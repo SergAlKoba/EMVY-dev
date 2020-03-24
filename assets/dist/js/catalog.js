@@ -49,6 +49,14 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    $('.filter-link').on('click', function(){
+        $('.filter-content').addClass('active');
+    });
+
+    $('.close-filter').on('click', function(){
+        $('.filter-content').removeClass('active');
+    });
+
 });
 
 $(window).resize(function(){

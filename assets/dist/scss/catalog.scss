@@ -103,9 +103,302 @@ header{
             left: 0;
             z-index: 5;
             width: 100%;
+            display: none;
             position: absolute;
+            padding: 38px 20px 44px;
             background-color: #f6f6f8;
-            
+            .close-filter{
+                width: 100%;
+                cursor: pointer;
+                color: #616161;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: right;
+                position: relative;
+                padding-right: 38px;
+                margin-bottom: 38px;
+                display: inline-block;
+                font-family: 'HelveticaNeueRoman';
+                i{
+                    top: 50%;
+                    right: 0;
+                    font-size: 24px;
+                    color: #616161;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+            .filter-title{
+                display: flex;
+                margin-bottom: 34px;
+                align-items: flex-end;
+                justify-content: space-between;
+                h3{
+                    color: #000000;
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: -0.52px;
+                    font-family: 'Roboto', sans-serif;
+                    text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+                }
+                .clear{
+                    color: #616161;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    position: relative;
+                    display: inline-block;
+                    font-family: 'HelveticaNeueRoman';
+                    &:hover{
+                        &::after{
+                            width: 0;
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 1px;
+                        position: absolute;
+                        background: #616161;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+            .sort{
+                width: 100%;
+                display: flex;
+                text-align: left;
+                margin-left: 2px;
+                margin-bottom: 15px;
+                align-items: flex-end;
+                p{
+                    color: #373737;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    padding: 5px 20px 5px 0;
+                    font-family: 'HelveticaNeueRoman';
+                }
+                ul{
+                    .sort-link{
+                        padding: 5px 0;
+                        position: relative;
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
+                        a{
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            position: relative;
+                            padding-right: 15px;
+                            font-family: 'HelveticaNeueRoman';
+                            &::after{
+                                content: '\E800';
+                                top: 40%;
+                                right: -5px;
+                                font-size: 16px;
+                                color: #000000;
+                                line-height: 16px;
+                                position: absolute;
+                                font-family: 'fontello';
+                                transform: translate(0, -50%);
+                            }
+                        }
+                        ul{
+                            right: 0;
+                            top: 28px;
+                            z-index: 4;
+                            width: 165px;
+                            display: none;
+                            position: absolute;
+                            background-color: #ffffff;
+                            padding: 12px 10px 12px 25px;
+                            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
+                            li{
+                                margin-bottom: 10px;
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                                a{
+                                    padding: 0;
+                                    color: #000000;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                    display: inline-block;
+                                    font-family: 'HelveticaNeueRoman';
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mfilter-content{
+                margin-bottom: 25px;
+                li{
+                    border-bottom: 1px solid #e6ded4;
+                    &:last-child{
+                        bottom: 0;
+                    }
+                }
+                .mfilter-filter-item{
+                    .mfilter-heading.mfilter-collapsed{
+                        i{
+                            transform: translate(0, -50%);
+                        }
+                    }
+                    .mfilter-heading{
+                        position: relative;
+                        padding: 25px 20px 25px 0;
+                        .mfilter-heading-text{
+                            span{
+                                width: 100%;
+                                color: #373737;
+                                font-size: 17px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                display: inline-block;
+                                font-family: 'HelveticaNeueMedium';
+                            }
+                        }
+                        i{
+                            top: 50%;
+                            right: -1px;
+                            font-size: 22px;
+                            color: #000000;
+                            position: absolute;
+                            transform: translate(0, -50%) rotate(180deg);
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+                .mfilter-content-opts{
+                    padding: 0 0 20px;
+                    .mfilter-option{
+                        position: relative;
+                        padding-left: 37px;
+                        margin-bottom: 12px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        .mfilter-col-input{
+                            left: 0;
+                            top: -1px;
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            input{
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                z-index: 4;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                            }
+                            input[type="radio"]:checked + span{
+                                &::after{
+                                    transform: translate(-50%, -50%) scale(1);
+                                }
+                            }
+                            input[type="radio"] + span{
+                                top: 0;
+                                left: 0;
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                                border-radius: 50%;
+                                position: absolute;
+                                border: 1px solid #f1c8e0;
+                                &::after{
+                                    content: '';
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    background-color: #aea395;
+                                    transform: translate(-50%, -50%) scale(0);
+                                    transition: all 0.5s;
+                                }
+                            }
+                            input[type="checkbox"]:checked + span{
+                                &::after{
+                                    transform: translate(-50%, -50%) scale(1);
+                                }
+                            }
+                            input[type="checkbox"] + span{
+                                top: 0;
+                                left: 0;
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                                border-radius: 5px;
+                                position: absolute;
+                                border: 1px solid #f1c8e0;
+                                &::after{
+                                    content: '';
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 2px;
+                                    position: absolute;
+                                    background-color: #aea395;
+                                    transform: translate(-50%, -50%) scale(0);
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                        .mfilter-input-active + label{
+                            color: #000000;
+                        }
+                        label{
+                            color: #616161;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            font-family: 'HelveticaNeueRoman';
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+            button{
+                width: 142px;
+                height: 52px;
+                border: none;
+                display: flex;
+                cursor: pointer;
+                color: #000000;
+                font-size: 15px;
+                margin: 0 auto;
+                font-weight: 400;
+                align-items: center;
+                border-radius: 36px;
+                justify-content: center;
+                background-color: #ffffff;
+                font-family: 'HelveticaNeueRoman';
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #f8f1e8;
+                }
+            }
+        }
+        .filter-content.active{
+            display: block;
         }
     }
     .product-items{
@@ -889,12 +1182,18 @@ header{
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 16px;
-                    padding-right: 11px;
+                    padding: 5px 11px 5px 0;
                     font-family: 'HelveticaNeueRoman';
                 }
                 ul{
                     .sort-link{
+                        padding: 5px 0;
                         position: relative;
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
                         a{
                             color: #000000;
                             font-size: 17px;
@@ -915,6 +1214,36 @@ header{
                                 transform: translate(0, -50%);
                             }
                         }
+                        ul{
+                            right: 0;
+                            top: 28px;
+                            z-index: 4;
+                            width: 165px;
+                            display: none;
+                            text-align: left;
+                            position: absolute;
+                            background-color: #ffffff;
+                            padding: 12px 10px 12px 25px;
+                            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
+                            li{
+                                margin-bottom: 10px;
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                                a{
+                                    padding: 0;
+                                    color: #000000;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                    display: inline-block;
+                                    font-family: 'HelveticaNeueRoman';
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -922,6 +1251,25 @@ header{
         .filter {
             .filter-link {
               margin-bottom: 30px;
+            }
+            .filter-content {
+                padding: 143px 185px;
+                .close-filter{
+                    top: 40px;
+                    margin: 0;
+                    width: auto;
+                    right: 21px;
+                    position: absolute;
+                }
+                .filter-title {
+                    h3 {
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+                }
+                .sort{
+                    display: none;
+                }
             }
         }
         .product-items{
@@ -1116,6 +1464,14 @@ header{
             .filter-link{
                 display: none;
             }
+            .filter-content {
+                display: block;
+                position: static;
+                padding: 102px 30px 40px;
+                .close-filter{
+                    display: none;
+                }
+            }
         }
         .product-items {
             margin: 0 -2.5%;
@@ -1178,6 +1534,38 @@ header{
         }
         .filter {
             width: 360px;
+            .filter-content {
+                padding: 105px 44px 40px 70px;
+                .filter-title {
+                    margin-bottom: 45px;
+                    h3 {
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .clear {
+                        font-size: 15px;
+                    }
+                }
+                .mfilter-content {
+                    .mfilter-filter-item {
+                        .mfilter-heading {
+                            padding: 28px 20px 28px 0;
+                        }
+                    }
+                    .mfilter-content-opts {
+                        padding: 0 0 23px;
+                        .mfilter-option {
+                            label {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+                button{
+                    display: none;
+                }
+            }
         }
         .product-items{
             padding-bottom: 12px;
