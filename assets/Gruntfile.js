@@ -28,6 +28,7 @@ grunt.initConfig({
 				'../markup/js/script.min.js': ['dist/js/script.js'],
 				'../markup/js/home.min.js': ['dist/js/home.js'],
 				'../markup/js/catalog.min.js': ['dist/js/catalog.js'],
+				'../markup/js/product-page.min.js': ['dist/js/product-page.js'],
 			}
 		}
 	},

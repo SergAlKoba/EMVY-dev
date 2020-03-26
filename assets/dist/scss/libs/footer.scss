@@ -198,6 +198,7 @@ footer{
     .footer-img {
         bottom: 0;
         right: 0;
+        z-index: 1;
         width: 130px;
         position: absolute;
         transform: scale(1, -1) rotate(180deg);
