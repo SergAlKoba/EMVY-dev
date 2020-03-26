@@ -49,6 +49,8 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    jcf.replaceAll();
+
 });
 
 $(window).resize(function(){

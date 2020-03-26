@@ -23,6 +23,8 @@ grunt.initConfig({
 				'../markup/js/jquery.min.js': ['dist/js/plugin/jquery.js'],
 				'../markup/js/jquery.mask.min.js': ['dist/js/plugin/jquery.mask.js'],
 				'../markup/js/slick.min.js': ['dist/js/plugin/slick.js'],
+				'../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
+				'../markup/js/jcf.number.min.js': ['dist/js/plugin/jcf.number.js'],
 				'../markup/js/readmore.min.js': ['dist/js/plugin/readmore.js'],
 				'../markup/js/jquery.matchHeight.min.js': ['dist/js/plugin/jquery.matchHeight.js'],
 				'../markup/js/script.min.js': ['dist/js/script.js'],
