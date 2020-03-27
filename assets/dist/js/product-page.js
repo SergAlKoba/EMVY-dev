@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $('.product-slider').slick({
-        dots: false,
+        dots: true,
         arrows: true,
         infinite: false,
         slidesToShow: 4,
@@ -12,7 +12,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1280,
                 settings: {
-                    dots: false,
+                    dots: true,
                     arrows: true,
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -45,8 +45,30 @@ $(document).ready(function(){
         byRow: true
     });
 
+    $('.complex-item .img').matchHeight({
+        byRow: true
+    });
+
     $('.conbiner a').on('click', function(){
         $(this).toggleClass('active');
+    });
+    
+    $('.manual-tabs li').on('click', function(){
+        var manual = $(this).data('manual');
+        $('.manual-tabs li').removeClass('active');
+        $('.manual-content').removeClass('active');
+        $(this).addClass('active');
+        $('.' + manual).addClass('active');
+    });
+    
+    $('.review').on('click', function(){
+        var review = $(this).data('manual');
+        $('.manual-content').removeClass('active');
+        $('.' + review).addClass('active');
+        event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top -40;
+		$('body,html').animate({scrollTop: top}, 1500);
     });
 
     jcf.replaceAll();
