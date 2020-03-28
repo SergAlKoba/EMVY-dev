@@ -23,6 +23,7 @@ grunt.initConfig({
 				'../markup/js/jquery.min.js': ['dist/js/plugin/jquery.js'],
 				'../markup/js/jquery.mask.min.js': ['dist/js/plugin/jquery.mask.js'],
 				'../markup/js/slick.min.js': ['dist/js/plugin/slick.js'],
+				'../markup/js/stars.min.js': ['dist/js/plugin/stars.js'],
 				'../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
 				'../markup/js/jcf.number.min.js': ['dist/js/plugin/jcf.number.js'],
 				'../markup/js/readmore.min.js': ['dist/js/plugin/readmore.js'],
@@ -31,6 +32,7 @@ grunt.initConfig({
 				'../markup/js/home.min.js': ['dist/js/home.js'],
 				'../markup/js/catalog.min.js': ['dist/js/catalog.js'],
 				'../markup/js/product-page.min.js': ['dist/js/product-page.js'],
+				'../markup/js/stocks.min.js': ['dist/js/stocks.js'],
 			}
 		}
 	},

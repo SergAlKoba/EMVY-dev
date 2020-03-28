@@ -465,60 +465,365 @@ header{
                     }
                 }
             }
+            .review-content{
+                padding-top: 19px;
+                padding-bottom: 65px;
+                .title{
+                    margin-bottom: 45px;
+                    position: relative;
+                    h2{
+                        color: #000000;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        position: relative;
+                        padding-bottom: 21px;
+                        display: inline-block;
+                        letter-spacing: -1.7px;
+                        font-family: 'Roboto', sans-serif;
+                        text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+                        &::after{
+                            content: '';
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 7px;
+                            position: absolute;
+                            background: #e6ded4;
+                        }
+                    }
+                    a{
+                        top: -7px;
+                        right: 0;
+                        width: 150px;
+                        height: 52px;
+                        padding: 0 5px;
+                        display: flex;
+                        color: #000000;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        position: absolute;
+                        border-radius: 36px;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #000000;
+                        font-family: 'HelveticaNeueRoman';
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #ffffff;
+                            background-color: #000000;
+                        }
+                    }
+                }
+                .review-items{
+                    margin-bottom: 73px;
+                    .review-item{
+                        margin-bottom: 24px;
+                        padding-bottom: 24px;
+                        border-bottom: 1px solid #fdf2f9;
+                        &:last-child{
+                            border: none;
+                            margin-bottom: 0;
+                            padding-bottom: 0;
+                        }
+                        .name{
+                            display: flex;
+                            margin-bottom: 15px;
+                            .avatar{
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 50%;
+                                position: relative;
+                                background-color: #f8f5f1;
+                                i{
+                                    top: 50%;
+                                    left: 50%;
+                                    z-index: 1;
+                                    font-size: 22px;
+                                    color: #616161;
+                                    position: absolute;
+                                    transform: translate(-50%, -50%);
+                                }
+                                img{
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 2;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                }
+                            }
+                            .review-title{
+                                padding: 18px 0 0 20px;
+                                h4{
+                                    color: #000000;
+                                    font-size: 17px;
+                                    font-weight: 500;
+                                    line-height: 17px;
+                                    margin-bottom: 4px;
+                                    font-family: 'HelveticaNeueMedium';
+                                }
+                                .assessment {
+                                    padding: 0;
+                                    li{
+                                        padding: 0;
+                                        margin: 0 -1px;
+                                        vertical-align: top;
+                                        display: inline-block;
+                                        &:first-child{
+                                            margin-left: 0;
+                                        }
+                                        &:last-child{
+                                            margin-right: 0;
+                                        }
+                                        &::after {
+                                            content: '\E814';
+                                            width: auto;
+                                            height: auto;
+                                            font-size: 13px;
+                                            position: static;
+                                            color: #000000;
+                                            line-height: 13px;
+                                            font-family: 'fontello';
+                                            background: transparent;
+                                        }
+                                    }
+                                    li.active{
+                                        &::after{
+                                            content: '\E813';
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .text{
+                            margin-bottom: 7px;
+                            p{
+                                color: #000000;
+                                font-size: 16px;
+                                font-weight: 300;
+                                line-height: 22px;
+                            }
+                        }
+                        .answer-link{
+                            float: right;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            position: relative;
+                            &:hover{
+                                &::after{
+                                    width: 0;
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                right: 0;
+                                bottom: 5px;
+                                width: 100%;
+                                height: 1px;
+                                position: absolute;
+                                background: #000000;
+                                transition: all 0.5s;
+                            }
+                            i{
+                                top: 50%;
+                                left: -33px;
+                                font-size: 15px;
+                                color: #000000;
+                                position: absolute;
+                                transform: translate(0, -50%);
+                            }
+                        }
+                        .answer{
+                            position: relative;
+                            padding-left: 23px;
+                            margin: 25px 0 20px;
+                            &::before{
+                                content: '';
+                                top: 0;
+                                left: 0;
+                                width: 3px;
+                                height: 86%;
+                                background-color: #f6f6f8;
+                                position: absolute;
+                            }
+                            .name {
+                                .review-title {
+                                    padding: 28px 0 0 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                form{
+                    margin: 0 -20px;
+                    padding: 56px 20px 51px;
+                    background-color: #fdf6fa;
+                    h3{
+                        color: #000000;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        margin-bottom: 38px;
+                        letter-spacing: -0.44px;
+                        font-family: 'Roboto', sans-serif;
+                        text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+                    }
+                    input{
+                        width: 100%;
+                        height: 63px;
+                        padding: 0 30px;
+                        color: #000000;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        margin-bottom: 24px;
+                        border: 1px solid #e6ded4;
+                        background-color: #ffffff;
+                        font-family: 'HelveticaNeueRoman';
+                    }
+                    textarea{
+                        resize: none;
+                        width: 100%;
+                        height: 200px;
+                        display: block;
+                        color: #000000;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        padding: 22px 30px;
+                        margin-bottom: 25px;
+                        border: 1px solid #e6ded4;
+                        background-color: #ffffff;
+                        font-family: 'HelveticaNeueRoman';
+                    }
+                    .stars-items{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 52px;
+                        p{
+                            padding: 0;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            margin-right: 20px;
+                            font-family: 'HelveticaNeueRoman';
+                        }
+                        .stars{
+                            .star{
+                                padding: 0;
+                                margin: 0 1px;
+                                vertical-align: top;
+                                display: inline-block;
+                                &:first-child{
+                                    margin-left: 0;
+                                }
+                                &:last-child{
+                                    margin-right: 0;
+                                }
+                                &::after {
+                                    content: '\E814';
+                                    width: auto;
+                                    height: auto;
+                                    font-size: 24px;
+                                    position: static;
+                                    color: #b9baba;
+                                    line-height: 24px;
+                                    font-family: 'fontello';
+                                    background: transparent;
+                                    transition: all 0.5s;
+                                }
+                            }
+                            .star.active{
+                                &::after{
+                                    content: '\E813';
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                    button{
+                        width: 138px;
+                        height: 52px;
+                        padding: 0 5px;
+                        margin: 0 auto;
+                        display: flex;
+                        color: #000000;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        border-radius: 36px;
+                        align-items: center;
+                        justify-content: center;
+                        background: transparent;
+                        border: 1px solid #000000;
+                        font-family: 'HelveticaNeueRoman';
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #ffffff;
+                            background-color: #000000;
+                        }
+                    }
+                }
+            }
+            .complex{
+                padding: 47px 0 10px;
+                .title{
+                    margin-bottom: 62px;
+                    h2{
+                        color: #000000;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        position: relative;
+                        padding-bottom: 21px;
+                        display: inline-block;
+                        letter-spacing: -1.7px;
+                        font-family: 'Roboto', sans-serif;
+                        text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+                        &::after{
+                            content: '';
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 7px;
+                            position: absolute;
+                            background: #e6ded4;
+                        }
+                    }
+                    a{
+                        display: none;
+                    }
+                }
+                .complex-content{
+                    margin: 0 -6%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .complex-item{
+                        width: 50%;
+                        text-align: center;
+                        margin-bottom: 60px;
+                        .img{
+                            margin-bottom: 28px;
+                        }
+                        p{
+                            color: #000000;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            font-family: 'HelveticaNeueRoman';
+                        }
+                    }
+                }
+            }
         }
         .manual-content.active{
             display: block;
-        }
-    }
-}
-
-.complex{
-    padding: 37px 0 30px;
-    .title{
-        margin-bottom: 62px;
-        h2{
-            color: #000000;
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 32px;
-            position: relative;
-            padding-bottom: 21px;
-            display: inline-block;
-            letter-spacing: -1.7px;
-            font-family: 'Roboto', sans-serif;
-            text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
-            &::after{
-                content: '';
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 7px;
-                position: absolute;
-                background: #e6ded4;
-            }
-        }
-        a{
-            display: none;
-        }
-    }
-    .complex-content{
-        margin: 0 -6%;
-        display: flex;
-        flex-wrap: wrap;
-        .complex-item{
-            width: 50%;
-            text-align: center;
-            margin-bottom: 60px;
-            .img{
-                margin-bottom: 28px;
-            }
-            p{
-                color: #000000;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 20px;
-                font-family: 'HelveticaNeueRoman';
-            }
         }
     }
 }
@@ -1024,28 +1329,78 @@ footer{
                     }
                 }
             }
-        }
-    }
-
-    .complex {
-        padding: 30px 0 40px;
-        .title {
-            margin-bottom: 98px;
-            h2 {
-                line-height: 42px;
-                padding-bottom: 16px;
-                letter-spacing: -0.76px;
-            }
-        }
-        .complex-content {
-            margin: 0 -3.5%;
-            .complex-item {
-                width: 33.33%;
-                padding: 0 20px;
-                margin-bottom: 60px;
-                p {
-                    font-size: 17px;
-                    line-height: 20px;
+            .manual-content {
+                .review-content{
+                    padding-top: 0;
+                    .title {
+                        margin-bottom: 77px;
+                        h2 {
+                            font-size: 30px;
+                        }
+                        a {
+                            top: -2px;
+                            width: 180px;
+                            font-size: 17px;
+                        }
+                    }
+                    .review-items {
+                        margin-bottom: 77px;
+                        .review-item {
+                            margin-bottom: 29px;
+                            padding-bottom: 29px;
+                            .text {
+                                margin-bottom: 10px;
+                            }
+                            .answer {
+                                position: relative;
+                                padding-left: 20px;
+                                margin: 30px 0 20px;
+                            }
+                        }
+                    }
+                    form {
+                        margin: 0;
+                        padding: 56px 40px 64px;
+                        h3 {
+                            font-size: 24px;
+                            margin-bottom: 66px;
+                        }
+                        textarea{
+                            margin-bottom: 23px;
+                        }
+                        .stars-items {
+                            margin-bottom: 48px;
+                        }
+                        button{
+                            float: right;
+                            width: 190px;
+                            height: 63px;
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .complex {
+                    padding: 40px 0 21px;
+                    .title {
+                        margin-bottom: 98px;
+                        h2 {
+                            line-height: 42px;
+                            padding-bottom: 16px;
+                            letter-spacing: -0.76px;
+                        }
+                    }
+                    .complex-content {
+                        margin: 0 -3.5%;
+                        .complex-item {
+                            width: 33.33%;
+                            padding: 0 20px;
+                            margin-bottom: 60px;
+                            p {
+                                font-size: 17px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1109,6 +1464,64 @@ footer{
             .advantage-item{
                 &::after {
                     right: -15%;
+                }
+            }
+        }
+        .manual {
+            .manual-content {
+                .review-content {
+                    .review-items {
+                        .review-item {
+                            padding-left: 90px;
+                            position: relative;
+                            .name {
+                                .avatar{
+                                    top: 0;
+                                    left: 0;
+                                    position: absolute;
+                                }
+                                .review-title{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 12px 0 0 0;
+                                    justify-content: space-between;
+                                    h4{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                            .text{
+                                padding-right: 110px;
+                            }
+                            .answer {
+                                padding-left: 100px;
+                                margin: 30px 0 20px -20px;
+                                .name {
+                                    .avatar {
+                                        left: 16px;
+                                    }
+                                    .review-title {
+                                        padding: 12px 0 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    form {
+                        input {
+                            width: 380px;
+                        }
+                        textarea {
+                            margin-bottom: 45px;
+                        }
+                        .stars-items{
+                            margin-bottom: 0;
+                        }
+                        button{
+                            margin-top: -40px;
+                        }
+                    }
                 }
             }
         }
@@ -1185,16 +1598,6 @@ footer{
 
 @media screen and (min-width: 1280px) {
 
-    .complex {
-        .complex-content {
-            margin: 0 -2.5%;
-            .complex-item {
-                width: 20%;
-                margin: 0 2.5% 60px;
-            }
-        }
-    }
-
     .product-one {
         padding: 40px 0 40px;
         .product-one-comtent {
@@ -1225,9 +1628,22 @@ footer{
             }
         }
         .manual {
-            .manual-content {}
-            p {
-                padding-right: 200px;
+            .manual-tabs {
+                p {
+                    padding-right: 200px;
+                }
+            }
+            .manual-content{
+                padding-bottom: 20px;
+                .complex {
+                    .complex-content {
+                        margin: 0 -2.5%;
+                        .complex-item {
+                            width: 20%;
+                            margin: 0 2.5% 60px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1320,24 +1736,114 @@ footer{
                     }
                 }
             }
-        }
-    }
-
-    .complex {
-        padding: 33px 0 64px;
-        .title {
-            margin-bottom: 97px;
-            h2 {
-                font-size: 32px;
-                line-height: 48px;
-                letter-spacing: -0.76px;
-            }
-        }
-        .complex-content {
-            margin: 0 -2%;
-            .complex-item{
-                width: 25%;
-                margin: 0 0 86px;
+            .manual-content{
+                .review-content {
+                    padding-top: 5px;
+                    padding-bottom: 70px;
+                    .title {
+                        margin-bottom: 63px;
+                        h2 {
+                            font-size: 34px;
+                            margin-left: 5px;
+                            margin-bottom: 24px;
+                        }
+                        a {
+                            top: -8px;
+                            width: 235px;
+                            height: 64px;
+                        }
+                    }
+                    .review-items {
+                        margin-bottom: 60px;
+                        .review-item {
+                            margin-bottom: 45px;
+                            padding-left: 135px;
+                            padding-bottom: 40px;
+                            .name {
+                                margin-bottom: 5px;
+                                .avatar {
+                                    left: 4px;
+                                    width: 104px;
+                                    height: 104px;
+                                    i{
+                                        font-size: 34px;
+                                    }
+                                }
+                                .review-title {
+                                    padding: 10px 0 0 0;
+                                    .assessment {
+                                        transform: translate(0, -7px);
+                                    }
+                                }
+                            }
+                            .text {
+                                margin-bottom: 15px;
+                                padding-right: 150px;
+                                p {
+                                    font-size: 16px;
+                                    line-height: 23px;
+                                }
+                            }
+                            .answer {
+                                padding-left: 156px;
+                                margin: 40px 0 25px -47px;
+                                .name {
+                                    .avatar {
+                                        left: 28px;
+                                    }
+                                    .review-title {
+                                        padding: 12px 0 5px 0;
+                                    }
+                                }
+                                .text {
+                                    margin-bottom: 18px;
+                                    padding-right: 120px;
+                                }
+                            }
+                        }
+                    }
+                    form {
+                        padding: 56px 40px 65px;
+                        h3 {
+                            width: 100%;
+                            margin-bottom: 63px;
+                        }
+                        input {
+                            width: 419px;
+                        }
+                        textarea {
+                            width: 100%;
+                            margin-bottom: 65px;
+                        }
+                        .stars-items{
+                            margin-bottom: 0;
+                        }
+                        button{
+                            z-index: 4;
+                            float: right;
+                            margin-bottom: 0;
+                            margin-top: -44px;
+                        }
+                    }
+                }
+                .complex {
+                    padding: 63px 0 24px;
+                    .title {
+                        margin-bottom: 97px;
+                        h2 {
+                            font-size: 32px;
+                            line-height: 48px;
+                            letter-spacing: -0.76px;
+                        }
+                    }
+                    .complex-content {
+                        margin: 0 -2%;
+                        .complex-item{
+                            width: 25%;
+                            margin: 0 0 86px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1433,11 +1939,27 @@ footer{
             p {
                 padding-right: 0;
             }
+            .manual-content {
+                .review-content {
+                    padding-top: 10px;
+                    padding-bottom: 45px;
+                    .review-items {
+                        .review-item {
+                            .answer {
+                                padding-left: 155px;
+                                margin: 38px 0 25px -33px;
+                            }
+                        }
+                    }
+                }
+                .complex {
+                    padding: 86px 0 2px;
+                    .title{
+                        margin-bottom: 130px;
+                    }
+                }
+            }
         }
-    }
-
-    .complex {
-        padding: 56px 0 75px;
     }
 
     .popular-goods {

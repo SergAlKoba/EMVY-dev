@@ -65,6 +65,8 @@ $(document).ready(function(){
         var review = $(this).data('manual');
         $('.manual-content').removeClass('active');
         $('.' + review).addClass('active');
+        $('.manual-tabs li').removeClass('active');
+        $('.manual-tabs li:last-child').addClass('active');
         event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top -40;
