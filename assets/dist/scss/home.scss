@@ -498,13 +498,14 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
-                    i{
-                        left: 0;
-                        top: 50%;
-                        color: #000000;
-                        font-size: 20px;
+                    &::after{
+                        content: '';
+                        top: 7px;
+                        left: 2px;
+                        width: 18px;
+                        height: 1px;
                         position: absolute;
-                        transform: translate(0, -50%);
+                        background: #000000;
                     }
                 }
             }
@@ -515,6 +516,7 @@
                 position: relative;
                 border-top: 1px solid #e4e4e4;
                 a{
+                    width: auto;
                     color: #000000;
                     font-size: 17px;
                     font-weight: 400;
@@ -843,14 +845,6 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
-                    i{
-                        left: 0;
-                        top: 50%;
-                        color: #000000;
-                        font-size: 20px;
-                        position: absolute;
-                        transform: translate(0, -50%);
-                    }
                 }
             }
             .add-to-cart{
@@ -860,6 +854,7 @@
                 position: relative;
                 border-top: 1px solid #e4e4e4;
                 a{
+                    width: auto;
                     color: #000000;
                     font-size: 17px;
                     font-weight: 400;

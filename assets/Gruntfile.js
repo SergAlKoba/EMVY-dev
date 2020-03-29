@@ -33,6 +33,7 @@ grunt.initConfig({
 				'../markup/js/catalog.min.js': ['dist/js/catalog.js'],
 				'../markup/js/product-page.min.js': ['dist/js/product-page.js'],
 				'../markup/js/stocks.min.js': ['dist/js/stocks.js'],
+				'../markup/js/about.min.js': ['dist/js/about.js'],
 			}
 		}
 	},
