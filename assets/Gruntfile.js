@@ -34,6 +34,7 @@ grunt.initConfig({
 				'../markup/js/product-page.min.js': ['dist/js/product-page.js'],
 				'../markup/js/stocks.min.js': ['dist/js/stocks.js'],
 				'../markup/js/about.min.js': ['dist/js/about.js'],
+				'../markup/js/pay-delivery.min.js': ['dist/js/pay-delivery.js'],
 			}
 		}
 	},
