@@ -321,14 +321,14 @@ footer{
             margin-top: 0;
         }
         nav {
-            top: 58%;
+            top: 38%;
             li {
                 margin: 0 62px;
             }
         }
         .header-contact {
             .open-menu {
-                top: 55%;
+                top: 29%;
                 width: 60px;
                 height: 60px;
             }
@@ -383,11 +383,17 @@ footer{
             margin-top: 5px;
         }
         nav{
+            top: 45%;
             left: 50.4%;
             li {
                 margin: 0 95px;
             }
         }
+        .header-contact {
+            .open-menu {
+                top: 38%;
+            }
+        }        
     }
 
     .stock {
