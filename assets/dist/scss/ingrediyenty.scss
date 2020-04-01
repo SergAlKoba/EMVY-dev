@@ -1,5 +1,3 @@
-@import "libs/slick";
-
 body{
     padding-top: 92px;
 }
@@ -21,8 +19,8 @@ header{
     }
 }
 
-.about{
-    padding: 58px 0 40px;
+.ingrediyenty{
+    padding: 58px 0 36px;
     .title{
         display: flex;
         margin-bottom: 52px;
@@ -83,10 +81,65 @@ header{
             }
         }
     }
-    .about-content{
-        img{
-            width: 100%;
-            margin-bottom: 23px;
+    .ingrediyenty-content{
+        .img{
+            margin-bottom: 28px;
+            position: relative;
+            .video{
+                right: -27px;
+                width: 100px;
+                height: 100px;
+                bottom: -30px;
+                position: absolute;
+                .video-bg{
+                    display: none;
+                }
+                .play {
+                    top: 50%;
+                    left: 50%;
+                    z-index: 3;
+                    width: 72px;
+                    height: 72px;
+                    cursor: pointer;
+                    position: absolute;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    &:hover{
+                        &::after {
+                            transform: translate(-50%, -50%) scale(1.1);
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        z-index: 0;
+                        width: 100%;
+                        height: 100%;
+                        filter: blur(2px);
+                        overflow: hidden;
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: rgba(255,54,54,0.5);
+                        transform: translate(-50%, -50%);
+                        transition: all 0.5s;
+                    }
+                    i {
+                        top: 52%;
+                        left: 53%;
+                        z-index: 1;
+                        color: #ffffff;
+                        font-size: 20px;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            img{
+                z-index: 0;
+                width: 100%;
+                display: block;
+            }
         }
         p{
             color: #373737;
@@ -164,9 +217,8 @@ header{
     }
 }
 
-.certificates{
-    overflow: hidden;
-    padding: 42px 0 60px;
+.tekhnologiya{
+    padding: 42px 0 36px;
     .title{
         margin-bottom: 45px;
         h3{
@@ -191,193 +243,23 @@ header{
             }
         }
     }
-    .certificates-slider{
-        width: 606px;
-        position: static;
-        padding-bottom: 38px;
-        .slick-list{
-            margin: 0 -11px;
+    .tekhnologiya-content{
+        p{
+            color: #262626;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 41px;
+            font-family: 'HelveticaNeueRoman';
         }
-        .slick-slide{
-            margin: 0 11px;
-        }
-        .certificates-item{
-            position: relative;
-            border: 1px solid #e6ded4;
-            img{
-                width: 100%;
-                display: flex;
-            }
-        }
-        .slick-dots {
-            right: 0;
-            bottom: 0;
-            z-index: 3;
+        img{
             width: 100%;
-            display: flex;
-            text-align: center;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            li{
-                width: 8px;
-                height: 8px;
-                margin: 0 5px;
-                transition: all 0.5s;
-                button{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    text-indent: -9999px;
-                    background: transparent;
-                    background-color: #f1c8e0;
-                    border: 2px solid transparent;
-                    transition: all 0.5s;
-                }
-            }
-            .slick-active{
-                width: 10px;
-                height: 10px;
-                button{
-                    background-color: #000000;
-                    border: 2px solid #000000;
-                }
-            }
-        }
-    }
-}
-
-.video{
-    padding: 22px 0 100px;
-    .title{
-        margin-bottom: 46px;
-        h3{
-            color: #000000;
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 32px;
-            position: relative;
-            padding-bottom: 21px;
-            display: inline-block;
-            letter-spacing: -1.7px;
-            font-family: 'Roboto', sans-serif;
-            text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
-            &::after{
-                content: '';
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 7px;
-                position: absolute;
-                background: #e6ded4;
-            }
-        }
-    }
-    .video-slider{
-        width: 608px;
-        position: static;
-        padding-bottom: 38px;
-        .slick-list{
-            margin: 0 -11px;
-        }
-        .slick-slide{
-            margin: 0 11px;
-        }
-        .video-item{
-            height: 213px;
-            position: relative;
-            &:hover{
-                .play{
-                    &::after{
-                        transform: translate(-50%, -50%) scale(1.1);
-                    }
-                }
-            }
-            &::after{
-                content: '';
-                top: 0;
-                left: 0;
-                z-index: 0;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.3);
-            }
-            .play{
-                top: 50%;
-                left: 50%;
-                z-index: 3;
-                width: 72px;
-                height: 72px;
-                cursor: pointer;
-                position: absolute;
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                &::after{
-                    content: '';
-                    top: 50%;
-                    left: 50%;
-                    z-index: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: blur(2px);
-                    overflow: hidden;
-                    position: absolute;
-                    border-radius: 50%;
-                    background-color: rgba(255, 54, 54, 0.5);
-                    transform: translate(-50%, -50%);
-                    transition: all 0.5s;
-                }
-                i{
-                    top: 52%;
-                    left: 53%;
-                    z-index: 1;
-                    color: #ffffff;
-                    font-size: 20px;
-                    position: absolute;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
-        .slick-dots {
-            right: 0;
-            bottom: 0;
-            z-index: 3;
-            width: 100%;
-            display: flex;
-            text-align: center;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            li{
-                width: 8px;
-                height: 8px;
-                margin: 0 5px;
-                transition: all 0.5s;
-                button{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    text-indent: -9999px;
-                    background: transparent;
-                    background-color: #f1c8e0;
-                    border: 2px solid transparent;
-                    transition: all 0.5s;
-                }
-            }
-            .slick-active{
-                width: 10px;
-                height: 10px;
-                button{
-                    background-color: #000000;
-                    border: 2px solid #000000;
-                }
-            }
         }
     }
 }
 
 footer{
+    margin-top: 77px;
     position: relative;
     &::after{
         content: '';
@@ -407,7 +289,7 @@ footer{
         }
     }
 
-    .about {
+    .ingrediyenty {
         padding: 98px 0 40px;
         .title {
             margin-bottom: 84px;
@@ -417,9 +299,35 @@ footer{
                 letter-spacing: -0.76px;
             }
         }
-        .about-content {
-            img {
-                margin-bottom: 32px;
+        .ingrediyenty-content {
+            .img {
+                margin-bottom: 37px;
+                .video {
+                    right: 0;
+                    bottom: 0;
+                    width: 200px;
+                    height: 135px;
+                    position: absolute;
+                    .video-bg{
+                        top: 0;
+                        left: 0;
+                        z-index: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        &::after{
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            z-index: 0;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.15);
+                        }
+                    }
+                }
             }
         }
     }
@@ -461,56 +369,20 @@ footer{
         }
     }
 
-    .certificates {
-        padding: 16px 0 80px;
+    .tekhnologiya {
+        padding: 16px 0 98px;
         .title {
-            margin-bottom: 67px;
+            margin-bottom: 71px;
             h3 {
                 line-height: 42px;
                 padding-bottom: 16px;
                 letter-spacing: -0.76px;
             }
         }
-        .certificates-slider{
-            width: 950px;
-            padding-bottom: 40px;
-            .slick-list {
-                margin: 0 -22px;
-            }
-            .slick-slide {
-                margin: 0 22px;
-            }
-            .slick-dots{
-                bottom: 0;
-            }
-        }
-    }
-
-    .video {
-        padding: 50px 0 130px;
-        .title {
-            margin-bottom: 67px;
-            h3 {
-                line-height: 42px;
-                padding-bottom: 16px;
-                letter-spacing: -0.76px;
-            }
-        }
-        .video-slider{
-            width: 100%;
-            position: relative;
-            padding-bottom: 40px;
-            .slick-list {
-                margin: 0 -23px;
-            }
-            .slick-slide {
-                margin: 0 23px;
-            }
-            .video-item {
-                
-            }
-            .slick-dots{
-                bottom: 0;
+        .tekhnologiya-content{
+            p{
+                font-size: 16px;
+                line-height: 21px;
             }
         }
     }
@@ -519,7 +391,7 @@ footer{
 
 @media screen and (min-width: 1024px) {
 
-    .about {
+    .ingrediyenty {
         .title {
             .deck-link{
                 width: 265px;
@@ -564,118 +436,18 @@ footer{
         }
     }
 
-    .certificates{
-        .certificates-slider{
-            width: 100%;
-            position: relative;
-            padding-bottom: 30px;
-            .slick-arrow {
-                right: 0;
-                z-index: 3;
-                top: -120px;
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                position: absolute;
-                background: transparent;
-                border: 1px solid #000000;
-                transition: all 0.5s;
-                &:hover{
-                    background-color: #000000;
-                    i{
-                        color: #ffffff;
-                    }
-                }
-                i{
-                    top: 50%;
-                    left: 50%;
-                    font-size: 14px;
-                    color: #000000;
-                    position: absolute; 
-                    transition: all 0.5s;  
-                }
-            }
-            .prev{
-                right: 70px;
-                i{
-                    top: 50%;
-                    left: 45%;
-                    font-size: 20px;
-                    transform: translate(-50%, -50%) rotate(90deg);
-                }
-            }
-            .next{
-                right: 0;
-                i{
-                    top: 50%;
-                    left: 55%;
-                    font-size: 20px;
-                    transform: translate(-50%, -50%) rotate(-90deg);
-                }
-            }
-        }
-    }
-
-    .video{
-        position: relative;
-        .video-slider{
-            padding-bottom: 30px;
-            .video-item {
-                height: 300px;
-            }
-            .slick-arrow {
-                right: 0;
-                z-index: 3;
-                top: -120px;
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                position: absolute;
-                background: transparent;
-                border: 1px solid #000000;
-                transition: all 0.5s;
-                &:hover{
-                    background-color: #000000;
-                    i{
-                        color: #ffffff;
-                    }
-                }
-                i{
-                    top: 50%;
-                    left: 50%;
-                    font-size: 14px;
-                    color: #000000;
-                    position: absolute; 
-                    transition: all 0.5s;  
-                }
-            }
-            .prev{
-                right: 70px;
-                i{
-                    top: 50%;
-                    left: 45%;
-                    font-size: 20px;
-                    transform: translate(-50%, -50%) rotate(90deg);
-                }
-            }
-            .next{
-                right: 0;
-                i{
-                    top: 50%;
-                    left: 55%;
-                    font-size: 20px;
-                    transform: translate(-50%, -50%) rotate(-90deg);
-                }
-            }
-        }
-    }
-
 }
 
 @media screen and (min-width: 1280px) {
 
-    .about {
-        .about-content {
+    .ingrediyenty {
+        .ingrediyenty-content {
+            .img {
+                .video {
+                    width: 260px;
+                    height: 175px;
+                }
+            }
             p {
                 font-size: 16px;
                 line-height: 20px;
@@ -689,14 +461,6 @@ footer{
             .advantages-item {
                 width: 29.33%;
                 margin: 0 2% 62px;
-            }
-        }
-    }
-
-    .video {
-        .video-slider {
-            .video-item {
-                height: 360px;
             }
         }
     }
@@ -732,7 +496,7 @@ footer{
         }
     }
 
-    .about {
+    .ingrediyenty {
         padding: 90px 0 50px;
         .title {
             margin-bottom: 74px;
@@ -751,10 +515,13 @@ footer{
                 }
             }
         }
-        .about-content {
-            img {
-                width: 100%;
-                margin-bottom: 51px;
+        .ingrediyenty-content {
+            .img {
+                margin-bottom: 56px;
+                .video{
+                    width: 335px;
+                    height: 223px;
+                }
             }
             p{
                 padding-right: 110px;
@@ -763,7 +530,7 @@ footer{
     }
 
     .advantages {
-        padding: 33px 0 25px;
+        padding: 33px 0 10px;
         .title {
             margin-bottom: 68px;
             h3 {
@@ -785,29 +552,8 @@ footer{
         }
     }
 
-    .certificates {
-        padding: 22px 0 75px;
-        .title {
-            margin-bottom: 65px;
-            h3 {
-                font-size: 32px;
-                line-height: 48px;
-                padding-bottom: 20px;
-                letter-spacing: -0.76px;
-            }
-        }
-        .certificates-slider{
-            padding-bottom: 38px;
-            .slick-arrow {
-                top: -132px;
-                width: 54px;
-                height: 54px;
-            }
-        }
-    }
-
-    .video {
-        padding: 42px 0 160px;
+    .tekhnologiya {
+        padding: 8px 0 104px;
         .title {
             margin-bottom: 66px;
             h3 {
@@ -817,15 +563,10 @@ footer{
                 letter-spacing: -0.76px;
             }
         }
-        .video-slider {
-            padding-bottom: 35px;
-            .video-item {
-                height: 415px;
-            }
-            .slick-arrow {
-                top: -132px;
-                width: 54px;
-                height: 54px;
+        .tekhnologiya-content{
+            p{
+                padding-right: 2px;
+                margin-bottom: 60px;
             }
         }
     }
@@ -853,15 +594,14 @@ footer{
         }        
     }
 
-    .about {
-        padding: 90px 0 65px;
+    .ingrediyenty {
+        padding: 90px 0 60px;
         .title{
             margin-bottom: 74px;
         }
-        .about-content {
-            img {
-                width: 100%;
-                margin-bottom: 51px;
+        .ingrediyenty-content {
+            .img {
+                margin-bottom: 55px;
             }
             p{
                 padding-right: 0;
@@ -870,7 +610,7 @@ footer{
     }
 
     .advantages {
-        padding: 36px 0 30px;
+        padding: 36px 0 15px;
         .advantages-content {
             margin: 0 -5%;
             .advantages-item {
@@ -880,22 +620,18 @@ footer{
         }
     }
 
-    .certificates {
-        padding: 34px 0 75px;
-        .certificates-slider {
-            .slick-slide {
-                margin: 0 47px;
+    .tekhnologiya {
+        padding: 19px 0 95px;
+        .tekhnologiya-content {
+            p {
+                padding-right: 2px;
+                margin-bottom: 81px;
             }
         }
     }
 
-    .video {
-        padding: 41px 0 160px;
-        .video-slider {
-            .video-item {
-                height: 340px;
-            }
-        }
+    footer {
+        margin-top: 36px;
     }
 
 }

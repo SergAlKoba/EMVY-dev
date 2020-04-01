@@ -1,6 +1,12 @@
+body{
+    padding-top: 92px;
+}
 
 header{
-    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #ffffff;
     padding: 18px 20px 22px;
     border-bottom: 2px solid #f6f6f8;
     .logo {
@@ -254,11 +260,12 @@ header{
                         line-height: 22px;
                         display: inline-block;
                         font-family: 'HelveticaNeueMedium';
-                        span{
+                        i{
                             color: #000000;
                             font-size: 18px;
                             font-weight: 700;
                             line-height: 22px;
+                            font-style: normal;
                             display: inline-block;
                             font-family: 'Roboto', sans-serif;
                         }
@@ -474,6 +481,10 @@ footer{
 }
 
 @media screen and (min-width: 1400px) {
+
+    body{
+        padding-top: 110px;
+    }
 
     header {
         padding: 48px 71px 20px;

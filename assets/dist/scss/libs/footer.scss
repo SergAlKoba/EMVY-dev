@@ -146,11 +146,11 @@ footer{
             span{
                 color: #616161;
                 font-size: 15px;
+                display: table;
                 cursor: pointer;
                 font-weight: 400;
                 line-height: 18px;
                 position: relative;
-                display: inline-block;;
                 font-family: 'HelveticaNeueRoman';
                 transition: all 0.5s;
                 &::after{
