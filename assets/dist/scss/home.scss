@@ -498,7 +498,7 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
-                    &::after{
+                    &::after {
                         content: '';
                         top: 7px;
                         left: 2px;
@@ -844,6 +844,15 @@
                     font-family: 'HelveticaNeueRoman';
                     &:last-child{
                         margin-bottom: 0;
+                    }
+                    &::after {
+                        content: '';
+                        top: 7px;
+                        left: 2px;
+                        width: 18px;
+                        height: 1px;
+                        position: absolute;
+                        background: #000000;
                     }
                 }
             }

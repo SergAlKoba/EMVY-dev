@@ -30,6 +30,7 @@ $(document).ready(function(){
 
     $('.close').on('click', function(){
         $('.callback').removeClass('active');
+        $('.added-cart').removeClass('active');
     });
 
     $('.close-popup').on('click', function(){
