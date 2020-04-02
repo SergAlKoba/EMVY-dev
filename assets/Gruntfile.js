@@ -38,6 +38,8 @@ grunt.initConfig({
 				'../markup/js/wishlist.min.js': ['dist/js/wishlist.js'],
 				'../markup/js/ingrediyenty.min.js': ['dist/js/ingrediyenty.js'],
 				'../markup/js/contacts.min.js': ['dist/js/contacts.js'],
+				'../markup/js/error.min.js': ['dist/js/error.js'],
+				'../markup/js/certifications.min.js': ['dist/js/certifications.js'],
 			}
 		}
 	},

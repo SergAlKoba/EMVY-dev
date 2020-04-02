@@ -20,7 +20,7 @@ header{
 }
 
 .contacts{
-    padding: 58px 0 70px;
+    padding: 58px 0 100px;
     .title{
         margin-bottom: 54px;
         h2{
@@ -28,10 +28,219 @@ header{
             font-size: 28px;
             font-weight: 700;
             line-height: 32px;
-            margin-bottom: 35px;
             letter-spacing: -0.56px;
             font-family: 'Roboto', sans-serif;
             text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+        }
+    }
+    .feedback{
+        padding: 20px 22px;
+        margin-bottom: 47px;
+        background-color: #f6f6f8;
+        h3{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            position: relative;
+            padding-right: 20px;
+            letter-spacing: -0.32px;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
+            &::after{
+                content: '\E800';
+                top: 50%;
+                right: -4px;
+                color: #000000;
+                font-size: 24px;
+                position: absolute;
+                font-family: 'fontello';
+                transform: translate(0, -50%);
+                transition: all 0.5s;
+            }
+        }
+        h3.active{
+            &::after{
+                transform: translate(0, -50%) rotate(180deg);
+            }
+        }
+        .feedback-content{
+            padding: 47px 0 24px;
+            width: 100% !important;
+            p{
+                color: #000000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 16px;
+                font-family: 'HelveticaNeueRoman';
+            }
+            form{
+                input{
+                    width: 100%;
+                    height: 48px;
+                    border: none;
+                    color: #000000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    margin-bottom: 16px;
+                    background: transparent;
+                    font-family: 'HelveticaNeueRoman';
+                    border-bottom: 1px solid #f1c8e0;
+                }
+                textarea{
+                    width: 100%;
+                    height: 48px;
+                    resize: none;
+                    border: none;
+                    color: #000000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    padding-top: 14px;
+                    margin-bottom: 23px;
+                    background: transparent;
+                    font-family: 'HelveticaNeueRoman';
+                    border-bottom: 1px solid #f1c8e0;
+                }
+                .checkbox{
+                    cursor: pointer;
+                    position: relative;
+                    padding-left: 32px;
+                    margin-bottom: 39px;
+                    span{
+                        left: -1px;
+                        top: 1px;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        position: absolute;
+                        border: 1px solid #f1c8e0;
+                        input{
+                            top: 0;
+                            left: 0;
+                            margin: 0;
+                            opacity: 0;
+                            z-index: 4;
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                            position: absolute;
+                        }
+                        input[type="checkbox"] + i{
+                            top: 50%;
+                            left: 50%;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 2px;
+                            position: absolute;
+                            background-color: #aea395;
+                            transform: translate(-50%, -50%) scale(0);
+                            transition: all 0.5s;
+                        }
+                        input[type="checkbox"]:checked + i{
+                            transform: translate(-50%, -50%) scale(1);
+                        }
+                    }
+                    label{
+                        cursor: pointer;
+                        color: #000000;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        font-family: 'HelveticaNeueRoman';
+                    }
+                }
+                button{
+                    width: 138px;
+                    height: 52px;
+                    border: none;
+                    float: right;
+                    display: flex;
+                    cursor: pointer;
+                    color: #000000;
+                    font-size: 15px;
+                    margin: 0 auto;
+                    font-weight: 400;
+                    align-items: center;
+                    border-radius: 36px;
+                    justify-content: center;
+                    border: 1px solid #000000;
+                    background-color: transparent;
+                    font-family: 'HelveticaNeueRoman';
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #ffffff;
+                        background-color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    .contacts-content{
+        .title{
+            display: none;
+        }
+        .contact-details{
+            margin-bottom: 31px;
+            li{
+                margin-bottom: 23px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                h4{
+                    color: #000000;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    margin-bottom: 16px;
+                    font-family: 'Roboto', sans-serif;
+                }
+                .tel{
+                    display: block;
+                    color: #000000;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    font-family: 'HelveticaNeueMedium';
+                }
+                .mail{
+                    display: block;
+                    color: #000000;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-family: 'HelveticaNeueRoman';
+                }
+                p{
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-family: 'HelveticaNeueRoman';
+                }
+            }
+        }
+        .permissions{
+            li{
+                color: #000000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 18px;
+                font-family: 'HelveticaNeueRoman';
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                span{
+                    font-weight: 500;
+                    display: inline-block;
+                    font-family: 'HelveticaNeueMedium';
+                }
+            }
         }
     }
 }
@@ -67,10 +276,10 @@ footer{
     }
 
     .contacts {
-        padding: 98px 0 80px;
+        padding: 98px 0 132px;
         .title {
             position: relative;
-            margin-bottom: 84px;
+            margin-bottom: 63px;
             h2 {
                 z-index: 0;
                 font-size: 38px;
@@ -80,22 +289,98 @@ footer{
                 letter-spacing: -0.76px;
             }
         }
+        .feedback {
+            margin-bottom: 55px;
+            .feedback-content {
+                p {
+                    margin-bottom: 66px;
+                }
+                form {
+                    .checkbox {
+                        margin-bottom: 64px;
+                    }
+                }
+            }
+        }
+        .contacts-content {
+            .contact-details{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 45px;
+                li {
+                    width: 36.5%;
+                    padding-right: 30px;
+                    margin-bottom: 41px;
+                    &:last-child{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    .contacts {
-        
-    }
+    
 
 }
 
 @media screen and (min-width: 1280px) {
 
     .contacts {
-        
+        position: relative;
+        &::after{
+            content: '';
+            top: 0;
+            right: 0;
+            z-index: 0;
+            width: 48.5%;
+            height: 100%;
+            position: absolute;
+            background-color: #f6f6f8;
+        }
+        .container{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .title{
+            display: none;
+        }
+        .contacts-content {
+            margin: 0;
+            width: 48%;
+            .title{
+                display: block;
+            }
+        }
+        .feedback{
+            width: 38%;
+            padding: 0;
+            margin: 18px 6% 0 0;
+            background: transparent;
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+                &::after{
+                    display: none;
+                }
+            }
+            .feedback-content {
+                padding: 25px 0;
+                p {
+                    margin-bottom: 31px;
+                }
+                form {
+                    .checkbox {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -130,12 +415,51 @@ footer{
     }
 
     .contacts {
-        padding: 99px 0 90px;
+        padding: 97px 0 78px;
         .title {
-            margin-bottom: 78px;
+            margin-bottom: 84px;
             h2 {
                 font-size: 42px;
                 line-height: 48px;
+            }
+        }
+        .contacts-content {
+            .contact-details {
+                li {
+                    width: 40%;
+                }
+            }
+        }
+        .feedback {
+            width: 41.3%;
+            margin: 18px 3.5% 0 0;
+            h3 {
+                font-size: 24px;
+                line-height: 26px;
+                letter-spacing: -0.5px;
+            }
+            .feedback-content {
+                form {
+                    input {
+                        margin-bottom: 36px;
+                    }
+                    .input{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        input{
+                            width: 46%;
+                        }
+                    }
+                    .checkbox {
+                        margin-bottom: 39px;
+                    }
+                    button {
+                        width: 188px;
+                        height: 65px;
+                        font-size: 17px;
+                    }
+                }
             }
         }
     }
@@ -164,9 +488,20 @@ footer{
     }
 
     .contacts {
-        padding: 99px 0 95px;
-        .title{
-            margin-bottom: 80px;
+        padding: 97px 0 75px;
+        &::after {
+            width: 48.8%;
+        }
+        .title {
+            margin-bottom: 84px;
+        }
+        .contacts-content {
+            margin: 0;
+            width: 42%;
+        }
+        .feedback {
+            width: 35.8%;
+            margin: 18px 8% 0 0;
         }
     }
 
