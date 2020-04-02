@@ -130,11 +130,6 @@
                     li{
                         position: relative;
                         margin-bottom: 24px;
-                        &:hover{
-                            ul{
-                                display: block;
-                            }
-                        }
                         a{
                             color: #000000;
                             font-size: 24px;
@@ -678,25 +673,79 @@ header{
             }
         }
         .personal-area{
-            font-size: 23px;
-            color: #616161;
-            position: relative;
             margin-right: 20px;
-            padding-right: 12px;
-            display: inline-block;
-            transition: all 0.5s;
+            position: relative;
             &:hover{
-                color: #000000;
+                .personal-content{
+                    display: block;
+                }    
             }
-            &::after{
-                content: '\E800';
-                top: 50%;
-                right: -3px;
-                font-size: 14px;
-                position: absolute;
-                font-family: 'fontello';
-                transform: translate(0, -50%);
+            a{
+                font-size: 23px;
+                color: #616161;
+                position: relative;
+                padding-right: 12px;
+                display: inline-block;
                 transition: all 0.5s;
+                &:hover{
+                    color: #000000;
+                }
+                &::after{
+                    content: '\E800';
+                    top: 50%;
+                    right: -3px;
+                    font-size: 14px;
+                    position: absolute;
+                    font-family: 'fontello';
+                    transform: translate(0, -50%);
+                    transition: all 0.5s;
+                }
+            }
+            .personal-content{
+                right: 0;
+                top: 22px;
+                z-index: 4;
+                display: none;
+                padding-top: 20px;
+                position: absolute;
+                ul{
+                    width: 201px;
+                    padding: 18px 15px;
+                    background-color: #ffffff;
+                    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
+                    li{
+                        margin-bottom: 8px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        a{
+                            color: #000000;
+                            font-size: 14px;
+                            font-weight: 400;
+                            padding-right: 0;
+                            line-height: 20px;
+                            padding-left: 18px;
+                            position: relative;
+                            &:hover{
+                                &::after{
+                                    color: #000000;
+                                }
+                            }
+                            &::after{
+                                content: '\E800';
+                                left: 0;
+                                top: 44%;
+                                right: initial;
+                                color: #b8ad9e;
+                                font-size: 14px;
+                                position: absolute;
+                                font-family: 'fontello';
+                                transform: translate(0, -50%) rotate(-90deg);
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+                }
             }
         }
         .open-menu{
@@ -771,6 +820,7 @@ header{
                                 line-height: 32px;
                             }
                             ul{
+                                display: block;
                                 margin: 21px 0 0;
                                 li{
                                     padding-left: 24px;
@@ -902,15 +952,17 @@ header{
                 }
             }
             .personal-area {
-                font-size: 26px;
                 margin-right: 0;
-                &::after {
-                    right: -5px;
-                    font-size: 16px;
-                }
-                span {
-                    i {
-                        right: -32px;
+                a{
+                    font-size: 26px;
+                    &::after {
+                        right: -5px;
+                        font-size: 16px;
+                    }
+                    span {
+                        i {
+                            right: -32px;
+                        }
                     }
                 }
             }
@@ -1178,10 +1230,12 @@ header{
                 margin-right: 38px;
             }
             .personal-area{
-                &::after {
-                    top: 54%;
-                    right: -3px;
-                    font-size: 16px;
+                a{
+                    &::after {
+                        top: 54%;
+                        right: -3px;
+                        font-size: 16px;
+                    }
                 }
             }
             .open-menu {
