@@ -41,6 +41,7 @@ grunt.initConfig({
 				'../markup/js/error.min.js': ['dist/js/error.js'],
 				'../markup/js/certifications.min.js': ['dist/js/certifications.js'],
 				'../markup/js/club.min.js': ['dist/js/club.js'],
+				'../markup/js/reviews.min.js': ['dist/js/reviews.js'],
 			}
 		}
 	},

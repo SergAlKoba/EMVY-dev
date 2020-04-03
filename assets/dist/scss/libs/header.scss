@@ -431,8 +431,9 @@ header{
     left: 0;
     z-index: 8;
     width: 100%;
-    padding: 12px 20px;
-    position: absolute;
+    position: fixed;
+    transition: all 0.5s;
+    padding: 18px 20px 22px;
     .close-basket{
         top: 0;
         left: 0;
@@ -772,6 +773,16 @@ header{
     }
 }
 
+header.active{
+    background: #ffffff;
+    border-bottom: 1px solid #f6f6f8;
+    .header-contact {
+        .open-menu {
+            background-color: #f8f1e8;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .menu {
@@ -871,18 +882,18 @@ header{
     }
 
     header{
-        padding: 48px 42px;
+        padding: 25px 42px 25px;
         .logo {
             width: 150px;
-            margin-top: 0;
+            margin-top: 10px;
         }
         .header-contact {
             .open-menu{
                 top: 50%;
                 left: 50%;
                 z-index: 3;
-                width: 62px;
-                height: 62px;
+                width: 50px;
+                height: 50px;
                 position: absolute;
                 transform: translate(-50%, -50%);
             }
@@ -1173,6 +1184,33 @@ header{
 
 }
 
+@media screen and (min-width: 1400px) {
+
+    header {
+        padding: 48px 71px 20px;
+        .logo {
+            margin-top: 0;
+        }
+        nav {
+            top: 38%;
+            li {
+                margin: 0 62px;
+            }
+        }
+        .header-contact {
+            .open-menu {
+                top: 29%;
+                width: 60px;
+                height: 60px;
+            }
+            .tel {
+                margin-right: 70px;
+            }
+        }
+    }
+
+}
+
 @media screen and (min-width: 1600px) {
 
     .menu {
@@ -1214,11 +1252,15 @@ header{
     }    
 
     header {
-        padding: 50px 70px 48px;
+        padding: 41px 71px 21px;
+        .logo {
+            margin-top: 5px;
+        }
         nav {
-            left: 50.2%;
+            top: 45%;
+            left: 50.4%;
             li {
-                margin: 0 64px;
+                margin: 0 95px;
             }
         }
         .header-contact {
@@ -1239,7 +1281,7 @@ header{
                 }
             }
             .open-menu {
-                top: 48%;
+                top: 38%;
             }
         }
     }
