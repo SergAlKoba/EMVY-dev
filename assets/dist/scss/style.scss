@@ -123,6 +123,79 @@ ul li,ol li{
   }
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  li{
+      margin: 0 6px;
+      &:first-child{
+          i{
+              transform: translate(-2px, 0) rotate(90deg);
+          }
+      }
+      &:last-child{
+          i{
+              transform: translate(2px, 0)  rotate(-90deg);
+          }
+      }
+      i{
+          font-size: 20px;
+          color: #616161;
+          transition: all 0.5s;
+      }
+      a{
+          width: 44px;
+          height: 44px;
+          color: #616161;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          display: flex;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #e5e5e5;
+          font-family: 'HelveticaNeueRoman';
+          transition: all 0.5s;
+          &:hover{
+              color: #ffffff;
+              border: 1px solid #e5e5e5;
+              background-color: #000000;
+              i{
+                  color: #ffffff;
+              }
+          }
+      }
+      span{
+          color: #616161;
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 20px;
+          line-height: 16px;
+          display: inline-block;
+          font-family: 'HelveticaNeueRoman';
+      }
+  }
+  li.active{
+      span{
+          margin: 0;
+          width: 44px;
+          height: 44px;
+          color: #ffffff;
+          font-size: 16px;
+          display: flex;
+          font-weight: 400;
+          line-height: 16px;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #e5e5e5;
+          background-color: #000000;
+          font-family: 'HelveticaNeueRoman';
+      }
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .bread-crumbs{
@@ -135,12 +208,6 @@ ul li,ol li{
 
 }
 
-@media screen and (min-width: 1024px) {
-
-
-
-}
-
 @media screen and (min-width: 1400px) {
 
   .bread-crumbs{
@@ -150,12 +217,6 @@ ul li,ol li{
   .container{
     padding: 0 70px;
   }
-
-}
-
-@media screen and (min-width: 1600px) {
-
-  
 
 }
 

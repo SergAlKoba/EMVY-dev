@@ -319,10 +319,21 @@ header{
                 }
             }
             li.active{
-                a{
+                span{
+                    margin: 0;
+                    width: 44px;
+                    height: 44px;
                     color: #ffffff;
+                    font-size: 16px;
+                    display: flex;
+                    font-weight: 400;
+                    line-height: 16px;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
                     border: 1px solid #e5e5e5;
                     background-color: #000000;
+                    font-family: 'HelveticaNeueRoman';
                 }
             }
         }
