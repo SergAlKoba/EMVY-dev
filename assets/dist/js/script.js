@@ -37,4 +37,8 @@ $(document).ready(function(){
         $('.callback').removeClass('active');
     });
 
+    jcf.replaceAll();
+
+    $(".basket-product .items").mCustomScrollbar();
+
 });

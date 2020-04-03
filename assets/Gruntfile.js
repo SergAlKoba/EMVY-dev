@@ -24,6 +24,7 @@ grunt.initConfig({
 				'../markup/js/jquery.mask.min.js': ['dist/js/plugin/jquery.mask.js'],
 				'../markup/js/slick.min.js': ['dist/js/plugin/slick.js'],
 				'../markup/js/stars.min.js': ['dist/js/plugin/stars.js'],
+				'../markup/js/jquery.mCustomScrollbar.min.js': ['dist/js/plugin/jquery.mCustomScrollbar.js'],
 				'../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
 				'../markup/js/jcf.number.min.js': ['dist/js/plugin/jcf.number.js'],
 				'../markup/js/readmore.min.js': ['dist/js/plugin/readmore.js'],
