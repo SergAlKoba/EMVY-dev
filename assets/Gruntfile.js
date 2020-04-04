@@ -27,6 +27,8 @@ grunt.initConfig({
 				'../markup/js/jquery.mCustomScrollbar.min.js': ['dist/js/plugin/jquery.mCustomScrollbar.js'],
 				'../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
 				'../markup/js/jcf.number.min.js': ['dist/js/plugin/jcf.number.js'],
+				'../markup/js/jcf.scrollable.min.js': ['dist/js/plugin/jcf.scrollable.js'],
+				'../markup/js/jcf.select.min.js': ['dist/js/plugin/jcf.select.js'],
 				'../markup/js/readmore.min.js': ['dist/js/plugin/readmore.js'],
 				'../markup/js/jquery.matchHeight.min.js': ['dist/js/plugin/jquery.matchHeight.js'],
 				'../markup/js/script.min.js': ['dist/js/script.js'],
@@ -43,6 +45,7 @@ grunt.initConfig({
 				'../markup/js/certifications.min.js': ['dist/js/certifications.js'],
 				'../markup/js/club.min.js': ['dist/js/club.js'],
 				'../markup/js/reviews.min.js': ['dist/js/reviews.js'],
+				'../markup/js/checkout.min.js': ['dist/js/checkout.js'],
 			}
 		}
 	},

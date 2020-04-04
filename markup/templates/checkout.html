@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/pay-delivery.css">
+    <link rel="stylesheet" href="../css/checkout.css">
 </head>
 
 <body>
@@ -272,99 +272,305 @@
             </div>
         </header>
 
-        <section class="pay-delivery">
+        <section class="checkout">
             <div class="container">
                 <div class="title">
-                    <h2>Доставка и оплата</h2>
+                    <h2>Оформить заказ</h2>
                 </div>
-                <div class="payment-methods">
-                    <div class="title">
-                        <h3>Способы оплаты</h3>
-                    </div>
-                    <div class="payment-methods-content">
-                        <div class="types-payment">
-                            <div class="types-item">
-                                <h4><i class="icon-driver"></i>Наличными курьеру</h4>
+                <div class="checkout-content">
+                    <div class="simplecheckout-content">
+                        <div class="simplecheckout-left-column">
+                            <div class="entrance">
+                                <div class="checkbox">
+                                    <span>
+                                    <input id="w" type="checkbox" checked="">
+                                    <i></i>
+                                </span>
+                                    <label for="w">Вступить в клуб привилегий</label>
+                                </div>
+                                <div class="entrance-link"><span>У меня уже есть аккаунт. </span><a href="javascript:void(0)"> Войти</a></div>
                             </div>
-                            <div class="types-item">
-                                <h4><i class="icon-payment-terminal"></i>Картой курьеру <span>(VISA, MasterCard, Сбербанк)</span></h4>
-                            </div>
-                            <div class="types-item">
-                                <h4><i class="icon-payment"></i>Картой на сайте <span>(VISA, MasterCard, Сбербанк)</span></h4>
-                            </div>
-                        </div>
-                        <div class="text">
-                            <p>Оплата банковскими картам на Сайте производится путем предпроцессингового расчета через компанию cloudpayments.ru.</p>
-                            <p>Сloud payments не передает данные Вашей карты Интернет-магазину www.emvycosmetics.com и иным третьим лицам!</p>
-                            <p>Обращаем Ваше внимание, что для безналичной оплаты заказа Ваша банковская карта должна поддерживать технологию 3D Secure, в противном случае опция «Оплата банковской картой на сайте» недоступна.</p>
-                            <p>Оплачивая Заказ банковской картой на Сайте, Вы получаете электронный чек на указанный EMAIL.</p>
-                            <p>Оплачивая Заказ банковской картой на Сайте, Вы даете свое согласие на обработку и передачу информации о покупке третьим лицам, оказывающим содействие в проведении расчетов за Товар и их доставке, а равно государственным органам.</p>
-                        </div>
-                        <a href="javascript:void(0)"><i class="icon-return"></i><span>Условия возврата</span></a>
-                    </div>
-                </div>
-                <div class="delivery">
-                    <div class="title">
-                        <h3>Доставка</h3>
-                    </div>
-                    <p class="free-shipping"><i class="icon-shape"></i>Бесплатная доставка курьером при заказе от <strong>5000 ₽</strong> во все регионы Росии</p>
-                    <div class="delivery-content">
-                        <div class="delivery-item">
-                            <div class="location">
-                                <div class="location-item">
-                                    <h4>по Москве в пределах МКАД</h4>
-                                    <p><i class="icon-clock"></i>до 3 рабочих дней</p>
+                            <div class="form-horizontal fio">
+                                <div class="form-group row-customer_firstname">
+                                    <input class="form-control" type="text" name="customer[firstname]" id="customer_firstname" value="" placeholder="Имя" data-reload-payment-form="true">
+                                </div>
+                                <div class="form-group row-customer_lastname">
+                                    <input class="form-control" type="text" name="customer[lastname]" id="customer_lastname" value="" placeholder="Фамилия" data-reload-payment-form="true">
+                                </div>
+                                <div class="form-group required row-customer_email">
+                                    <input class="form-control" type="email" name="customer[email]" id="customer_email" value="" placeholder="Номер телефона" data-reload-payment-form="true">
+                                </div>
+                                <div class="form-group required row-customer_telephone">
+                                    <input class="form-control" type="tel" name="customer[telephone]" id="customer_telephone" value="" placeholder="Email" data-reload-payment-form="true">
                                 </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <i class="icon-warehouse"></i>
-                                    <h4>Пункт самовывоза СДЭК</h4>
-                                    <p>Бесплатно</p>
-                                </li>
-                                <li>
-                                    <i class="icon-driver"></i>
-                                    <h4>Курьер</h4>
-                                    <p>Рассчитывается в зависимости от адреса </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="delivery-item">
-                            <div class="location">
-                                <div class="location-item">
-                                    <h4>по Московской области</h4>
-                                    <p><i class="icon-clock"></i>до 3 рабочих дней</p>
+                            <h3>Доставка</h3>
+                            <div class="form-horizontal">
+                                <div class="form-group  row-shipping_address_zone_id">
+                                    <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "maxVisibleItems": 33}'>
+                                        <option value=""> --- Выберите --- </option>
+                                        <option value="2726">Алтайский край</option>
+                                        <option value="2729">Амурская область</option>
+                                        <option value="2724">Архангельская область</option>
+                                        <option value="2725">Астраханская область</option>
+                                        <option value="2727">Белгородская область</option>
+                                        <option value="2730">Брянская область</option>
+                                        <option value="2799">Владимирская область</option>
+                                        <option value="2801">Волгоградская область</option>
+                                        <option value="2802">Вологодская область</option>
+                                        <option value="2803">Воронежская область</option>
+                                        <option value="2728">Еврейская АО</option>
+                                        <option value="2722">Забайкальский край</option>
+                                        <option value="2741">Ивановская область</option>
+                                        <option value="2740">Иркутская область</option>
+                                        <option value="2743">Калининградская область</option>
+                                        <option value="2744">Калужская область</option>
+                                        <option value="2775">Камчатский край</option>
+                                        <option value="2733">Карачаево-Черкесия</option>
+                                        <option value="2747">Кемеровская область</option>
+                                        <option value="2804">Кировская область</option>
+                                        <option value="2753">Коми-Пермяцкий АО</option>
+                                        <option value="2772">Корякский АО</option>
+                                        <option value="2750">Костромская область</option>
+                                        <option value="2745">Краснодарский край</option>
+                                        <option value="2752">Красноярский край</option>
+                                        <option value="2754">Курганская область</option>
+                                        <option value="2755">Курская область</option>
+                                        <option value="2791">Ленинградская область</option>
+                                        <option value="2757">Липецкая область</option>
+                                        <option value="2758">Магаданская область</option>
+                                        <option value="2761">Москва</option>
+                                        <option value="2751" selected="selected">Московская область</option>
+                                        <option value="2762">Мурманская область</option>
+                                        <option value="2764">Ненецкий АО</option>
+                                        <option value="2766">Нижегородская область</option>
+                                        <option value="2767">Новгородская область</option>
+                                        <option value="2768">Новосибирская область</option>
+                                        <option value="2769">Омская область</option>
+                                        <option value="2771">Оренбургская область</option>
+                                        <option value="2770">Орловская область</option>
+                                        <option value="2773">Пензенская область</option>
+                                        <option value="2774">Пермский край</option>
+                                        <option value="2800">Приморский край</option>
+                                        <option value="2777">Псковская область</option>
+                                        <option value="2805">Республика Саха / Якутия</option>
+                                        <option value="2760">Республика Адыгея</option>
+                                        <option value="2738">Республика Алтай</option>
+                                        <option value="2794">Республика Башкортостан</option>
+                                        <option value="2796">Республика Бурятия</option>
+                                        <option value="2759">Республика Дагестан</option>
+                                        <option value="2765">Республика Ингушетия</option>
+                                        <option value="2763">Республика Кабардино-Балкария</option>
+                                        <option value="2736">Республика Калмыкия</option>
+                                        <option value="2776">Республика Карелия</option>
+                                        <option value="2787">Республика Коми</option>
+                                        <option value="2808">Республика Марий Эл</option>
+                                        <option value="2782">Республика Мордовия</option>
+                                        <option value="2798">Республика Северная Осетия</option>
+                                        <option value="2746">Республика Татарстан</option>
+                                        <option value="2756">Республика Тыва</option>
+                                        <option value="2721">Республика Хакасия</option>
+                                        <option value="2778">Ростовская область</option>
+                                        <option value="2779">Рязанская область</option>
+                                        <option value="2781">Самарская область</option>
+                                        <option value="2785">Санкт-Петербург</option>
+                                        <option value="2783">Саратовская область</option>
+                                        <option value="2807">Свердловская область</option>
+                                        <option value="2784">Смоленская область</option>
+                                        <option value="2786">Ставропольский край</option>
+                                        <option value="2735">Таймырский АО</option>
+                                        <option value="2788">Тамбовская область</option>
+                                        <option value="2792">Тверская область</option>
+                                        <option value="2789">Томская область</option>
+                                        <option value="2790">Тульская область</option>
+                                        <option value="2793">Тюменская область</option>
+                                        <option value="2742">Удмуртская Республика</option>
+                                        <option value="2795">Ульяновская область</option>
+                                        <option value="2748">Хабаровский край</option>
+                                        <option value="2749">Ханты-Мансийский АО - Югра</option>
+                                        <option value="2732">Челябинская область</option>
+                                        <option value="2739">Чеченская Республика</option>
+                                        <option value="2731">Чувашская Республика</option>
+                                        <option value="2723">Чукотский АО</option>
+                                        <option value="2780">Ямало-Ненецкий АО</option>
+                                        <option value="2806">Ярославская область</option>
+                                    </select>
                                 </div>
-                                <div class="location-item">
-                                    <h4>по России</h4>
-                                    <p><i class="icon-clock"></i>2-16 рабочих дней</p>
-                                </div>
-                                <div class="location-item">
-                                    <h4>Санкт-Петербург и близлежащие районы Ленинградской обл.</h4>
-                                    <p><i class="icon-clock"></i>до 4 рабочих дней</p>
+                                <div class="form-group required row-shipping_address_city">
+                                    <input class="form-control" type="text" name="shipping_address[city]" id="shipping_address_city" value="" placeholder="" data-onchange="reloadAll">
                                 </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <i class="icon-warehouse"></i>
-                                    <h4>Пункт самовывоза СДЭК</h4>
-                                    <p>Рассчитывается в зависимости от адреса </p>
-                                </li>
-                                <li>
-                                    <i class="icon-driver"></i>
-                                    <h4>Курьер</h4>
-                                    <p>Рассчитывается в зависимости от адреса </p>
-                                </li>
-                            </ul>
+                            <div class="delivery">
+                                <h5>Выберите службу доставки</h5>
+                                <div class="delivery-item">
+                                    <div class="radio">
+                                        <span>
+                                        <input name="q" type="radio">
+                                        <i></i>
+                                    </span>
+                                        <label for="e">Доставка Курьером <img src="../img/delivery-img.png" alt=""></label>
+                                    </div>
+                                </div>
+                                <div class="delivery-item">
+                                    <div class="radio">
+                                        <span>
+                                        <input name="q" type="radio">
+                                        <i></i>
+                                    </span>
+                                        <label for="e">Пункт Самовывоза <img src="../img/delivery-img.png" alt=""></label>
+                                    </div>
+                                    <a href="javascript:void(0)">Выбрать пункт выдачи на карте</a>
+                                </div>
+                                <div class="delivery-item">
+                                    <div class="radio">
+                                        <span>
+                                        <input name="q" type="radio" checked>
+                                        <i></i>
+                                    </span>
+                                        <label for="e">Доставка Курьером <img src="../img/delivery-img2.png" alt=""></label>
+                                    </div>
+                                    <input type="text" placeholder="Адрес доставки">
+                                </div>
+                                <div class="delivery-item">
+                                    <div class="radio">
+                                        <span>
+                                        <input name="q" type="radio">
+                                        <i></i>
+                                    </span>
+                                        <label for="e">Пункт Самовывоза <img src="../img/delivery-img2.png" alt=""></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Оплата</h3>
+                            <div class="types-payment">
+                                <div class="checkbox">
+                                    <span>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                </span>
+                                    <label><i class="icon-coin"></i> Использовать Бонусы - 10560</label>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="radio ban">
+                                            <span>
+                                            <input name="r" type="radio" disabled>
+                                            <i></i>
+                                        </span>
+                                            <label><i class="icon-driver"></i> Наличными курьеру</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- ban класс для блакировки -->
+                                        <div class="radio ban">
+                                            <span>
+                                            <input name="r" type="radio" disabled>
+                                            <i></i>
+                                        </span>
+                                            <label><i class="icon-payment-terminal"></i> Картой курьеру <span>(VISA, MasterCard, Сбербанк)</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio ban">
+                                            <span>
+                                            <input name="r" type="radio" disabled>
+                                            <i></i>
+                                        </span>
+                                            <label><i class="icon-payment"></i> Картой на сайте <span>(VISA, MasterCard, Сбербанк)</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="simplecheckout-right-column">
+                            <h3>Всего Товаров (3)</h3>
+                            <div class="basket-product">
+                                <div class="product-items">
+                                    <div class="product-item">
+                                        <span class="remove"><i class="icon-close"></i></span>
+                                        <div class="img">
+                                            <img src="../img/product-item-img1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p>Крем для век от отеков и первых морщин</p>
+                                            <ul>
+                                                <li>
+                                                    <input min="1" max="999" type="number" value="2" placeholder="0">
+                                                </li>
+                                                <li><strong>3500 ₽</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <span class="remove"><i class="icon-close"></i></span>
+                                        <div class="img">
+                                            <img src="../img/product-item-img1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p> Крем для век от отеков и первых морщин</p>
+                                            <ul>
+                                                <li>
+                                                    <input min="1" max="999" type="number" value="1" placeholder="0">
+                                                </li>
+                                                <li><strong>1750 ₽</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <span class="remove"><i class="icon-close"></i></span>
+                                        <div class="img">
+                                            <img src="../img/product-item-img1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p> Крем для век от отеков и первых морщин</p>
+                                            <ul>
+                                                <li>
+                                                    <input min="1" max="999" type="number" value="1" placeholder="0">
+                                                </li>
+                                                <li><strong>1750 ₽</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <ul>
+                                        <li>
+                                            <span>Итого (3 товара)</span>
+                                            <strong>5250 ₽</strong>
+                                        </li>
+                                        <li>
+                                            <span>Доставка</span>
+                                            <strong class="delivery">+500 ₽</strong>
+                                        </li>
+                                        <li>
+                                            <span>Бонусы</span>
+                                            <strong class="bonuses">-5750 ₽</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pay">
+                                    <h5>К Оплате</h5>
+                                    <strong>0 ₽</strong>
+                                </div>
+                                <div class="promotional">
+                                    <a class="promotional-link" href="javascript:void(0)">У меня есть промокод!</a>
+                                    <div class="input" style="display: none;">
+                                        <input type="text" placeholder="EM1057843527">
+                                        <i class="icon-check"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="info">
-                        <i class="icon-info"></i>
-                        <div class="text">
-                            <p>Доставка производится в жилые и офисные помещения.</p>
-                            <p>Один заказ доставляется по одному адресу.</p>
-                            <p>Если Вы хотите отправить заказы по нескольким адресам, необходимо оформить отдельный заказ для каждого адреса.</p>
+                    <div class="simplecheckout-button-block buttons clearfix">
+                        <div class="checkbox">
+                            <span>
+                            <input id="w" type="checkbox" checked="">
+                            <i></i>
+                        </span>
+                            <label for="w">Принимаю условия оферты и даю свое согласие на обработку моих персональных данных</label>
                         </div>
+                        <button>Оформить заказ</button>
                     </div>
                 </div>
             </div>
@@ -458,11 +664,12 @@
     <script src="../js/jquery.mask.min.js"></script>
     <script src="../js/jquery.matchHeight.min.js"></script>
     <script src="../js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.number.min.js"></script>
+    <script src="../js/jcf.scrollable.min.js"></script>
     <script src="../js/script.min.js"></script>
-    <script src="../js/pay-delivery.min.js"></script>
+    <script src="../js/checkout.min.js"></script>
 </body>
 
 </html>

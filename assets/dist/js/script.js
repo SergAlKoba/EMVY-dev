@@ -13,6 +13,13 @@ $(document).ready(function(){
     $('.basket-open').on('click', function(){
         $('.basket-product').addClass('active');
         $('.close-basket').addClass('active');
+        $('.personal-content').removeClass('active');
+    });
+
+    $('.personal-area').on('click', function(){
+        $('.personal-content').addClass('active');
+        $('.close-basket').addClass('active');
+        $('.basket-product').removeClass('active');
     });
 
     $('.basket-product .remove').on('click', function(){
@@ -22,6 +29,7 @@ $(document).ready(function(){
     $('.close-basket').on('click', function(){
         $('.basket-product').removeClass('active');
         $('.close-basket').removeClass('active');
+        $('.personal-content').removeClass('active');
     });
 
     $('.callback_js').on('click', function(){
