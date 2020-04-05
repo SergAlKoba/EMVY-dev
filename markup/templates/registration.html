@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/club.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -272,78 +272,160 @@
             </div>
         </header>
 
-        <div class="container">
-            <div class="bread-crumbs">
-                <a class="prev-page" href="javascript:void(0)"><i class="icon-arrow-down"></i></a>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="club.html">Клуб Привилегий</a></li>
-                    <li><span>Домашний уход за кожей</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="club-inner">
+        <section class="login">
             <div class="container">
                 <div class="title">
-                    <h3>Домашний уход за кожей</h3>
-                    <span>Январь 30, 2020</span>
+                    <h2>Регистрация</h2>
                 </div>
-                <div class="club-inner-content">
-                    <div class="text left clearfix">
-                        <div class="img">
-                            <img src="../img/club-inner-img1.png" alt="">
+                <div class="registration-content">
+                    <div class="entrance">
+                        <h3>Персональные данные</h3>
+                        <div class="entrance-link"><span>У меня уже есть аккаунт. </span><a href="login.html"> Войти</a></div>
+                    </div>
+                    <form action="" class="clearfix">
+                        <div class="information">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Номер телефона">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Пароль">
+                            <input type="text" placeholder="Подтвердите пароль">
                         </div>
-                        <p>Когда ко мне в салон впервые приходит клиент, то сразу после знакомства следует беседа, в которой происходит “сбор анамнеза” (сведений, фиксирующихся со слов клиента). Речь идет о состоянии кожи, развитии нежелательных изменений
-                            кожных покровов, условиях жизни, аллергических реакциях, перенесенных заболеваниях, операциях, травмах, беременностях, наследственности, способах и средствах ухода за кожей в домашних условиях и др. И зачастую выясняется, что
-                            клиент допускает ошибки в выборе домашних косметических средств или неправильно использует подобранное.</p>
-                        <p>На первый взгляд, даже странно, почему я заостряю внимание на таких мелочах. Ведь поменять крем или средство для очищения кожи — не проблема! Но время-то назад не вернёшь, а небольшая косметическая проблема может стать причиной
-                            более серьезных симптомов.</p>
-                        <p>Кожа – самый большой орган человека. Она выполняет защитную, терморегуляторную, выделительную, иммунную и другие функции. Нагрузка на нее колоссальная, “износ” постоянный, а замене не подлежит. Испортить внешний вид кожи довольно
-                            просто, а восстановить — <a href="javascript:void(0)">трудно.</a></p>
-                    </div>
-                    <div class="text">
-                        <p>Сегодня мы поговорим о базовых правилах и основных этапах ухода за кожей лица в домашних условиях. Они подходят всем, независимо от возраста, типа кожи и пола. Индивидуально подбираются только сами косметические средства (с учетом
-                            вышеперечисленных параметров).</p>
-                        <p>Три обязательных этапа ухода за кожей лица:</p>
-                        <ul>
-                            <li>Очищение</li>
-                            <li>Тонизирование</li>
-                            <li>Уход при помощи кремов (увлажнение или питание).</li>
-                        </ul>
-                    </div>
-                    <h4>Post H2</h4>
-                    <div class="text right clearfix">
-                        <div class="img">
-                            <img src="../img/club-inner-img2.png" alt="">
+                        <div class="delivery-information">
+                            <h3>Информация для доставки</h3>
+                            <div class="form-group">
+                                <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option value=""> --- Выберите --- </option>
+                                    <option value="2726">Алтайский край</option>
+                                    <option value="2729">Амурская область</option>
+                                    <option value="2724">Архангельская область</option>
+                                    <option value="2725">Астраханская область</option>
+                                    <option value="2727">Белгородская область</option>
+                                    <option value="2730">Брянская область</option>
+                                    <option value="2799">Владимирская область</option>
+                                    <option value="2801">Волгоградская область</option>
+                                    <option value="2802">Вологодская область</option>
+                                    <option value="2803">Воронежская область</option>
+                                    <option value="2728">Еврейская АО</option>
+                                    <option value="2722">Забайкальский край</option>
+                                    <option value="2741">Ивановская область</option>
+                                    <option value="2740">Иркутская область</option>
+                                    <option value="2743">Калининградская область</option>
+                                    <option value="2744">Калужская область</option>
+                                    <option value="2775">Камчатский край</option>
+                                    <option value="2733">Карачаево-Черкесия</option>
+                                    <option value="2747">Кемеровская область</option>
+                                    <option value="2804">Кировская область</option>
+                                    <option value="2753">Коми-Пермяцкий АО</option>
+                                    <option value="2772">Корякский АО</option>
+                                    <option value="2750">Костромская область</option>
+                                    <option value="2745">Краснодарский край</option>
+                                    <option value="2752">Красноярский край</option>
+                                    <option value="2754">Курганская область</option>
+                                    <option value="2755">Курская область</option>
+                                    <option value="2791">Ленинградская область</option>
+                                    <option value="2757">Липецкая область</option>
+                                    <option value="2758">Магаданская область</option>
+                                    <option value="2761">Москва</option>
+                                    <option value="2751" selected="selected">Московская область</option>
+                                    <option value="2762">Мурманская область</option>
+                                    <option value="2764">Ненецкий АО</option>
+                                    <option value="2766">Нижегородская область</option>
+                                    <option value="2767">Новгородская область</option>
+                                    <option value="2768">Новосибирская область</option>
+                                    <option value="2769">Омская область</option>
+                                    <option value="2771">Оренбургская область</option>
+                                    <option value="2770">Орловская область</option>
+                                    <option value="2773">Пензенская область</option>
+                                    <option value="2774">Пермский край</option>
+                                    <option value="2800">Приморский край</option>
+                                    <option value="2777">Псковская область</option>
+                                    <option value="2805">Республика Саха / Якутия</option>
+                                    <option value="2760">Республика Адыгея</option>
+                                    <option value="2738">Республика Алтай</option>
+                                    <option value="2794">Республика Башкортостан</option>
+                                    <option value="2796">Республика Бурятия</option>
+                                    <option value="2759">Республика Дагестан</option>
+                                    <option value="2765">Республика Ингушетия</option>
+                                    <option value="2763">Республика Кабардино-Балкария</option>
+                                    <option value="2736">Республика Калмыкия</option>
+                                    <option value="2776">Республика Карелия</option>
+                                    <option value="2787">Республика Коми</option>
+                                    <option value="2808">Республика Марий Эл</option>
+                                    <option value="2782">Республика Мордовия</option>
+                                    <option value="2798">Республика Северная Осетия</option>
+                                    <option value="2746">Республика Татарстан</option>
+                                    <option value="2756">Республика Тыва</option>
+                                    <option value="2721">Республика Хакасия</option>
+                                    <option value="2778">Ростовская область</option>
+                                    <option value="2779">Рязанская область</option>
+                                    <option value="2781">Самарская область</option>
+                                    <option value="2785">Санкт-Петербург</option>
+                                    <option value="2783">Саратовская область</option>
+                                    <option value="2807">Свердловская область</option>
+                                    <option value="2784">Смоленская область</option>
+                                    <option value="2786">Ставропольский край</option>
+                                    <option value="2735">Таймырский АО</option>
+                                    <option value="2788">Тамбовская область</option>
+                                    <option value="2792">Тверская область</option>
+                                    <option value="2789">Томская область</option>
+                                    <option value="2790">Тульская область</option>
+                                    <option value="2793">Тюменская область</option>
+                                    <option value="2742">Удмуртская Республика</option>
+                                    <option value="2795">Ульяновская область</option>
+                                    <option value="2748">Хабаровский край</option>
+                                    <option value="2749">Ханты-Мансийский АО - Югра</option>
+                                    <option value="2732">Челябинская область</option>
+                                    <option value="2739">Чеченская Республика</option>
+                                    <option value="2731">Чувашская Республика</option>
+                                    <option value="2723">Чукотский АО</option>
+                                    <option value="2780">Ямало-Ненецкий АО</option>
+                                    <option value="2806">Ярославская область</option>
+                                </select>
+                            </div>
+                            <div class="required">
+                                <input type="text" placeholder="Город">
+                                <input type="text" placeholder="Индекс">
+                                <input type="text" placeholder="Адрес">
+                            </div>
                         </div>
-                        <p>При этом следует помнить, что даже идеально подобранные средства не будут эффективны, если не соблюдать такие правила:</p>
-                        <p>Регулярность. Домашний уход должен быть ежедневным, два раза в день (утром и вечером). Ведь эти действия занимают всего 2-3 минуты, а видимый результат от постоянного ритуала виден уже на 7 день после начала ухода.
-                        </p>
-                        <p>Правильная техника нанесения косметических средств. Все косметические средства наносятся только по массажным линиям (линиям наименьшего растяжения кожи).</p>
-                        <p>Если нарушить это правило, то уход пойдет только во вред. Постоянное растягивание кожи может стать причиной преждевременного появления морщин. Основные массажные линии лица идут от центра к периферии. Мы мысленно проводим вертикальную
-                            линию, делящую наше лицо пополам, а затем симметрично проводим линии от этой оси к середине уха (козелку – части уха, небольшому хрящевому выступу на передней части ушной раковины).</p>
-                    </div>
-                    <h5>Post H3</h5>
-                    <div class="text">
-                        <p>Исключением является область глаз. В этой области косметическое средство следует наносить, начиная с внешнего уголка глаза и ведя к внутреннему (движения по нижнему контуру глаза). На передней поверхности шеи средства наносятся
-                            нежными движениями в направлении снизу-вверх, а на боковой наоборот – сверху вниз.
-                        </p>
-                        <p>Косметические средства наносятся всегда чистыми руками, и распределяются подушечками пальцев при помощи нежных движений (ни в коем случае нельзя сильно надавливать или растягивать кожу). Кисть должна быть расслаблена.
-                        </p>
-                    </div>
-                </div>
-                <div class="share">
-                    <p>Поделиться:</p>
-                    <ul>
-                        <li><a href="javascript:void(0)"><i class="icon-facebook-icon"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="icon-twitter-icon"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="icon-google-icon"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="icon-instagram-icon"></i></a></li>
-                    </ul>
+                        <div class="newsletter">
+                            <p>Подписаться но рассылку</p>
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        <span>
+                                        <input name="r" type="radio">
+                                        <i></i>
+                                    </span>
+                                        <label>Да</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <span>
+                                        <input name="r" type="radio">
+                                        <i></i>
+                                    </span>
+                                        <label>Нет</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons clearfix">
+                            <div class="checkbox">
+                                <span>
+                                <input id="w" type="checkbox" checked="">
+                                <i></i>
+                            </span>
+                                <label for="w">Принимаю условия оферты и даю свое согласие на обработку моих персональных данных</label>
+                            </div>
+                            <button>Зарегистрироваться</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer>
             <div class="container">
@@ -434,9 +516,11 @@
     <script src="../js/jquery.matchHeight.min.js"></script>
     <script src="../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.number.min.js"></script>
+    <script src="../js/jcf.scrollable.min.js"></script>
     <script src="../js/script.min.js"></script>
-    <script src="../js/club.min.js"></script>
+    <script src="../js/login.min.js"></script>
 </body>
 
 </html>
