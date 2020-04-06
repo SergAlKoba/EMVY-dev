@@ -284,6 +284,13 @@
                 background-color: #ffffff;
                 font-family: 'HelveticaNeueRoman';
             }
+            input:focus{
+                border: 1px solid #000000;
+            }
+            
+            input.error{
+            border: 1px solid #f14a4a;
+            }
             button {
                 width: 189px;
                 height: 64px;

@@ -78,6 +78,10 @@ header{
         input:focus{
             border: 1px solid #000000;
         }
+        
+        input.error{
+        border: 1px solid #f14a4a;
+        }
         button{
             width: 153px;
             height: 52px;
@@ -276,6 +280,10 @@ header{
         }
         input:focus{
             border: 1px solid #000000;
+        }
+        
+        input.error{
+        border: 1px solid #f14a4a;
         }
         .jcf-select{
             width: 100%;

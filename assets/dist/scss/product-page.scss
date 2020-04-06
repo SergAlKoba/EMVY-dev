@@ -701,6 +701,12 @@ header{
                         background-color: #ffffff;
                         font-family: 'HelveticaNeueRoman';
                     }
+                    input:focus{
+                        border: 1px solid #000000;
+                    }
+                    input.error{
+                        border: 1px solid #f14a4a;
+                    }
                     textarea{
                         resize: none;
                         width: 100%;
@@ -715,6 +721,9 @@ header{
                         border: 1px solid #e6ded4;
                         background-color: #ffffff;
                         font-family: 'HelveticaNeueRoman';
+                    }
+                    textarea:focus{
+                        border: 1px solid #000000;
                     }
                     .stars-items{
                         display: flex;

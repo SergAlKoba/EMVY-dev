@@ -306,6 +306,13 @@ header{
                                 font-family: 'HelveticaNeueRoman';
                                 border-bottom: 1px solid #f1c8e0;
                             }
+                            input:focus{
+                                border-bottom: 1px solid #000000;
+                            }
+                            
+                            input.error{
+                            border-bottom: 1px solid #f14a4a;
+                            }
                         }
                     }
                 }
@@ -445,6 +452,13 @@ header{
                     background-color: #ffffff;
                     font-family: 'HelveticaNeueRoman';
                     transition: all 0.5s;
+                    input:focus{
+                        border: 1px solid #000000;
+                    }
+                    
+                    input.error{
+                    border: 1px solid #f14a4a;
+                    }
                 }
                 input:focus{
                     border: 1px solid #000000;
