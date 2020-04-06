@@ -197,6 +197,102 @@ ul li,ol li{
   }
 }
 
+.error-notifications{
+  width: 100%;
+  display: block;
+  color: #373737;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 19px 25px 16px 60px;
+  background-color: #ffe9e9;
+  font-family: 'Roboto', sans-serif;
+  i{
+    top: 50%;
+    left: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f14a4a;
+    transform: translate(0, -50%);
+    &::before{
+      top: 50%;
+      left: 50%;
+      font-size: 15px;
+      color: #ffffff;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.successfully-notifications{
+  width: 100%;
+  display: block;
+  color: #373737;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 19px 25px 16px 60px;
+  background-color: #e0ffea;
+  font-family: 'Roboto', sans-serif;
+  i{
+    top: 50%;
+    left: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #00d20f;
+    transform: translate(0, -50%);
+    &::before{
+      top: 50%;
+      left: 50%;
+      font-size: 15px;
+      color: #ffffff;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.info-notifications{
+  width: 100%;
+  display: block;
+  color: #373737;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 19px 25px 16px 60px;
+  background-color: #f8f5f1;
+  font-family: 'Roboto', sans-serif;
+  i{
+    top: 50%;
+    left: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000000;
+    transform: translate(0, -50%);
+    &::before{
+      top: 50%;
+      left: 50%;
+      font-size: 15px;
+      color: #ffffff;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .bread-crumbs{
