@@ -494,7 +494,7 @@ header{
                     transition: all 0.5s;
                 }
             }
-            form{
+            .form-content{
                 left: 0;
                 top: 74px;
                 width: 100%;
@@ -563,7 +563,7 @@ header{
                     }
                 }
             }
-            form.active{
+            .form-content.active{
                 transform: translate(0, 0);
             }
         }
@@ -1075,7 +1075,7 @@ header.active{
                         font-size: 26px;
                     }
                 }
-                form{
+                .form-content{
                     top: 0;
                     left: 0;
                     padding: 0;
@@ -1111,7 +1111,7 @@ header.active{
                         }
                     }
                 }
-                form.active{
+                .form-content.active{
                     transform: translate(0, 0);
                 }
             }
@@ -1157,7 +1157,7 @@ header.active{
                 .search-open{
                     z-index: 0;
                 }
-                form{
+                .form-content{
                     z-index: 1;
                     input{
                         width: 300px;
@@ -1202,7 +1202,7 @@ header.active{
     .search-form {
         .header-contact {
             .form {
-                form {
+                .form-content {
                     input {
                         width: 500px;
                     }
@@ -1410,7 +1410,7 @@ header.active{
                 transition: all 0.5s;
             }   
             .form {
-                form {
+                .form-content {
                     input {
                         width: 700px;
                         right: 100px;
@@ -1452,7 +1452,7 @@ header.active{
     .search-form {
         .header-contact {
             .form {
-                form {
+                .form-content {
                     input {
                         top: 30%;
                         width: 760px;
@@ -1544,7 +1544,7 @@ header.active{
     .search-form {
         .header-contact {
             .form {
-                form {
+                .form-content {
                     input {
                         width: 860px;
                     }
