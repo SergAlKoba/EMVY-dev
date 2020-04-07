@@ -159,9 +159,14 @@
                         <a href="tel:8800707-15-08">8 (800) 707-15-08</a>
                         <span class="callback_js">обратный звонок</span>
                     </div>
-                    <form>
-                        <button><i class="icon-search"></i></button>
-                    </form>
+                    <div class="form">
+                        <a class="search-open"><i class="icon-search"></i></a>
+                        <form>
+                            <input type="search" placeholder="Поиск">
+                            <button><i class="icon-search"></i></button>
+                            <a class="search-close" href="javascript:void(0)"><i class="icon-close"></i></a>
+                        </form>
+                    </div>
                     <div class="basket-open">
                         <a class="basket" href="javascript:void(0)">
                             <i class="icon-basket"></i>
@@ -421,6 +426,212 @@
                                 <label for="w">Принимаю условия оферты и даю свое согласие на обработку моих персональных данных</label>
                             </div>
                             <button>Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="registration-content">
+                    <div class="entrance">
+                        <h3>Персональные данные</h3>
+                        <div class="entrance-link"><span>У меня уже есть аккаунт. </span><a href="login.html"> Войти</a></div>
+                    </div>
+                    <form action="index.php?route=account/simpleregister" method="post" enctype="multipart/form-data" id="simplepage_form" class="clearfix">
+
+                        <div class="information">
+                            <div class="form-horizontal">
+                                <div class="form-group required row-register_firstname">
+                                    <input class="form-control" type="text" name="register[firstname]" id="register_firstname" value="" placeholder="Имя" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_firstname">
+                                        <div style="display:none;" data-for="register_firstname" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="1" data-length-max="32" data-required="true">Имя должно быть от 1 до 32 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_lastname">
+                                    <input class="form-control" type="text" name="register[lastname]" id="register_lastname" value="" placeholder="Фамилия" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_lastname">
+                                        <div style="display:none;" data-for="register_lastname" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="1" data-length-max="32" data-required="true">Фамилия должна быть от 1 до 32 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_telephone">
+                                    <input class="form-control" type="tel" name="register[telephone]" id="register_telephone" value="" placeholder="Телефон" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_telephone">
+                                        <div style="display:none;" data-for="register_telephone" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="3" data-length-max="32" data-required="true">Телефон должен быть от 3 до 32 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_email">
+                                    <input class="form-control" type="email" name="register[email]" id="register_email" value="" placeholder="Email" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_email">
+                                        <div style="display:none;" data-for="register_email" data-rule="api" class="simplecheckout-error-text simplecheckout-rule" data-method="checkEmailForUniqueness" data-filter="register_register" data-filter-value="1" data-required="true">Адрес уже зарегистрирован!</div>
+                                        <div style="display:none;" data-for="register_email" data-rule="regexp" class="simplecheckout-error-text simplecheckout-rule" data-regexp=".+@.+" data-required="true">Некорректный адрес электронной почты!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_password">
+                                    <input class="form-control" type="password" name="register[password]" id="register_password" data-validate-on="keyup" value="" placeholder="Пароль" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_password">
+                                        <div style="display:none;" data-for="register_password" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="4" data-length-max="20" data-required="true">Пароль должен быть от 4 до 20 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_confirm_password">
+                                    <input class="form-control" type="password" name="register[confirm_password]" id="register_confirm_password" data-validate-on="keyup" value="" placeholder="Подтвердить пароль" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_confirm_password">
+                                        <div style="display:none;" data-for="register_confirm_password" data-rule="equal" class="simplecheckout-error-text simplecheckout-rule" data-equal="register_password" data-required="true">Подтверждение пароля не соответствует паролю!</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="delivery-information">
+                            <h3>Информация для доставки</h3>
+                            <div class="form-group">
+                                <div class="form-group required row-register_zone_id">
+                                    <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}' name="register[zone_id]" id="register_zone_id" data-theme="bootstrap" data-reload-payment-form="true">
+                                        <option value=""> --- Выберите --- </option>
+                                        <option value="2726">Алтайский край</option>
+                                        <option value="2729">Амурская область</option>
+                                        <option value="2724">Архангельская область</option>
+                                        <option value="2725">Астраханская область</option>
+                                        <option value="2727">Белгородская область</option>
+                                        <option value="2730">Брянская область</option>
+                                        <option value="2799">Владимирская область</option>
+                                        <option value="2801">Волгоградская область</option>
+                                        <option value="2802">Вологодская область</option>
+                                        <option value="2803">Воронежская область</option>
+                                        <option value="2728">Еврейская АО</option>
+                                        <option value="2722">Забайкальский край</option>
+                                        <option value="2741">Ивановская область</option>
+                                        <option value="2740">Иркутская область</option>
+                                        <option value="2743">Калининградская область</option>
+                                        <option value="2744">Калужская область</option>
+                                        <option value="2775">Камчатский край</option>
+                                        <option value="2733">Карачаево-Черкесия</option>
+                                        <option value="2747">Кемеровская область</option>
+                                        <option value="2804">Кировская область</option>
+                                        <option value="2753">Коми-Пермяцкий АО</option>
+                                        <option value="2772">Корякский АО</option>
+                                        <option value="2750">Костромская область</option>
+                                        <option value="2745">Краснодарский край</option>
+                                        <option value="2752">Красноярский край</option>
+                                        <option value="2754">Курганская область</option>
+                                        <option value="2755">Курская область</option>
+                                        <option value="2791">Ленинградская область</option>
+                                        <option value="2757">Липецкая область</option>
+                                        <option value="2758">Магаданская область</option>
+                                        <option value="2761">Москва</option>
+                                        <option value="2751" selected="selected">Московская область</option>
+                                        <option value="2762">Мурманская область</option>
+                                        <option value="2764">Ненецкий АО</option>
+                                        <option value="2766">Нижегородская область</option>
+                                        <option value="2767">Новгородская область</option>
+                                        <option value="2768">Новосибирская область</option>
+                                        <option value="2769">Омская область</option>
+                                        <option value="2771">Оренбургская область</option>
+                                        <option value="2770">Орловская область</option>
+                                        <option value="2773">Пензенская область</option>
+                                        <option value="2774">Пермский край</option>
+                                        <option value="2800">Приморский край</option>
+                                        <option value="2777">Псковская область</option>
+                                        <option value="2805">Республика Саха / Якутия</option>
+                                        <option value="2760">Республика Адыгея</option>
+                                        <option value="2738">Республика Алтай</option>
+                                        <option value="2794">Республика Башкортостан</option>
+                                        <option value="2796">Республика Бурятия</option>
+                                        <option value="2759">Республика Дагестан</option>
+                                        <option value="2765">Республика Ингушетия</option>
+                                        <option value="2763">Республика Кабардино-Балкария</option>
+                                        <option value="2736">Республика Калмыкия</option>
+                                        <option value="2776">Республика Карелия</option>
+                                        <option value="2787">Республика Коми</option>
+                                        <option value="2808">Республика Марий Эл</option>
+                                        <option value="2782">Республика Мордовия</option>
+                                        <option value="2798">Республика Северная Осетия</option>
+                                        <option value="2746">Республика Татарстан</option>
+                                        <option value="2756">Республика Тыва</option>
+                                        <option value="2721">Республика Хакасия</option>
+                                        <option value="2778">Ростовская область</option>
+                                        <option value="2779">Рязанская область</option>
+                                        <option value="2781">Самарская область</option>
+                                        <option value="2785">Санкт-Петербург</option>
+                                        <option value="2783">Саратовская область</option>
+                                        <option value="2807">Свердловская область</option>
+                                        <option value="2784">Смоленская область</option>
+                                        <option value="2786">Ставропольский край</option>
+                                        <option value="2735">Таймырский АО</option>
+                                        <option value="2788">Тамбовская область</option>
+                                        <option value="2792">Тверская область</option>
+                                        <option value="2789">Томская область</option>
+                                        <option value="2790">Тульская область</option>
+                                        <option value="2793">Тюменская область</option>
+                                        <option value="2742">Удмуртская Республика</option>
+                                        <option value="2795">Ульяновская область</option>
+                                        <option value="2748">Хабаровский край</option>
+                                        <option value="2749">Ханты-Мансийский АО - Югра</option>
+                                        <option value="2732">Челябинская область</option>
+                                        <option value="2739">Чеченская Республика</option>
+                                        <option value="2731">Чувашская Республика</option>
+                                        <option value="2723">Чукотский АО</option>
+                                        <option value="2780">Ямало-Ненецкий АО</option>
+                                        <option value="2806">Ярославская область</option>
+                                    </select>
+                                    <div class="simplecheckout-rule-group" data-for="register_zone_id">
+                                        <div style="display:none;" data-for="register_zone_id" data-rule="notEmpty" class="simplecheckout-error-text simplecheckout-rule" data-not-empty="1" data-required="true">Выберите регион!</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="required">
+                                <div class="form-group required row-register_city">
+                                    <input class="form-control" type="text" name="register[city]" id="register_city" value="Москва" placeholder="Город" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_city">
+                                        <div style="display:none;" data-for="register_city" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="2" data-length-max="128" data-required="true">Город должен быть от 2 до 128 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_postcode">
+                                    <input class="form-control" type="text" name="register[postcode]" id="register_postcode" value="" placeholder="Индекс" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_postcode">
+                                        <div style="display:none;" data-for="register_postcode" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="2" data-length-max="10" data-required="true">Индекс должен быть от 2 до 10 символов!</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group required row-register_address_1">
+                                    <input class="form-control" type="text" name="register[address_1]" id="register_address_1" value="" placeholder="Адрес" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="register_address_1">
+                                        <div style="display:none;" data-for="register_address_1" data-rule="byLength" class="simplecheckout-error-text simplecheckout-rule" data-length-min="3" data-length-max="128" data-required="true">Адрес должен быть от 3 до 128 символов!</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            <p>Подписаться но рассылку</p>
+                            <ul>
+                                <div class="form-group  row-register_newsletter">
+                                    <div>
+                                        <li>
+                                            <div class="radio">
+                                                <span> <input type="radio" name="register[newsletter]" id="register_newsletter" value="1" checked="checked" data-reload-payment-form="true"><i></i></span>
+                                                <label>Да</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <span> <input type="radio" name="register[newsletter]" id="register_newsletter" value="0" data-reload-payment-form="true"><i></i></span>
+                                                <label>Нет</label>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div class="buttons clearfix">
+                            <div class="checkbox"><span><input type="checkbox" name="agreements[]" value="all"><i></i></span>
+                                <label for="w">Принимаю условия оферты и даю свое согласие на обработку моих персональных данных</label>
+                            </div>
+                            <a class="button btn-primary button_oc btn" data-onclick="submit" id="simpleregister_button_confirm"><span>Зарегистрироваться</span></a>
                         </div>
                     </form>
                 </div>

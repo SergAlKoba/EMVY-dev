@@ -49,4 +49,14 @@ $(document).ready(function(){
 
     $(".basket-product .items").mCustomScrollbar();
 
+    $('.search-open').on('click', function(){
+        $('.form form').addClass('active');
+        $('header').addClass('search-form');
+    });
+
+    $('.search-close').on('click', function(){
+        $('.form form').removeClass('active');
+        $('header').removeClass('search-form');
+    });
+
 });

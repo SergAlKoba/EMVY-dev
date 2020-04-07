@@ -280,8 +280,7 @@ header{
         }
         input:focus{
             border: 1px solid #000000;
-        }
-        
+        }      
         input.error{
         border: 1px solid #f14a4a;
         }
@@ -416,6 +415,29 @@ header{
             .checkbox{
                 margin-bottom: 20px;
             }
+            a{
+                width: 213px;
+                height: 52px;
+                border: none;
+                float: right;
+                margin: 0 auto;
+                display: flex;
+                cursor: pointer;
+                color: #000000;
+                font-size: 15px;
+                font-weight: 400;
+                align-items: center;
+                border-radius: 36px;
+                justify-content: center;
+                border: 1px solid #000000;
+                background-color: transparent;
+                font-family: 'HelveticaNeueRoman';
+                transition: all 0.5s;
+                &:hover{
+                    color: #ffffff;
+                    background-color: #000000;
+                }
+            }
         }
     }
 }
@@ -497,17 +519,22 @@ footer{
                     width: 47%;
                 }
             }
-            .required{
+            .form-horizontal{
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 33px;
                 justify-content: space-between;
+            }
+            .required{
+                width: 47%;
                 input{
-                    width: 47%;
-                    &:last-child{
-                        width: 100%;
-                        margin-bottom: 0;
-                    }
+                    width: 100%;
+                }
+            }
+            .delivery-information{
+                .required {
+                    width: 100%;
                 }
             }
             .newsletter {
@@ -524,6 +551,11 @@ footer{
             .buttons {
                 .checkbox {
                     margin-bottom: 48px;
+                }
+                a{
+                    width: 270px;
+                    height: 64px;
+                    font-size: 17px;
                 }
             }
             button {

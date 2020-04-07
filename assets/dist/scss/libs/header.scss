@@ -477,10 +477,11 @@ header{
         .tel{
             display: none;
         }
-        form{
+        .form{
             margin-right: 24px;
-            button{
+            a{
                 border: none;
+                cursor: pointer;
                 background: transparent;
                 &:hover{
                     i{
@@ -492,6 +493,78 @@ header{
                     color: #616161;
                     transition: all 0.5s;
                 }
+            }
+            form{
+                left: 0;
+                top: 74px;
+                width: 100%;
+                padding: 10px 0;
+                position: absolute;
+                transform: translate(130%, 0);
+                transition: all 0.5s;
+                &::after{
+                    content: '';
+                    top: 50%;
+                    left: 50%;
+                    z-index: -1;
+                    width: 100vw;
+                    height: 100%;
+                    position: absolute;
+                    background: #ffffff;
+                    border-bottom: 2px solid #f6f6f8;
+                    transform: translate(-50%, -50%);
+                }
+                input{
+                    width: 75%;
+                    height: 36px;
+                    border: none;
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    background: transparent;
+                    font-family: 'HelveticaNeueRoman';
+                    border-bottom: 1px solid #ece6df;
+                }
+                button{
+                    top: 50%;
+                    right: 40px;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    background: transparent;
+                    transform: translate(0, -50%);
+                    &:hover{
+                        i{
+                            color: #000000;
+                        }
+                    }
+                    i{
+                        font-size: 23px;
+                        color: #616161;
+                        transition: all 0.5s;
+                    }
+                }
+                .search-close{
+                    top: 50%;
+                    right: 0;
+                    cursor: pointer;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                    &:hover{
+                        i{
+                            color: #000000;
+                        }
+                    }
+                    i{
+                        font-size: 23px;
+                        color: #616161;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+            form.active{
+                transform: translate(0, 0);
             }
         }
         .basket-open{
@@ -988,17 +1061,63 @@ header.active{
                 height: 50px;
                 position: absolute;
                 transform: translate(-50%, -50%);
+                transition: all 0.5s;
             }
-            form {
+            .form {
+                z-index: 0;
                 margin-right: 55px;
-                button {
+                position: relative;
+                .search-open{
+                    z-index: 1;
+                    position: relative;
+                    display: inline-block;
                     i {
                         font-size: 26px;
                     }
                 }
+                form{
+                    top: 0;
+                    left: 0;
+                    padding: 0;
+                    z-index: 0;
+                    transform: translate(0, 0);
+                    &::after{
+                        padding: 0;
+                        display: none;
+                    }
+                    input{
+                        top: 50%;
+                        width: 0;
+                        right: 40px;
+                        position: absolute;
+                        transform: translate(0, -50%);
+                        transition: all 0.5s;
+                    }
+                    .search-close{
+                        opacity: 0;
+                        right: -144px;
+                        transition: all 0.5s;
+                        i {
+                            font-size: 26px;
+                        }
+                    }
+                    button {
+                        top: 0;
+                        right: 0;
+                        position: static;
+                        transform: translate(0, 0);
+                        i {
+                            font-size: 26px;
+                        }
+                    }
+                }
+                form.active{
+                    transform: translate(0, 0);
+                }
             }
             .basket-open{
                 margin-right: 37px;
+                transition: all 0.5s;
                 .basket {
                     font-size: 26px;
                     span{
@@ -1014,6 +1133,7 @@ header.active{
             }
             .personal-area {
                 margin-right: 0;
+                transition: all 0.5s;
                 a{
                     font-size: 26px;
                     &::after {
@@ -1026,6 +1146,36 @@ header.active{
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .search-form{
+        .header-contact{
+            .form{
+                z-index: 3;
+                .search-open{
+                    z-index: 0;
+                }
+                form{
+                    z-index: 1;
+                    input{
+                        width: 300px;
+                    }
+                    .search-close{
+                        opacity: 1;
+                    }
+                }
+            }
+            .basket-open{
+                opacity: 0;
+            }
+            .personal-area{
+                opacity: 0;
+            }
+            .open-menu{
+                opacity: 0;
+                z-index: -1;
             }
         }
     }
@@ -1045,6 +1195,18 @@ header.active{
             .menu-global {
                 width: 670px;
                 margin-top: 35px;
+            }
+        }
+    }
+
+    .search-form {
+        .header-contact {
+            .form {
+                form {
+                    input {
+                        width: 500px;
+                    }
+                }
             }
         }
     }
@@ -1137,6 +1299,7 @@ header.active{
             left: 50.5%;
             display: block;
             position: absolute;
+            transition: all 1s;
             transform: translate(-50%, -50%);
             li{
                 margin: 0 60px;
@@ -1174,11 +1337,13 @@ header.active{
             }
         }
         .header-contact{
+            margin-top: 5px;
             align-items: flex-start;
             .tel{
                 display: block;
                 text-align: right;
                 margin-right: 50px;
+                transition: all 1s;
                 a{
                     display: block;
                     color: #000000;
@@ -1232,6 +1397,30 @@ header.active{
         }
     }
 
+    .search-form{
+        nav{
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+        .header-contact{
+            .tel{
+                opacity: 0;
+                z-index: -1;
+                transition: all 0.5s;
+            }   
+            .form {
+                form {
+                    input {
+                        width: 700px;
+                        right: 100px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -1248,6 +1437,7 @@ header.active{
             }
         }
         .header-contact {
+            margin-top: 0;
             .open-menu {
                 top: 29%;
                 width: 60px;
@@ -1255,6 +1445,21 @@ header.active{
             }
             .tel {
                 margin-right: 70px;
+            }
+        }
+    }
+
+    .search-form {
+        .header-contact {
+            .form {
+                form {
+                    input {
+                        top: 30%;
+                        width: 760px;
+                        right: 100px;
+                        height: 45px;
+                    }
+                }
             }
         }
     }
@@ -1332,6 +1537,18 @@ header.active{
             }
             .open-menu {
                 top: 38%;
+            }
+        }
+    }
+
+    .search-form {
+        .header-contact {
+            .form {
+                form {
+                    input {
+                        width: 860px;
+                    }
+                }
             }
         }
     }
