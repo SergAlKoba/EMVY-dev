@@ -402,7 +402,6 @@ header{
 }
 
 footer{
-    position: relative;
     &::after{
         content: '';
         top: 0;
@@ -839,10 +838,6 @@ footer{
 
 @media screen and (min-width: 1700px) {
 
-    footer{
-        &::after {
-            width: 80%;
-        }
-    }
+
 
 }

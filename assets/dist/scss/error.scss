@@ -35,7 +35,6 @@ header{
     }
     .error-content{
         padding: 0 6px;
-        min-height: 38vh;
         text-align: center;
         p{
             color: #000000;
@@ -70,7 +69,6 @@ header{
 }
 
 footer{
-    position: relative;
     &::after{
         content: '';
         top: 0;
@@ -114,7 +112,6 @@ footer{
             }
         }
         .error-content{
-            min-height: 12vh;
             p{
                 margin-bottom: 35px;
             }
@@ -125,11 +122,7 @@ footer{
 
 @media screen and (min-width: 1280px) {
 
-    .error {
-        .error-content {
-            min-height: 30vh;
-        }
-    }
+
 
 }
 
@@ -172,7 +165,6 @@ footer{
             }
         }
         .error-content {
-            min-height: 25.5vh;
             p {
                 font-size: 24px;
                 line-height: 30px;
@@ -209,20 +201,13 @@ footer{
         .title {
             margin-bottom: 112px;
         }
-        .error-content {
-            min-height: 51.5vh;
-        }
     }
 
 }
 
 @media screen and (min-width: 1700px) {
 
-    footer{
-        &::after {
-            width: 80%;
-        }
-    }
+    
 
 }
 

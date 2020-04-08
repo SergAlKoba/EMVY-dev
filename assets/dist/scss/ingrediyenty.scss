@@ -2,6 +2,39 @@ body{
     padding-top: 92px;
 }
 
+.popup-img{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    transform: translate(0, -150%);
+    transition: all 0.5s;
+    .img-close{
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+        background: #ffffff;
+    }
+    img{
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        width: 80%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup-img.active{
+    transform: translate(0, 0);
+}
+
 header{
     top: 0;
     left: 0;
@@ -116,7 +149,6 @@ header{
                         z-index: 0;
                         width: 100%;
                         height: 100%;
-                        filter: blur(2px);
                         overflow: hidden;
                         position: absolute;
                         border-radius: 50%;
@@ -218,7 +250,7 @@ header{
 }
 
 .tekhnologiya{
-    padding: 42px 0 36px;
+    padding: 42px 0 76px;
     .title{
         margin-bottom: 45px;
         h3{
@@ -258,9 +290,30 @@ header{
     }
 }
 
-footer{
-    margin-top: 77px;
+.img{
+    z-index: 2;
     position: relative;
+    i{
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #b8ad9e;
+        &::before{
+            top: 50%;
+            left: 50%;
+            font-size: 12px;
+            color: #ffffff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+footer{
     &::after{
         content: '';
         top: 0;
@@ -465,6 +518,12 @@ footer{
         }
     }
 
+    .img {
+        i {
+            display: none;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -638,11 +697,7 @@ footer{
 
 @media screen and (min-width: 1700px) {
 
-    footer{
-        &::after {
-            width: 80%;
-        }
-    }
+
 
 }
 

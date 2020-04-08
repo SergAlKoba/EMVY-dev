@@ -496,9 +496,10 @@ header{
             }
             .form-content{
                 left: 0;
-                top: 74px;
+                top: -18px;
                 width: 100%;
-                padding: 10px 0;
+                z-index: 9;
+                padding: 27px 0;
                 position: absolute;
                 transform: translate(130%, 0);
                 transition: all 0.5s;
@@ -1552,5 +1553,30 @@ header.active{
             }
         }
     }
+
+}
+
+
+@media screen and (min-width: 2200px) {
+
+    .menu {
+        .menu-bg {
+            .nav-model {
+                width: 590px;
+            }
+        }
+    }
+
+    .search-form {
+        .header-contact {
+            .form {
+                .form-content {
+                    input {
+                        width: 1260px;
+                    }
+                }
+            }
+        }
+    }   
 
 }

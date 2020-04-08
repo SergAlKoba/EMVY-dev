@@ -1,6 +1,11 @@
 footer{
-    position: relative;
-    padding: 78px 0 47px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    .footer{
+        padding: 78px 0 47px;
+    }
     .footer-content{
         margin: 0 -3px;
     }
@@ -208,7 +213,9 @@ footer{
 @media screen and (min-width: 768px) {
 
     footer {
-        padding: 78px 0 53px;
+        .footer{
+            padding: 78px 0 53px;
+        }
         .footer-content {
             margin: 0;
         }
@@ -326,7 +333,9 @@ footer{
 @media screen and (min-width: 1400px){
 
     footer{
-        padding: 60px 0 50px;
+        .footer{
+            padding: 60px 0 50px;
+        }
     }
 
 }
@@ -334,7 +343,9 @@ footer{
 @media screen and (min-width: 1600px){
     
     footer{
-        padding: 87px 0 80px;
+        .footer{
+            padding: 87px 0 80px;
+        }
         .footer-contact {
             margin-top: 6px;
             .tel {

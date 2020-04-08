@@ -803,25 +803,7 @@ header{
     }
 }
 
-// .jcf-select-drop{
-//     z-index: 6;
-//     width: 100%;
-//     height: 200px;
-//     padding: 15px;
-//     overflow: scroll;
-//     border: 1px solid #e6ded4;
-//     background-color: #ffffff;
-//     span{
-//         width: 100% !important;
-//     }
-//     div{
-//         width: 100% !important;
-//     }
-
-// }
-
 footer{
-    position: relative;
     &::after{
         content: '';
         top: 0;
@@ -1242,11 +1224,7 @@ footer{
 
 @media screen and (min-width: 1700px) {
 
-    footer{
-        &::after {
-            width: 80%;
-        }
-    }
+
 
 }
 

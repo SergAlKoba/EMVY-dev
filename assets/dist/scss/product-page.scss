@@ -534,6 +534,7 @@ header{
                 .review-items{
                     margin-bottom: 73px;
                     .review-item{
+                        min-height: 120px;
                         margin-bottom: 24px;
                         padding-bottom: 24px;
                         border-bottom: 1px solid #fdf2f9;
@@ -654,6 +655,7 @@ header{
                             }
                         }
                         .answer{
+                            min-height: 100px;
                             position: relative;
                             padding-left: 23px;
                             margin: 25px 0 20px;
@@ -662,7 +664,7 @@ header{
                                 top: 0;
                                 left: 0;
                                 width: 3px;
-                                height: 86%;
+                                height: 100%;
                                 background-color: #f6f6f8;
                                 position: absolute;
                             }
@@ -1267,7 +1269,6 @@ header{
 }
 
 footer{
-    position: relative;
     &::after{
         content: '';
         top: 0;
@@ -2087,10 +2088,6 @@ footer{
 
 @media screen and (min-width: 1700px) {
 
-    footer{
-        &::after {
-            width: 80%;
-        }
-    }
+
 
 }
