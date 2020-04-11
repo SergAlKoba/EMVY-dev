@@ -49,7 +49,7 @@ $(document).ready(function(){
         byRow: true
     });
 
-    $('.conbiner a').on('click', function(){
+    $('.conbiner li').on('click', function(){
         $(this).toggleClass('active');
     });
     
@@ -71,6 +71,10 @@ $(document).ready(function(){
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top -40;
 		$('body,html').animate({scrollTop: top}, 1500);
+    });
+
+    $('.conbiner-hover li').on('click', function(){
+        $(this).toggleClass('active');
     });
 
     jcf.replaceAll();

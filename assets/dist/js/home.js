@@ -7,7 +7,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         customPaging: function(slider, i) { 
-            return '<button class="tab">0' + (i + 1) + '<i class="fa fa-sort-asc"></i></button>';
+            return '<button class="tab"><span></span><i class="fa fa-sort-asc"></i></button>';
         },
     });
 

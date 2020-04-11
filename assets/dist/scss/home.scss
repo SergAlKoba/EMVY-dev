@@ -304,7 +304,7 @@ header.search-form{
         &:hover{
             .img{
                 img{
-                    transform: scale(0.7);
+                    //transform: scale(0.7);
                 }
             }
             .product-hover{
@@ -430,7 +430,7 @@ header.search-form{
                     position: static;
                     &::after{
                         content: '\E819';
-                        color: #000000;
+                        color: #616161;
                     }
                 }
             }
@@ -544,7 +544,7 @@ header.search-form{
             .add-to-cart{
                 z-index: 1;
                 text-align: center;
-                padding: 24px 20px;
+                padding: 40px 20px;
                 position: relative;
                 border-top: 1px solid #e4e4e4;
                 a{
@@ -672,7 +672,7 @@ header.search-form{
         &:hover{
             .img{
                 img{
-                    transform: scale(0.7);
+                    //transform: scale(0.7);
                 }
             }
             .product-hover{
@@ -798,7 +798,7 @@ header.search-form{
                     position: static;
                     &::after{
                         content: '\E819';
-                        color: #000000;
+                        color: #616161;
                     }
                 }
             }
@@ -912,7 +912,7 @@ header.search-form{
             .add-to-cart{
                 z-index: 1;
                 text-align: center;
-                padding: 24px 20px;
+                padding: 40px 20px;
                 position: relative;
                 border-top: 1px solid #e4e4e4;
                 a{
@@ -1830,7 +1830,7 @@ header.search-form{
                         &::after{
                             content: '';
                             top: 50%;
-                            right: 38px;
+                            right: 22px;
                             width: 38px;
                             height: 1px;
                             position: absolute;
@@ -1842,6 +1842,27 @@ header.search-form{
                             font-size: 18px;
                             color: #000000;
                             line-height: 22px;
+                        }
+                        span{
+                            width: 14px;
+                            height: 14px;
+                            display: block;
+                            border-radius: 50%;
+                            position: relative;
+                            border: 1px solid transparent;
+                            transition: all 0.5s;
+                            &::after{
+                                content: '';
+                                top: 50%;
+                                left: 50%;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                position: absolute;
+                                background: #979797;
+                                transform: translate(-50%, -50%);
+                                transition: all 0.5s;
+                            }
                         }
                     }
                 }
@@ -1857,6 +1878,12 @@ header.search-form{
                         &::after{
                             width: 64px;
                             background: #000000;
+                        }
+                        span{
+                            border: 1px solid #000000;
+                            &::after{
+                                background: #000000;
+                            }
                         }
                     }
                 }

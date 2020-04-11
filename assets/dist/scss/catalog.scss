@@ -266,6 +266,7 @@ header{
                         }
                     }
                     .mfilter-heading{
+                        cursor: pointer;
                         position: relative;
                         padding: 25px 20px 25px 0;
                         .mfilter-heading-text{
@@ -424,7 +425,7 @@ header{
                 box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
                 .img{
                     img{
-                        transform: scale(0.7);
+                        //transform: scale(0.7);
                     }
                 }
                 .product-hover{
@@ -550,7 +551,7 @@ header{
                         position: static;
                         &::after{
                             content: '\E819';
-                            color: #000000;
+                            color: #616161;
                         }
                     }
                 }
@@ -664,7 +665,7 @@ header{
                 .add-to-cart{
                     z-index: 1;
                     text-align: center;
-                    padding: 24px 20px;
+                    padding: 40px 20px;
                     position: relative;
                     border-top: 1px solid #e4e4e4;
                     a{
@@ -786,7 +787,7 @@ header{
             &:hover{
                 .img{
                     img{
-                        transform: scale(0.7);
+                        //transform: scale(0.7);
                     }
                 }
                 .product-hover{
@@ -912,7 +913,7 @@ header{
                         position: static;
                         &::after{
                             content: '\E819';
-                            color: #000000;
+                            color: #616161;
                         }
                     }
                 }
@@ -1017,7 +1018,7 @@ header{
                 .add-to-cart{
                     z-index: 1;
                     text-align: center;
-                    padding: 24px 20px;
+                    padding: 40px 20px;
                     position: relative;
                     border-top: 1px solid #e4e4e4;
                     a{
@@ -1624,7 +1625,7 @@ header{
                 &:hover {
                     .img {
                         img {
-                            transform: translate(-50%, 0) scale(0.7);
+                            //transform: translate(-50%, 0) scale(0.7);
                         }
                     }
                 }
@@ -1675,7 +1676,7 @@ header{
                 &:hover {
                     .img {
                         img {
-                            transform: translate(-50%, 0) scale(0.7);
+                            //transform: translate(-50%, 0) scale(0.7);
                         }
                     }
                 }

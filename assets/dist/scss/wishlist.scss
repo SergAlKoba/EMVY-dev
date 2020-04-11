@@ -87,7 +87,7 @@ header{
             &:hover{
                 .img{
                     img{
-                        transform: scale(0.7);
+                        //transform: scale(0.7);
                     }
                 }
                 .product-hover{
@@ -214,7 +214,7 @@ header{
                             content: '\E819';
                             z-index: 1;
                             font-size: 28px;
-                            color: #000000;
+                            color: #616161;
                             position: relative;
                             font-family: 'fontello';
                             transition: all 0.5s;
@@ -331,7 +331,7 @@ header{
                 .add-to-cart{
                     z-index: 1;
                     text-align: center;
-                    padding: 24px 20px;
+                    padding: 40px 20px;
                     position: relative;
                     border-top: 1px solid #e4e4e4;
                     a{
