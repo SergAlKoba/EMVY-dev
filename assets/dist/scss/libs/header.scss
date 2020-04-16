@@ -307,9 +307,31 @@
                 border: 1px solid #000000;
                 font-family: 'HelveticaNeueRoman';
                 transition: all 0.5s;
+                i{
+                    display: none;
+                }
                 &:hover {
                     color: #ffffff;
                     background-color: #000000;
+                }
+            }
+            .success{
+                i{
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    margin-right: 8px;
+                    border-radius: 50%;
+                    position: relative;
+                    background-color: #00d20f;
+                    &::before{
+                        top: 50%;
+                        left: 50%;
+                        font-size: 16px;
+                        color: #ffffff;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }
