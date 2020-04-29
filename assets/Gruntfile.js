@@ -47,6 +47,7 @@ grunt.initConfig({
 				'../markup/js/reviews.min.js': ['dist/js/reviews.js'],
 				'../markup/js/checkout.min.js': ['dist/js/checkout.js'],
 				'../markup/js/login.min.js': ['dist/js/login.js'],
+				'../markup/js/successfully.min.js': ['dist/js/successfully.js'],
 			}
 		}
 	},

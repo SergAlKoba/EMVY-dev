@@ -8,6 +8,8 @@ $(document).ready(function(){
 
     $('.colse-menu').on('click', function(){
         $('.menu').removeClass('active');
+        $('.languages-content').removeClass('active');
+        $('.close-languages').removeClass('active');
     });
 
     $('.basket-open').on('click', function(){
@@ -22,6 +24,11 @@ $(document).ready(function(){
         $('.basket-product').removeClass('active');
     });
 
+    $('.languages').on('click', function(){
+        $('.languages-content').addClass('active');
+        $('.close-languages').addClass('active');
+    });
+
     $('.basket-product .remove').on('click', function(){
         $(this).parent('.product-item').remove();
     });
@@ -30,6 +37,11 @@ $(document).ready(function(){
         $('.basket-product').removeClass('active');
         $('.close-basket').removeClass('active');
         $('.personal-content').removeClass('active');
+    });
+
+    $('.close-languages').on('click', function(){
+        $('.close-languages').removeClass('active');
+        $('.languages-content').removeClass('active');
     });
 
     $('.callback_js').on('click', function(){

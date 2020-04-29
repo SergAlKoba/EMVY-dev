@@ -234,6 +234,10 @@ ul li,ol li{
   }
 }
 
+.simplecheckout-warning-block.error-notifications{
+  background: transparent;
+}
+
 .successfully-notifications{
   width: 100%;
   display: block;
@@ -303,7 +307,9 @@ fieldset{
 }
 
 i{
+  font-weight: 500;
   font-style: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
