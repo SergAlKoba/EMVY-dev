@@ -418,16 +418,13 @@ header{
             padding: 13px 16px 19px;
             border: 1px solid #f6f6f8;
             background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            transition: all 0.5s;
             &:last-child{
                 margin-bottom: 0;
             }
             &:hover{
-                box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
-                .img{
-                    img{
-                        //transform: scale(0.7);
-                    }
-                }
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
                 .product-hover{
                     transform: translate(0, 0);
                 }
@@ -435,10 +432,10 @@ header{
                     opacity: 0;
                 }
                 p{
-                    filter: blur(2px);
+                    filter: blur(3px);
                 }
                 .size{
-                    filter: blur(2px);
+                    filter: blur(3px);
                 }
                 .conbiner-hover{
                     opacity: 1;
@@ -632,7 +629,7 @@ header{
                 z-index: 3;
                 width: 100%;
                 position: absolute;
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba(255, 255, 255, 0.6);
                 transform: translate(0, 100%);
                 transition: all 0.5s;
                 ul{
@@ -665,8 +662,8 @@ header{
                 .add-to-cart{
                     z-index: 1;
                     text-align: center;
-                    padding: 40px 20px;
                     position: relative;
+                    padding: 30px 20px 40px;
                     border-top: 1px solid #e4e4e4;
                     a{
                         width: auto;
@@ -675,9 +672,8 @@ header{
                         font-weight: 400;
                         line-height: 22px;
                         position: relative;
-                        margin-bottom: 15px;
-                        padding-left: 50px;
                         display: inline-block;
+                        padding: 15px 0 15px 50px;
                         font-family: 'HelveticaNeueRoman';
                         i{
                             top: 45%;
@@ -736,7 +732,8 @@ header{
         .product-slider{
             padding-bottom: 11px;
             .slick-list{
-                margin: 0 -23px;
+                padding: 20px;
+                margin: -20px -43px;
             }
             .slick-slide{
                 margin: 0 23px;
@@ -784,12 +781,10 @@ header{
             padding: 13px 16px 19px;
             border: 1px solid #f6f6f8;
             background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            transition: all 0.5s;
             &:hover{
-                .img{
-                    img{
-                        //transform: scale(0.7);
-                    }
-                }
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
                 .product-hover{
                     transform: translate(0, 0);
                 }
@@ -797,10 +792,10 @@ header{
                     opacity: 0;
                 }
                 p{
-                    filter: blur(2px);
+                    filter: blur(3px);
                 }
                 .size{
-                    filter: blur(2px);
+                    filter: blur(3px);
                 }
                 .conbiner-hover{
                     opacity: 1;
@@ -994,7 +989,7 @@ header{
                 z-index: 3;
                 width: 100%;
                 position: absolute;
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba(255, 255, 255, 0.6);
                 transform: translate(0, 100%);
                 transition: all 0.5s;
                 ul{
@@ -1018,8 +1013,8 @@ header{
                 .add-to-cart{
                     z-index: 1;
                     text-align: center;
-                    padding: 40px 20px;
                     position: relative;
+                    padding: 30px 20px 40px;
                     border-top: 1px solid #e4e4e4;
                     a{
                         width: auto;
@@ -1028,9 +1023,8 @@ header{
                         font-weight: 400;
                         line-height: 22px;
                         position: relative;
-                        margin-bottom: 15px;
-                        padding-left: 50px;
                         display: inline-block;
+                        padding: 15px 0 15px 50px;
                         font-family: 'HelveticaNeueRoman';
                         i{
                             top: 45%;
@@ -1652,6 +1646,11 @@ header{
                 p{
                     margin-bottom: 6px;
                 }
+                .product-hover {
+                    .add-to-cart {
+                        padding: 20px 20px 30px;
+                    }
+                }
             }
         }
         .product {
@@ -1702,6 +1701,11 @@ header{
                 }
                 p{
                     margin-bottom: 6px;
+                }
+                .product-hover {
+                    .add-to-cart {
+                        padding: 20px 20px 30px;
+                    }
                 }
             }
         }
@@ -1789,6 +1793,13 @@ header{
             .product-slider {
                 .slick-slide {
                     margin: 0 28px;
+                }
+            }
+            .product-item {
+                .product-hover {
+                    .add-to-cart {
+                        padding: 20px 20px 20px;
+                    }
                 }
             }
         }

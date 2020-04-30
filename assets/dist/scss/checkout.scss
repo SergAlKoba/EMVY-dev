@@ -195,7 +195,6 @@ header{
                         margin-bottom: 15px;
                         padding: 34px 3px 30px;
                         border-top: 1px solid #f1c8e0;
-                        border-bottom: 1px solid #f1c8e0;
                         ul{
                             li{
                                 display: flex;
@@ -216,6 +215,10 @@ header{
                             line-height: 18px;
                             align-items: center;
                             font-family: 'HelveticaNeueRoman';
+                            img{
+                                width: 70px;
+                                margin-right: 10px;
+                            }
                             p{
                                 display: none;
                             }
@@ -240,6 +243,25 @@ header{
                             font-weight: 500;
                             line-height: 20px;
                             font-family: 'Roboto', sans-serif;
+                        }
+                        #total_total{
+                            margin-top: 30px;
+                            padding-top: 30px;
+                            border-top: 1px solid #f1c8e0;
+                            span{
+                                color: #373737;
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 12px;
+                                font-family: 'HelveticaNeueMedium';
+                            }
+                            strong{
+                                color: #000000;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 20px;
+                                font-family: 'Roboto', sans-serif;
+                            }
                         }
                     }
                     .pay{
@@ -491,12 +513,12 @@ header{
                         }
                     }
                     .jcf-select-opener{
-                        top: 53%;
+                        top: 50%;
                         right: 27px;
                         color: #000000;
                         font-size: 24px;
                         position: absolute;
-                        transform: translate(0, -50%) rotate(-90deg);
+                        transform: translate(0, -50%) rotate(180deg);
                         transition: all 0.5s;
                         &::after{
                             content: '\e800';
@@ -548,6 +570,7 @@ header{
                 }
                 .jcf-select.jcf-drop-active{
                     .jcf-select-opener{
+                        top: 53%;
                         transform: translate(0, -50%) rotate(0);
                     }
                 }
@@ -857,6 +880,108 @@ footer{
         position: absolute;
         background: #f8e3ef;
         transform: translate(-50%, 0);
+    }
+}
+
+#simple_login{
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    #temp_popup_container {
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        width: 345px;
+        position: absolute;
+        padding: 50px 25px 37px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 30px rgba(0,0,0,0.05);
+        transform: translate(-50%, -50%);
+        .close {
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #616161;
+            position: absolute;
+        }
+        .form-group{
+            input{
+                width: 100%;
+                height: 63px;
+                color: #000000;
+                font-size: 15px;
+                padding: 0 31px;
+                font-weight: 400;
+                margin-bottom: 20px;
+                line-height: 18px;
+                border: 1px solid #e6ded4;
+                background-color: #ffffff;
+                font-family: 'HelveticaNeueRoman';
+                transition: all 0.5s;
+                input:focus{
+                    border: 1px solid #000000;
+                }
+                
+                input.error{
+                border: 1px solid #f14a4a;
+                }
+            }
+            input:focus{
+                border: 1px solid #000000;
+            }
+            a{
+                display: table;
+                color: #b8ad9e;
+                margin-top: -12px;
+                text-decoration: underline;
+            }
+        }
+        #simplecheckout_button_login{
+            width: 184px;
+            height: 64px;
+            display: flex;
+            color: #000000;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 17px;
+            border-radius: 36px;
+            align-items: center;
+            margin: 30px auto 0;
+            justify-content: center;
+            border: 1px solid #000000;
+            font-family: 'HelveticaNeueRoman';
+            transition: all 0.5s;
+            &:hover {
+                color: #ffffff;
+                background-color: #000000;
+            }
+            span{
+                i{
+                    color: #ffffff;
+                    position: relative;
+                    margin-right: 15px;
+                    &::after{
+                        content: '';
+                        z-index: -1;
+                        top: 50%;
+                        left: 50%;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        position: absolute;
+                        background-color: #00d20f;
+                        transform: translate(-50%, -50%);
+                    }
+                    &::before{
+                        z-index: 1;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1179,6 +1304,9 @@ footer{
                         .total {
                             margin-bottom: 20px;
                             padding: 34px 0 23px;
+                            #total_total {
+                                margin-top: 40px;
+                            }
                         }
                         .pay {
                             padding: 18px 0 28px;

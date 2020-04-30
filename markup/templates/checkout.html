@@ -561,16 +561,20 @@
                                 </div>
                                 <div class="total">
                                     <ul>
-                                        <li>
-                                            <span>Итого (3 товара)</span>
-                                            <strong>5250 ₽</strong>
+                                        <li id="total_sub_total">
+                                            <span>Итого:</span>
+                                            <strong>23123 <i>₽</i></strong>
+                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
                                         </li>
-                                        <li>
-                                            <span><img src="https://emvycosmetics.com/image/catalog/ll_cdek/logo.png"> Посылка склад-склад   Москва   <i>  ул. Большая Пионерская, 40, строение 1 -  MSK76  </i> :</span>
+                                        <li id="total_shipping">
+                                            <span><img src="https://emvycosmetics.com/image/catalog/ll_cdek/logo.png"> <h4>Посылка склад-склад   Москва</h4>  <p> ул. Большая Пионерская, 40, строение 1 - MSK76</p>  :</span>
+                                            <strong>380 <i>₽</i></strong>
+                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
                                         </li>
-                                        <li>
-                                            <span>Бонусы</span>
-                                            <strong class="bonuses">-5750 ₽</strong>
+                                        <li id="total_total">
+                                            <span>Всего:</span>
+                                            <strong>23503 <i>₽</i></strong>
+                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -599,8 +603,25 @@
                         <button>Оформить заказ</button>
                         <a href="javascrupt:void(0)">Оформить заказ</a>
                     </div>
-                </div>
-            </div>
+                    <div id="simple_login" style="display: none;">
+                        <div id="temp_popup_container">
+                            <div class="simplecheckout-block" id="simplecheckout_login">
+                                <div class="simplecheckout-block-content">
+                                    <div id="simple_login_header"><span class="close"><i style="cursor:pointer;" data-onclick="close" class="icon-close"></i></span></div>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control" data-onkeydown="detectEnterAndLogin" type="text" name="email" value="" placeholder="Email:">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" data-onkeydown="detectEnterAndLogin" type="password" name="password" value="" placeholder="Пароль:">
+                                            <a href="https://emvycosmetics.com/index.php?route=account/forgotten">Забыли пароль?</a>
+                                        </div>
+                                        <a id="simplecheckout_button_login" data-onclick="login" class="button btn-primary button_oc btn"><span><i class="icon-check"></i>Войти</span></a>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </section>
 
         <footer>
@@ -676,9 +697,10 @@
                             </div>
                             <a class="mail" href="mailto:info@emvycosmetics.com">info@emvycosmetics.com</a>
                             <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-telegram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram-1"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
