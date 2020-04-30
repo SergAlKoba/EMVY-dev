@@ -842,6 +842,29 @@ header{
                     background-color: #000000;
                 }
             }
+            input{
+                width: 182px;
+                height: 52px;
+                border: none;
+                float: right;
+                display: flex;
+                cursor: pointer;
+                color: #000000;
+                font-size: 15px;
+                margin: 0 auto;
+                font-weight: 400;
+                align-items: center;
+                border-radius: 36px;
+                justify-content: center;
+                border: 1px solid #000000;
+                background-color: transparent;
+                font-family: 'HelveticaNeueRoman';
+                transition: all 0.5s;
+                &:hover{
+                    color: #ffffff;
+                    background-color: #000000;
+                }
+            }
             a{
                 width: 182px;
                 height: 52px;
@@ -1330,6 +1353,11 @@ footer{
             .simplecheckout-button-block{
                 width: 56.6%;
                 button {
+                    width: 238px;
+                    height: 64px;
+                    font-size: 17px;
+                }
+                input {
                     width: 238px;
                     height: 64px;
                     font-size: 17px;

@@ -432,10 +432,10 @@ header{
                     opacity: 0;
                 }
                 p{
-                    filter: blur(3px);
+                    filter: blur(15px);
                 }
                 .size{
-                    filter: blur(3px);
+                    filter: blur(15px);
                 }
                 .conbiner-hover{
                     opacity: 1;
@@ -629,7 +629,7 @@ header{
                 z-index: 3;
                 width: 100%;
                 position: absolute;
-                background-color: rgba(255, 255, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.55);
                 transform: translate(0, 100%);
                 transition: all 0.5s;
                 ul{
@@ -792,10 +792,10 @@ header{
                     opacity: 0;
                 }
                 p{
-                    filter: blur(3px);
+                    filter: blur(15px);
                 }
                 .size{
-                    filter: blur(3px);
+                    filter: blur(15px);
                 }
                 .conbiner-hover{
                     opacity: 1;
@@ -989,7 +989,7 @@ header{
                 z-index: 3;
                 width: 100%;
                 position: absolute;
-                background-color: rgba(255, 255, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.55);
                 transform: translate(0, 100%);
                 transition: all 0.5s;
                 ul{
