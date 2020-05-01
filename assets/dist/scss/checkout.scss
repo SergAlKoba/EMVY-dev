@@ -518,7 +518,7 @@ header{
                         color: #000000;
                         font-size: 24px;
                         position: absolute;
-                        transform: translate(0, -50%) rotate(180deg);
+                        transform: translate(0, -50%) rotate(0);
                         transition: all 0.5s;
                         &::after{
                             content: '\e800';
@@ -571,7 +571,7 @@ header{
                 .jcf-select.jcf-drop-active{
                     .jcf-select-opener{
                         top: 53%;
-                        transform: translate(0, -50%) rotate(0);
+                        transform: translate(0, -50%) rotate(180deg);
                     }
                 }
                 .form-horizontal{
@@ -709,13 +709,19 @@ header{
                             font-size: 16px;
                             padding-left: 35px;
                             position: relative;
+                            flex-direction: column;
                             i{
-                                top: 55%;
+                                top: 24%;
                                 left: 5px;
                                 font-size: 32px;
                                 color: #000000;
                                 position: absolute;
                                 transform: translate(-50%, -50%);
+                            }
+                            p{
+                                font-size: 14px;
+                                color: #616161;
+                                font-family: 'HelveticaNeueRoman';
                             }
                         }
                     }

@@ -187,6 +187,7 @@ header{
             .video-item{
                 height: 245px;
                 position: relative;
+                margin-bottom: 18px;
                 &:hover{
                     .play{
                         &::after{
@@ -238,6 +239,12 @@ header{
                         transform: translate(-50%, -50%);
                     }
                 }
+            }
+            h3{
+                font-size: 18px;
+                color: #000000;
+                line-height: 22px;
+                font-family: 'HelveticaNeueRoman';
             }
         }
     }
