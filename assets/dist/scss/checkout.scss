@@ -954,10 +954,6 @@ footer{
                 input:focus{
                     border: 1px solid #000000;
                 }
-                
-                input.error{
-                border: 1px solid #f14a4a;
-                }
             }
             input:focus{
                 border: 1px solid #000000;
@@ -967,6 +963,11 @@ footer{
                 color: #b8ad9e;
                 margin-top: -12px;
                 text-decoration: underline;
+            }
+        }
+        .form-group.has-error{
+            input{
+                border: 1px solid #f14a4a;
             }
         }
         #simplecheckout_button_login{
