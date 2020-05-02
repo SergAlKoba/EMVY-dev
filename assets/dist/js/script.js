@@ -51,10 +51,26 @@ $(document).ready(function(){
     $('.close').on('click', function(){
         $('.callback').removeClass('active');
         $('.added-cart').removeClass('active');
+        $('.popup-peturn').removeClass('active');
+        $('.popup-club').removeClass('active');
     });
 
     $('.close-popup').on('click', function(){
         $('.callback').removeClass('active');
+        $('.popup-peturn').removeClass('active');
+        $('.popup-club').removeClass('active');
+    });
+
+    $('.peturn-open').on('click', function(){
+        $('.popup-peturn').addClass('active');
+    });
+
+    $('.club-open').on('click', function(){
+        $('.popup-club').addClass('active');
+    });
+
+    $('.close2').on('click', function(){
+        $('.popup-club').removeClass('active');
     });
 
     jcf.replaceAll();
@@ -76,6 +92,18 @@ $(document).ready(function(){
     $('body').css({
         'padding-bottom': footerHeight
     })
+
+    $('.tadle-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+    $('.options-item span').matchHeight({
+        byRow: true
+    });
 
 });
 

@@ -73,6 +73,13 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 1500);
     });
 
+    $('.review-write').on('click', function(){
+        event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top -130;
+		$('body,html').animate({scrollTop: top}, 1500);
+    });
+
     $('.conbiner-hover li').on('click', function(){
         $(this).toggleClass('active');
     });

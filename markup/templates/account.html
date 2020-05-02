@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/club.css">
 </head>
 
 <body>
@@ -292,339 +292,249 @@
 
 
 
-        <section class="checkout">
-            <div class="container">
-                <div class="title">
-                    <h2>Оформить заказ</h2>
+        <div class="popup-club">
+            <span class="close-popup"></span>
+            <div class="club-content">
+                <span class="close"><i class="icon-close"></i></span>
+                <img src="../img/popup-club-img.jpg" alt="">
+                <h3>Присоединяйтесь к программе лояльности интернет-магазина EMVY</h3>
+                <div class="offers-items">
+                    <div class="offers-item">
+                        <i class="icon-cemca"></i>
+                        <span>Специальные предложения на весь ассортимент, включая эксклюзивы и последние новинки</span>
+                    </div>
+                    <div class="offers-item">
+                        <i class="icon-ruca"></i>
+                        <span>Особые условия доставки для участников программы лояльности</span>
+                    </div>
+                    <div class="offers-item">
+                        <i class="icon-coin"></i>
+                        <span>Возможность оплачивать покупки бонусами</span>
+                    </div>
                 </div>
-                <div class="checkout-content">
-                    <div class="simplecheckout-content">
-                        <div class="simplecheckout-left-column">
-                            <div class="entrance">
-                                <div class="checkbox">
-                                    <span>
-                                    <input id="w" type="checkbox" checked="">
-                                    <i></i>
-                                </span>
-                                    <label for="w">Вступить в клуб привилегий</label>
-                                </div>
-                                <div class="entrance-link"><span>У меня уже есть аккаунт. </span><a href="javascript:void(0)"> Войти</a></div>
-                            </div>
-                            <div class="form-horizontal fio">
-                                <div class="form-group row-customer_firstname">
-                                    <input class="form-control" type="text" name="customer[firstname]" id="customer_firstname" value="" placeholder="Имя" data-reload-payment-form="true">
-                                    <span class="error-notifications"><i class="icon-explamation"></i>Заполните обязательные поля</span>
-                                    <span class="successfully-notifications"><i class="icon-check"></i>Сообщение успешно отправлено!</span>
-                                    <span class="info-notifications"><i class="icon-info"></i>Доставка производится в жилые и офисные помещения.</span>
-                                </div>
-                                <div class="form-group row-customer_lastname">
-                                    <input class="form-control" type="text" name="customer[lastname]" id="customer_lastname" value="" placeholder="Фамилия" data-reload-payment-form="true">
-                                </div>
-                                <div class="form-group required row-customer_email">
-                                    <input class="form-control" type="email" name="customer[email]" id="customer_email" value="" placeholder="Номер телефона" data-reload-payment-form="true">
-                                </div>
-                                <div class="form-group required row-customer_telephone">
-                                    <input class="form-control" type="tel" name="customer[telephone]" id="customer_telephone" value="" placeholder="Email" data-reload-payment-form="true">
-                                </div>
-                            </div>
-                            <h3>Доставка</h3>
-                            <div class="form-horizontal">
-                                <div class="form-group  row-shipping_address_zone_id">
-                                    <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                        <option value=""> --- Выберите --- </option>
-                                        <option value="2726">Алтайский край</option>
-                                        <option value="2729">Амурская область</option>
-                                        <option value="2724">Архангельская область</option>
-                                        <option value="2725">Астраханская область</option>
-                                        <option value="2727">Белгородская область</option>
-                                        <option value="2730">Брянская область</option>
-                                        <option value="2799">Владимирская область</option>
-                                        <option value="2801">Волгоградская область</option>
-                                        <option value="2802">Вологодская область</option>
-                                        <option value="2803">Воронежская область</option>
-                                        <option value="2728">Еврейская АО</option>
-                                        <option value="2722">Забайкальский край</option>
-                                        <option value="2741">Ивановская область</option>
-                                        <option value="2740">Иркутская область</option>
-                                        <option value="2743">Калининградская область</option>
-                                        <option value="2744">Калужская область</option>
-                                        <option value="2775">Камчатский край</option>
-                                        <option value="2733">Карачаево-Черкесия</option>
-                                        <option value="2747">Кемеровская область</option>
-                                        <option value="2804">Кировская область</option>
-                                        <option value="2753">Коми-Пермяцкий АО</option>
-                                        <option value="2772">Корякский АО</option>
-                                        <option value="2750">Костромская область</option>
-                                        <option value="2745">Краснодарский край</option>
-                                        <option value="2752">Красноярский край</option>
-                                        <option value="2754">Курганская область</option>
-                                        <option value="2755">Курская область</option>
-                                        <option value="2791">Ленинградская область</option>
-                                        <option value="2757">Липецкая область</option>
-                                        <option value="2758">Магаданская область</option>
-                                        <option value="2761">Москва</option>
-                                        <option value="2751" selected="selected">Московская область</option>
-                                        <option value="2762">Мурманская область</option>
-                                        <option value="2764">Ненецкий АО</option>
-                                        <option value="2766">Нижегородская область</option>
-                                        <option value="2767">Новгородская область</option>
-                                        <option value="2768">Новосибирская область</option>
-                                        <option value="2769">Омская область</option>
-                                        <option value="2771">Оренбургская область</option>
-                                        <option value="2770">Орловская область</option>
-                                        <option value="2773">Пензенская область</option>
-                                        <option value="2774">Пермский край</option>
-                                        <option value="2800">Приморский край</option>
-                                        <option value="2777">Псковская область</option>
-                                        <option value="2805">Республика Саха / Якутия</option>
-                                        <option value="2760">Республика Адыгея</option>
-                                        <option value="2738">Республика Алтай</option>
-                                        <option value="2794">Республика Башкортостан</option>
-                                        <option value="2796">Республика Бурятия</option>
-                                        <option value="2759">Республика Дагестан</option>
-                                        <option value="2765">Республика Ингушетия</option>
-                                        <option value="2763">Республика Кабардино-Балкария</option>
-                                        <option value="2736">Республика Калмыкия</option>
-                                        <option value="2776">Республика Карелия</option>
-                                        <option value="2787">Республика Коми</option>
-                                        <option value="2808">Республика Марий Эл</option>
-                                        <option value="2782">Республика Мордовия</option>
-                                        <option value="2798">Республика Северная Осетия</option>
-                                        <option value="2746">Республика Татарстан</option>
-                                        <option value="2756">Республика Тыва</option>
-                                        <option value="2721">Республика Хакасия</option>
-                                        <option value="2778">Ростовская область</option>
-                                        <option value="2779">Рязанская область</option>
-                                        <option value="2781">Самарская область</option>
-                                        <option value="2785">Санкт-Петербург</option>
-                                        <option value="2783">Саратовская область</option>
-                                        <option value="2807">Свердловская область</option>
-                                        <option value="2784">Смоленская область</option>
-                                        <option value="2786">Ставропольский край</option>
-                                        <option value="2735">Таймырский АО</option>
-                                        <option value="2788">Тамбовская область</option>
-                                        <option value="2792">Тверская область</option>
-                                        <option value="2789">Томская область</option>
-                                        <option value="2790">Тульская область</option>
-                                        <option value="2793">Тюменская область</option>
-                                        <option value="2742">Удмуртская Республика</option>
-                                        <option value="2795">Ульяновская область</option>
-                                        <option value="2748">Хабаровский край</option>
-                                        <option value="2749">Ханты-Мансийский АО - Югра</option>
-                                        <option value="2732">Челябинская область</option>
-                                        <option value="2739">Чеченская Республика</option>
-                                        <option value="2731">Чувашская Республика</option>
-                                        <option value="2723">Чукотский АО</option>
-                                        <option value="2780">Ямало-Ненецкий АО</option>
-                                        <option value="2806">Ярославская область</option>
-                                    </select>
-                                </div>
-                                <div class="form-group required row-shipping_address_city">
-                                    <input class="form-control" type="text" name="shipping_address[city]" id="shipping_address_city" value="" placeholder="" data-onchange="reloadAll">
-                                </div>
-                            </div>
-                            <div class="delivery">
-                                <h5>Выберите службу доставки</h5>
-                                <div class="delivery-item">
-                                    <div class="radio">
-                                        <span>
-                                        <input name="q" type="radio">
-                                        <i></i>
-                                    </span>
-                                        <label for="e">Доставка Курьером <img src="../img/delivery-img.png" alt=""></label>
-                                    </div>
-                                </div>
-                                <div class="delivery-item">
-                                    <div class="radio">
-                                        <span>
-                                        <input name="q" type="radio">
-                                        <i></i>
-                                    </span>
-                                        <label for="e">Пункт Самовывоза <img src="../img/delivery-img.png" alt=""></label>
-                                    </div>
-                                    <a href="javascript:void(0)">Выбрать пункт выдачи на карте</a>
-                                </div>
-                                <div class="delivery-item">
-                                    <div class="radio">
-                                        <span>
-                                        <input name="q" type="radio" checked>
-                                        <i></i>
-                                    </span>
-                                        <label for="e">Доставка Курьером <img src="../img/cdek.png" alt=""></label>
-                                    </div>
-                                    <input type="text" placeholder="Адрес доставки">
-                                </div>
-                                <div class="delivery-item">
-                                    <div class="radio">
-                                        <span>
-                                        <input name="q" type="radio">
-                                        <i></i>
-                                    </span>
-                                        <label for="ll_cdek.ll_cdek_136">
-                                            <img src="../img/cdek.png">
-                                            <h4>Посылка склад-склад   Москва </h4>
-                                            <p> ул. Большая Пионерская, 40, строение 1 - MSK76 </p> <strong>- 170 <i>₽</i></strong>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>Оплата</h3>
-                            <div class="types-payment">
-                                <div class="checkbox">
-                                    <span>
-                                    <input type="checkbox" checked>
-                                    <i></i>
-                                </span>
-                                    <label><i class="icon-coin"></i> Использовать Бонусы - 10560
-                                        <p>Мои бонусы: 10560</p>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <div class="radio ban">
-                                            <span>
-                                            <input name="r" type="radio" disabled>
-                                            <i></i>
-                                        </span>
-                                            <label><i class="icon-driver"></i> Наличными курьеру</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <!-- ban класс для блакировки -->
-                                        <div class="radio ban">
-                                            <span>
-                                            <input name="r" type="radio" disabled>
-                                            <i></i>
-                                        </span>
-                                            <label><i class="icon-payment-terminal"></i> Картой курьеру <span>(VISA, MasterCard, Сбербанк)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="radio ban">
-                                            <span>
-                                            <input name="r" type="radio" disabled>
-                                            <i></i>
-                                        </span>
-                                            <label><i class="icon-payment"></i> Картой на сайте <span>(VISA, MasterCard, Сбербанк)</span></label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="tadle">
+                    <div class="tadle-item">
+                        <div class="title">
+                            <strong>Статус</strong>
                         </div>
-                        <div class="simplecheckout-right-column">
-                            <h3>Всего Товаров (3)</h3>
-                            <div class="basket-product">
-                                <div class="product-items">
-                                    <div class="product-item">
-                                        <span class="remove"><i class="icon-close"></i></span>
-                                        <div class="img">
-                                            <img src="../img/product-item-img1.png" alt="">
-                                        </div>
-                                        <div class="text">
-                                            <p>Крем для век от отеков и первых морщин</p>
-                                            <ul>
-                                                <li>
-                                                    <input min="1" max="999" type="number" value="2" placeholder="0">
-                                                </li>
-                                                <li><strong>3500 ₽</strong></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-item">
-                                        <span class="remove"><i class="icon-close"></i></span>
-                                        <div class="img">
-                                            <img src="../img/product-item-img1.png" alt="">
-                                        </div>
-                                        <div class="text">
-                                            <p> Крем для век от отеков и первых морщин</p>
-                                            <ul>
-                                                <li>
-                                                    <input min="1" max="999" type="number" value="1" placeholder="0">
-                                                </li>
-                                                <li><strong>1750 ₽</strong></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-item">
-                                        <span class="remove"><i class="icon-close"></i></span>
-                                        <div class="img">
-                                            <img src="../img/product-item-img1.png" alt="">
-                                        </div>
-                                        <div class="text">
-                                            <p> Крем для век от отеков и первых морщин</p>
-                                            <ul>
-                                                <li>
-                                                    <input min="1" max="999" type="number" value="1" placeholder="0">
-                                                </li>
-                                                <li><strong>1750 ₽</strong></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                        <div class="item-content">
+                            <strong>Шаг балов</strong>
+                            <strong>% от оплаты</strong>
+                            <strong>% оплаты баллами</strong>
+                        </div>
+                    </div>
+                    <div class="tadle-item">
+                        <div class="title">
+                            <span>Серебро</span>
+                        </div>
+                        <div class="item-content">
+                            <span>0-3000</span>
+                            <span>6%</span>
+                            <span>40%</span>
+                        </div>
+                    </div>
+                    <div class="tadle-item">
+                        <div class="title">
+                            <span>Золото</span>
+                        </div>
+                        <div class="item-content">
+                            <span>3000-8000</span>
+                            <span>8%</span>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <div class="tadle-item">
+                        <div class="title">
+                            <span>Платина</span>
+                        </div>
+                        <div class="item-content">
+                            <span>8000-15000</span>
+                            <span>10%</span>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="tadle-item">
+                        <div class="title">
+                            <span>VIP</span>
+                        </div>
+                        <div class="item-content">
+                            <span>от 15000</span>
+                            <span>12%</span>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tadle-slider">
+                    <div>
+                        <div class="tadle-item">
+                            <ul>
+                                <li>
+                                    <span>Статус</span>
+                                    <strong>Серебро</strong>
+                                </li>
+                                <li>
+                                    <span>Шаг балов</span>
+                                    <strong>0-3000</strong>
+                                </li>
+                                <li>
+                                    <span>% от оплаты</span>
+                                    <strong>6%</strong>
+                                </li>
+                                <li>
+                                    <span>% оплаты баллами </span>
+                                    <strong>40%</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tadle-item">
+                            <ul>
+                                <li>
+                                    <span>Статус</span>
+                                    <strong>Золото</strong>
+                                </li>
+                                <li>
+                                    <span>Шаг балов</span>
+                                    <strong>3000-8000</strong>
+                                </li>
+                                <li>
+                                    <span>% от оплаты</span>
+                                    <strong>8%</strong>
+                                </li>
+                                <li>
+                                    <span>% оплаты баллами </span>
+                                    <strong>60%</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tadle-item">
+                            <ul>
+                                <li>
+                                    <span>Статус</span>
+                                    <strong>Платина</strong>
+                                </li>
+                                <li>
+                                    <span>Шаг балов</span>
+                                    <strong>8000-15000</strong>
+                                </li>
+                                <li>
+                                    <span>% от оплаты</span>
+                                    <strong>10%</strong>
+                                </li>
+                                <li>
+                                    <span>% оплаты баллами </span>
+                                    <strong>80%</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tadle-item">
+                            <ul>
+                                <li>
+                                    <span>Статус</span>
+                                    <strong>VIP</strong>
+                                </li>
+                                <li>
+                                    <span>Шаг балов</span>
+                                    <strong>от 15000</strong>
+                                </li>
+                                <li>
+                                    <span>% от оплаты</span>
+                                    <strong>12%</strong>
+                                </li>
+                                <li>
+                                    <span>% оплаты баллами </span>
+                                    <strong>100%</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Как получить привилегии Клуба EMVY ?</h3>
+                <div class="options-items">
+                    <div class="options-item">
+                        <i class="icon-vindowe"></i>
+                        <span>Зарегистрируйтесь, подпишитесь на рассылку Узнавайте первыми о всех специальных предложениях.</span>
+                        <a href="javascript:void(0)">Зарегистрироваться</a>
+                    </div>
+                    <div class="options-item">
+                        <i class="icon-coin"></i>
+                        <span>Накапливайте баллы за каждую покупку* Переходите на новые уровни программы лояльности.</span>
+                        <a href="javascript:void(0)">К покупкам</a>
+                    </div>
+                    <div class="options-item">
+                        <i class="icon-gali"></i>
+                        <span>Отслеживайте статус в личном кабинете Будьте в курсе доступных привилегий.</span>
+                        <a href="javascript:void(0)">В личный кабинет</a>
+                    </div>
+                </div>
+                <p>*Баллы конвертируются согласно формуле: 1 балл = 1 рубль. Баллы начисляются после оплаты и доставки заказа. Количество баллов пересчитывается ежедневно, учитываются только баллы за покупки, совершенные в течение 365 дней. Баллы за покупки,
+                    совершенные ранее, сгорают. Более подробную информацию вы можете получить, ознакомившись с Условиями программы лояльности, или уточнить у операторов нашего интернет-магазина.</p>
+                <span class="close2"><i class="icon-close"></i><strong>Закрыть</strong></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bread-crumbs">
+                <a class="prev-page" href="javascript:void(0)"><i class="icon-arrow-down"></i></a>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><span>Крем для век от отеков и первых морщин</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="club-inner">
+            <div class="container account-account">
+                <div id="content" class="row">
+                    <div class="col-sm-9 stage" style="width: 75%; display: flex; justify-content: flex-end; flex-direction: column;">
+                        <div class="title">
+                            <ul>
+                                <li>
+                                    <label for="">Мои баллы: </label> 2709
+                                </li>
+                            </ul>
+                            <a class="club-open" href="javascript:void(0)"><i class="icon-info"></i><span>о Системе Лояльности</span></a>
+                        </div>
+                        <div class="stage-content">
+                            <div class="stage-item on">
+                                <div class="icons">
+                                    <span><i class="icon-check"></i></span>
                                 </div>
-                                <div class="total">
-                                    <ul>
-                                        <li id="total_sub_total">
-                                            <span>Итого:</span>
-                                            <strong>23123 <i>₽</i></strong>
-                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
-                                        </li>
-                                        <li id="total_shipping">
-                                            <span><img src="../img/cdek.png"> <h4>Посылка склад-склад   Москва</h4>  <p> ул. Большая Пионерская, 40, строение 1 - MSK76</p>  :</span>
-                                            <strong>380 <i>₽</i></strong>
-                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
-                                        </li>
-                                        <li id="total_total">
-                                            <span>Всего:</span>
-                                            <strong>23503 <i>₽</i></strong>
-                                            <span style="display: none" class="simplecheckout-cart-total-remove"></span>
-                                        </li>
-                                    </ul>
+                                <h4>Silver</h4>
+                                <p>0-3000</p>
+                            </div>
+                            <div class="stage-item yes">
+                                <div class="icons">
+                                    <span><i class="icon-check"></i></span>
                                 </div>
-                                <div class="pay">
-                                    <h5>К Оплате</h5>
-                                    <strong>0 ₽</strong>
+                                <h4>Gold</h4>
+                                <p>3000-8000</p>
+                            </div>
+                            <div class="stage-item">
+                                <div class="icons">
+                                    <span><i class="icon-check"></i></span>
                                 </div>
-                                <div class="promotional">
-                                    <a class="promotional-link" href="javascript:void(0)">У меня есть промокод!</a>
-                                    <div class="input" style="display: none;">
-                                        <input type="text" placeholder="EM1057843527">
-                                        <i class="icon-check"></i>
-                                    </div>
+                                <h4>Platinum</h4>
+                                <p>8000-15000</p>
+                            </div>
+                            <div class="stage-item">
+                                <div class="icons">
+                                    <span><i class="icon-check"></i></span>
                                 </div>
+                                <h4>VIP</h4>
+                                <p>от 15000</p>
                             </div>
                         </div>
                     </div>
-                    <div class="simplecheckout-button-block buttons clearfix">
-                        <div class="checkbox">
-                            <span>
-                            <input id="w" type="checkbox" checked="">
-                            <i></i>
-                        </span>
-                            <label for="w">Принимаю условия оферты и даю свое согласие на обработку моих персональных данных</label>
-                        </div>
-                        <button>Оформить заказ</button>
-                        <a href="javascrupt:void(0)">Оформить заказ</a>
-                    </div>
-                    <div id="simple_login" style="display: none;">
-                        <div id="temp_popup_container">
-                            <div class="simplecheckout-block" id="simplecheckout_login">
-                                <div class="simplecheckout-block-content">
-                                    <div id="simple_login_header"><span class="close"><i style="cursor:pointer;" data-onclick="close" class="icon-close"></i></span></div>
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <input class="form-control" data-onkeydown="detectEnterAndLogin" type="text" name="email" value="" placeholder="Email:">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" data-onkeydown="detectEnterAndLogin" type="password" name="password" value="" placeholder="Пароль:">
-                                            <a href="https://emvycosmetics.com/index.php?route=account/forgotten">Забыли пароль?</a>
-                                        </div>
-                                        <a id="simplecheckout_button_login" data-onclick="login" class="button btn-primary button_oc btn"><span><i class="icon-check"></i>Войти</span></a>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <div class="footer">
@@ -718,11 +628,10 @@
     <script src="../js/jquery.matchHeight.min.js"></script>
     <script src="../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../js/jcf.min.js"></script>
-    <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.number.min.js"></script>
-    <script src="../js/jcf.scrollable.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/stars.min.js"></script>
     <script src="../js/script.min.js"></script>
-    <script src="../js/checkout.min.js"></script>
 </body>
 
 </html>
