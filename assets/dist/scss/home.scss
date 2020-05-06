@@ -306,6 +306,10 @@ header.search-form{
         transition: all 0.5s;
         &:hover{
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            .bg{
+                z-index: 1;
+                opacity: 1;
+            }
             .product-hover{
                 transform: translate(0, 0);
             }
@@ -321,6 +325,16 @@ header.search-form{
             .conbiner-hover{
                 opacity: 1;
             }   
+        }
+        .bg{
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 0;
+            width: 100%;
+            height: 72.5%;
+            position: absolute;
+            transition: all 0.3s;
         }
         a{
             top: 0;
@@ -512,7 +526,7 @@ header.search-form{
             position: absolute;
             background-color: rgba(255, 255, 255, 0.55);
             transform: translate(0, 100%);
-            transition: all 0.5s;
+            transition: all 0.3s;
             ul{
                 z-index: 1;
                 padding: 22px 23px;
@@ -544,7 +558,7 @@ header.search-form{
                 z-index: 1;
                 text-align: center;
                 position: relative;
-                padding: 30px 20px 40px;
+                padding: 25px 20px 25px;
                 border-top: 1px solid #e4e4e4;
                 a{
                     width: auto;
@@ -671,6 +685,10 @@ header.search-form{
         transition: all 0.5s;
         &:hover{
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            .bg{
+                opacity: 1;
+                z-index: 1;
+            }
             .product-hover{
                 transform: translate(0, 0);
             }
@@ -686,6 +704,16 @@ header.search-form{
             .conbiner-hover{
                 opacity: 1;
             }   
+        }
+        .bg{
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 0;
+            width: 100%;
+            height: 72.5%;
+            position: absolute;
+            transition: all 0.3s;
         }
         a{
             top: 0;
@@ -909,7 +937,7 @@ header.search-form{
                 z-index: 1;
                 text-align: center;
                 position: relative;
-                padding: 30px 20px 40px;
+                padding: 25px 20px 25px;
                 border-top: 1px solid #e4e4e4;
                 a{
                     width: auto;
@@ -1601,6 +1629,16 @@ header.search-form{
 
     .product {
         padding: 82px 0 30px;
+        .product-item {
+            .bg{
+                height: 67%;
+            }
+            .product-hover {
+                .add-to-cart {
+                    padding: 35px 20px 35px;
+                }
+            }
+        }
         .product-slider{
             .slick-arrow {
                 right: 0;
@@ -1670,6 +1708,14 @@ header.search-form{
             .product-item {
                 width: 28.33%;
                 margin: 0 2.5% 46px;
+                .bg{
+                    height: 66.5%;
+                }
+                .product-hover {
+                    .add-to-cart {
+                        padding: 35px 20px 35px;
+                    }
+                }
             }
         }
     }
@@ -1928,6 +1974,14 @@ header.search-form{
         }
     }
 
+    .product {
+        .product-item {
+            .bg {
+                height: 65%;
+            }
+        }
+    }
+
     .our-popular {
         .our-popular-img {
             right: 10%;
@@ -1942,6 +1996,9 @@ header.search-form{
             .product-item {
                 width: 21%;
                 margin: 0 2% 46px;
+                .bg {
+                    height: 64.5%;
+                }
             }
         }
     }
@@ -2006,6 +2063,9 @@ header.search-form{
         }
         .product-item {
             padding: 13px 18px 22px;
+            .bg{
+                height: 66%;
+            }
             .conbiner {
                 li {
                     margin: 0 11px;
@@ -2047,6 +2107,9 @@ header.search-form{
             .product-item {
                 width: 22%;
                 margin: 0 1.5% 53px;
+                .bg {
+                    height: 66%;
+                }
             }
         }
         .product-list {
@@ -2205,7 +2268,32 @@ header.search-form{
         }
     }
 
+    .product {
+        .product-item {
+            .bg {
+                height: 70.5%;
+            }
+            .product-hover {
+                .add-to-cart {
+                    padding: 25px 20px 25px;
+                }
+            }
+        }
+    }
+
     .our-popular {
+        .product-items {
+            .product-item {
+                .bg {
+                    height: 72%;
+                }
+                .product-hover {
+                    .add-to-cart {
+                        padding: 25px 20px 25px;
+                    }
+                }
+            }
+        }
         .our-popular-img {
             top: -8%;
             right: 11.9%;
