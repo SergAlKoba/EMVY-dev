@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     $('.product-item p').matchHeight({
-        byRow: true
+        byRow: false
     });
 
     $('.conbiner-hover li').on('click', function(){
