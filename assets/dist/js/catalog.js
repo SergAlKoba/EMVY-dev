@@ -57,12 +57,37 @@ $(document).ready(function(){
         $('.filter-content').removeClass('active');
     });
 
+
+    var product1 = $('.catalog .product-items .product-item').outerHeight();
+    var productHover1 = $('.catalog .product-items .product-item .product-hover').outerHeight();
+    $('.catalog .product-items .product-item .bg').css({
+        height: product1 - productHover1 - 2
+    });
+
+    var product2 = $('.catalog .product .product-item').outerHeight();
+    var productHover2 = $('.catalog .product .product-item .product-hover').outerHeight();
+    $('.catalog .product .product-item .bg').css({
+        height: product2 - productHover2 - 2
+    });
+
 });
 
 $(window).resize(function(){
 
     $('.product-item p').matchHeight({
         byRow: true
+    });
+
+    var product1 = $('.catalog .product-items .product-item').outerHeight();
+    var productHover1 = $('.catalog .product-items .product-item .product-hover').outerHeight();
+    $('.catalog .product-items .product-item .bg').css({
+        height: product1 - productHover1 - 2
+    });
+
+    var product2 = $('.catalog .product .product-item').outerHeight();
+    var productHover2 = $('.catalog .product .product-item .product-hover').outerHeight();
+    $('.catalog .product .product-item .bg').css({
+        height: product2 - productHover2 - 2
     });
 
 });

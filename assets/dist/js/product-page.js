@@ -86,12 +86,24 @@ $(document).ready(function(){
 
     jcf.replaceAll();
 
+    var product1 = $('.popular-goods .product-item').outerHeight();
+    var productHover1 = $('.popular-goods .product-item .product-hover').outerHeight();
+    $('.popular-goods .product-item .bg').css({
+        height: product1 - productHover1 - 2
+    });
+
 });
 
 $(window).resize(function(){
 
     $('.product-item p').matchHeight({
         byRow: true
+    });
+
+    var product1 = $('.popular-goods .product-item').outerHeight();
+    var productHover1 = $('.popular-goods .product-item .product-hover').outerHeight();
+    $('.popular-goods .product-item .bg').css({
+        height: product1 - productHover1 - 2
     });
 
 });

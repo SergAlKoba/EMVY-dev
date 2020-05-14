@@ -127,12 +127,36 @@ $(document).ready(function(){
         $('header').removeClass('active');
     }
 
+    var product1 = $('.product .product-item').outerHeight();
+    var productHover1 = $('.product .product-item .product-hover').outerHeight();
+    $('.product .product-item .bg').css({
+        height: product1 - productHover1 - 2
+    });
+
+    var product2 = $('.our-popular .product-items .product-item').outerHeight();
+    var productHover2 = $('.our-popular .product-items .product-item .product-hover').outerHeight();
+    $('.our-popular .product-items .product-item .bg').css({
+        height: product2 - productHover2 - 2
+    });
+
 });
 
 $(window).resize(function(){
 
     $('.product-item p').matchHeight({
         byRow: true
+    });
+
+    var product1 = $('.product .product-item').outerHeight();
+    var productHover1 = $('.product .product-item .product-hover').outerHeight();
+    $('.product .product-item .bg').css({
+        height: product1 - productHover1  - 2
+    });
+
+    var product2 = $('.our-popular .product-items .product-item').outerHeight();
+    var productHover2 = $('.our-popular .product-items .product-item .product-hover').outerHeight();
+    $('.our-popular .product-items .product-item .bg').css({
+        height: product2 - productHover2 - 2
     });
 
 });
