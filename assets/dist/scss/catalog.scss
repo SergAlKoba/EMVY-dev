@@ -30,7 +30,7 @@ header{
     .title{
         margin-bottom: 42px;
         position: relative;
-        h2{
+        h1{
             color: #000000;
             font-size: 28px;
             font-weight: 700;
@@ -141,7 +141,7 @@ header{
                 margin-bottom: 34px;
                 align-items: flex-end;
                 justify-content: space-between;
-                h3{
+                .box-heading{
                     color: #000000;
                     font-size: 26px;
                     font-weight: 700;
@@ -730,7 +730,7 @@ header{
         padding: 51px 0 61px;
         .title{
             margin-bottom: 65px;
-            h2{
+            h1{
                 color: #000000;
                 font-size: 28px;
                 font-weight: 700;
@@ -1230,7 +1230,7 @@ header{
             margin-bottom: 43px;
             align-items: flex-end;
             justify-content: space-between;
-            h2 {
+            h1 {
                 width: 60%;
                 font-size: 38px;
                 line-height: 42px;
@@ -1327,7 +1327,7 @@ header{
                     position: absolute;
                 }
                 .filter-title {
-                    h3 {
+                    .box-heading {
                         font-size: 28px;
                         line-height: 32px;
                     }
@@ -1374,7 +1374,7 @@ header{
             padding: 82px 0 58px;
             .title {
                 margin-bottom: 90px;
-                h2 {
+                h1 {
                     width: 100%;
                     font-size: 32px;
                     line-height: 42px;
@@ -1625,7 +1625,7 @@ header{
         padding: 50px 70px 162px 405px;
         .title {
             margin-bottom: 71px;
-            h2 {
+            h1 {
                 font-size: 42px;
                 line-height: 48px;
                 letter-spacing: -0.76px;
@@ -1637,7 +1637,7 @@ header{
                 padding: 105px 44px 40px 70px;
                 .filter-title {
                     margin-bottom: 45px;
-                    h3 {
+                    .box-heading {
                         font-size: 32px;
                         line-height: 38px;
                     }
@@ -1714,7 +1714,7 @@ header{
             padding: 76px 0 50px;
             .title {
                 margin-bottom: 70px;
-                h2 {
+                h1 {
                     font-size: 36px;
                     line-height: 48px;
                     letter-spacing: -0.76px;

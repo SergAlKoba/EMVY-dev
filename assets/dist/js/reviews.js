@@ -7,11 +7,13 @@ $(document).ready(function(){
         lessLink: '<a href="#">Свернуть</a>'
     });
 
+    $('.video-item').height($('.video-item').width()/1.5);
+
 });
 
 $(window).resize(function(){
 
-
+    $('.video-item').height($('.video-item').width()/1.5);
 
 });
 

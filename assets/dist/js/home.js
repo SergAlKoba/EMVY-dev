@@ -4,8 +4,10 @@ $(document).ready(function(){
         dots: true,
         fade: true,
         arrows: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplaySpeed: 5000,
         customPaging: function(slider, i) { 
             return '<button class="tab"><span></span><i class="fa fa-sort-asc"></i></button>';
         },
@@ -139,9 +141,13 @@ $(document).ready(function(){
         height: product2 - productHover2 - 2
     });
 
+    $('.video-item').height($('.video-item').width()/1.5);
+
 });
 
 $(window).resize(function(){
+
+    $('.video-item').height($('.video-item').width()/1.5);
 
     $('.product-item p').matchHeight({
         byRow: true

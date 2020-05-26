@@ -94,7 +94,7 @@ header{
                 width: 100%;
                 position: absolute;
                 padding: 61px 145px 49px 24px;
-                h4{
+                .h4{
                     color: #000000;
                     font-size: 22px;
                     font-weight: 700;
@@ -454,7 +454,7 @@ footer{
                 .text {
                     width: 60%;
                     padding: 80px 35px 30px 35px;
-                    h4{
+                    .h4{
                         font-size: 36px;
                         line-height: 42px;
                         margin-bottom: 30px;
@@ -675,7 +675,7 @@ footer{
                 .text {
                     width: 60%;
                     padding: 80px 35px 30px;
-                    h4{
+                    .h4{
                         margin-bottom: 26px;
                     }
                 }
@@ -796,7 +796,7 @@ footer{
                 &:last-child{
                     .text{
                         width: 52%;
-                        h4{
+                        .h4{
                             font-size: 42px;
                             line-height: 47px;
                         }
