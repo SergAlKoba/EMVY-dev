@@ -501,7 +501,7 @@ header{
                     }
                     .jcf-select-text{
                         margin-bottom: 17px;
-                        padding: 22px 60px 22px 32px;
+                        padding: 15px 60px 15px 32px;
                         border: 1px solid #e6ded4;
                         background-color: #ffffff;
                         span{
@@ -527,7 +527,7 @@ header{
                     }
                     .jcf-select-drop{
                         left: 0;
-                        top: 63px;
+                        top: 50px;
                         z-index: 6;
                         width: 100%;
                         padding: 15px;
@@ -898,6 +898,69 @@ header{
     }
 }
 
+.row-shipping_address{
+    input{
+        margin: 10px 0 18px;
+    }
+}
+
+.pvz-description-block{
+    font-size: 15px;
+    color: #373737;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 34px;
+    margin: 0 !important;
+    letter-spacing: 0.3px;
+    font-family: 'HelveticaNeueMedium';
+    &::after{
+        content: '\e839';
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        color: #373737;
+        position: absolute;
+    }
+}
+
+.yandex_delivery_icon{
+    margin-top: 15px;
+    img{
+        width: 130px;
+    }
+}
+
+.select-yandex{
+    width: 88%;
+    .jcf-select{
+        width: 100%;
+    }
+}
+
+.dropdown-menu{
+    margin-bottom: 20px;
+    li{
+        margin-bottom: 2px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        a{
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            color:  #616161;
+            line-height: 24px;
+            font-family: 'HelveticaNeueRoman';
+            &:hover{
+                color: #000000;
+            }
+        }       
+    }
+}
+
 footer{
     &::after{
         content: '';
@@ -940,7 +1003,7 @@ footer{
         .form-group{
             input{
                 width: 100%;
-                height: 63px;
+                height: 50px;
                 color: #000000;
                 font-size: 15px;
                 padding: 0 31px;
@@ -1099,8 +1162,6 @@ footer{
                         .delivery-item {
                             .radio {
                                 label{
-                                    padding-left: 65px;
-                                    padding-right: 80px;
                                     img{
                                         left: 0;
                                         top: 2px;
@@ -1118,6 +1179,15 @@ footer{
                     }
                 }
             }
+        }
+    }
+
+    .select-yandex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .jcf-select{
+            width: 46.5%;
         }
     }
 
