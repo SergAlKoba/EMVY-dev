@@ -300,6 +300,7 @@
                 <div class="checkout-content">
                     <div class="simplecheckout-content">
                         <div class="simplecheckout-left-column">
+                            <div class="alert alert-success">Ваш аккаунт создан! Вы можете перейти к оплате заказа!</div>
                             <div class="entrance">
                                 <div class="checkbox">
                                     <span>
@@ -312,24 +313,31 @@
                             </div>
                             <div class="form-horizontal fio">
                                 <div class="form-group row-customer_firstname">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <input class="form-control" type="text" name="customer[firstname]" id="customer_firstname" value="" placeholder="Имя" data-reload-payment-form="true">
                                     <span class="error-notifications"><i class="icon-explamation"></i>Заполните обязательные поля</span>
                                     <span class="successfully-notifications"><i class="icon-check"></i>Сообщение успешно отправлено!</span>
                                     <span class="info-notifications"><i class="icon-info"></i>Доставка производится в жилые и офисные помещения.</span>
+                                    <span class="info-notifications-min"><i class="icon-info"></i>Введите адресс доставки</span>
+                                    <span class="error-notifications-min"><i class="icon-explamation"></i>Купон недействителен, либо истек срок его действия.</span>
                                 </div>
                                 <div class="form-group row-customer_lastname">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <input class="form-control" type="text" name="customer[lastname]" id="customer_lastname" value="" placeholder="Фамилия" data-reload-payment-form="true">
                                 </div>
                                 <div class="form-group required row-customer_email">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <input class="form-control" type="email" name="customer[email]" id="customer_email" value="" placeholder="Номер телефона" data-reload-payment-form="true">
                                 </div>
                                 <div class="form-group required row-customer_telephone">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <input class="form-control" type="tel" name="customer[telephone]" id="customer_telephone" value="" placeholder="Email" data-reload-payment-form="true">
                                 </div>
                             </div>
                             <h3>Доставка</h3>
                             <div class="form-horizontal">
                                 <div class="form-group  row-shipping_address_zone_id">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                                         <option value=""> --- Выберите --- </option>
                                         <option value="2726">Алтайский край</option>
@@ -420,6 +428,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group required row-shipping_address_city">
+                                    <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                     <input class="form-control" type="text" name="shipping_address[city]" id="shipping_address_city" value="" placeholder="" data-onchange="reloadAll">
                                     <ul class="dropdown-menu" style="top: 1071.12px; left: 40px;">
                                         <li data-value="174688"><a href="#">г Москва</a></li>
@@ -450,7 +459,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="delivery">
+                            <div class="simplecheckout-block-content delivery">
                                 <h5>Выберите службу доставки</h5>
                                 <div class="delivery-item">
                                     <div class="radio">

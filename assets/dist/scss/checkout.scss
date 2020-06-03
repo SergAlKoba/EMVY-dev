@@ -461,12 +461,12 @@ header{
                     }
                 }
                 .ban{
-                    label{
-                        color: #a5a5a5;
-                        i{
-                            color: #a5a5a5;
-                        }
-                    }
+                    // label{
+                    //     color: #a5a5a5;
+                    //     i{
+                    //         color: #a5a5a5;
+                    //     }
+                    // }
                 }
                 input{
                     width: 100%;
@@ -761,12 +761,12 @@ header{
                                 }
                             }
                             .ban{
-                                label{
-                                    color: #a5a5a5;
-                                    i{
-                                        color: #a5a5a5;
-                                    }
-                                }
+                                // label{
+                                //     color: #a5a5a5;
+                                //     i{
+                                //         color: #a5a5a5;
+                                //     }
+                                // }
                             }
                         }
                     }
@@ -898,6 +898,15 @@ header{
     }
 }
 
+.simplecheckout-tooltip{
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 5px;
+    font-family: 'HelveticaNeueRoman';
+}
+
 .row-shipping_address{
     width: 100%;
     input{
@@ -948,28 +957,69 @@ header{
 
 .dropdown-menu{
     z-index: 3;
-    top: 65px !important;
-    margin-bottom: 20px;
+    display: none;
+    width: 100%;
     position: absolute;
     left: 0 !important;
     background: #fff;
+    margin-bottom: 20px;
+    top: 50px !important;
     padding: 10px 30px 15px;
+    border: 1px solid #e6ded4;
     li{
-        margin-bottom: 2px;
+        position: relative;
+        margin-bottom: 5px;
+        padding: 8px 20px 8px;
+        border-bottom: 1px solid #f1c8e0;
+        &::after {
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #b8ad9e;
+            transform: translate(0, -50%);
+        }
         &:last-child{
             margin-bottom: 0;
         }
         a{
+            color: #616161;
+            font-size: 15px;
             cursor: pointer;
-            font-size: 14px;
             font-weight: 400;
-            color:  #616161;
-            line-height: 24px;
+            line-height: 18px;
             font-family: 'HelveticaNeueRoman';
+            transition: all 0.5s;
             &:hover{
                 color: #000000;
             }
         }       
+    }
+}
+
+.simplecheckout-block-content{
+    .delivery-item{
+        p{
+            margin-top: 10px;
+            color: #373737;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                content: '\e839';
+                top: 50%;
+                left: 0;
+                font-size: 20px;
+                color: #000000;
+                position: absolute;
+                font-family: "fontello";
+                transform: translate(0, -50%);
+            }
+        }
     }
 }
 

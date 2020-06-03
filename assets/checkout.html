@@ -25,6 +25,7 @@
             <div class="checkout-content">
                 <div class="simplecheckout-content">
                     <div class="simplecheckout-left-column">
+                        <div class="alert alert-success">Ваш аккаунт создан! Вы можете перейти к оплате заказа!</div>
                         <div class="entrance">
                             <div class="checkbox">
                                 <span>
@@ -37,24 +38,31 @@
                         </div>
                         <div class="form-horizontal fio">
                             <div class="form-group row-customer_firstname">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <input class="form-control" type="text" name="customer[firstname]" id="customer_firstname" value="" placeholder="Имя" data-reload-payment-form="true">
                                 <span class="error-notifications"><i class="icon-explamation"></i>Заполните обязательные поля</span>
                                 <span class="successfully-notifications"><i class="icon-check"></i>Сообщение успешно отправлено!</span>
                                 <span class="info-notifications"><i class="icon-info"></i>Доставка производится в жилые и офисные помещения.</span>
+                                <span class="info-notifications-min"><i class="icon-info"></i>Введите адресс доставки</span>
+                                <span class="error-notifications-min"><i class="icon-explamation"></i>Купон недействителен, либо истек срок его действия.</span>
                             </div>
                             <div class="form-group row-customer_lastname">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <input class="form-control" type="text" name="customer[lastname]" id="customer_lastname" value="" placeholder="Фамилия" data-reload-payment-form="true">
                             </div>
                             <div class="form-group required row-customer_email">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <input class="form-control" type="email" name="customer[email]" id="customer_email" value="" placeholder="Номер телефона" data-reload-payment-form="true">
                             </div>
                             <div class="form-group required row-customer_telephone">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <input class="form-control" type="tel" name="customer[telephone]" id="customer_telephone" value="" placeholder="Email" data-reload-payment-form="true">
                             </div>
                         </div>
                         <h3>Доставка</h3>
                         <div class="form-horizontal">
                             <div class="form-group  row-shipping_address_zone_id">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                                     <option value=""> --- Выберите --- </option>
                                     <option value="2726">Алтайский край</option>
@@ -145,11 +153,12 @@
                                 </select>
                             </div>
                             <div class="form-group required row-shipping_address_city">
+                                <div class="simplecheckout-tooltip" data-for="shipping_address_zone_id">Регион</div>
                                 <input class="form-control" type="text" name="shipping_address[city]" id="shipping_address_city" value="" placeholder="" data-onchange="reloadAll">
                                 <ul class="dropdown-menu" style="top: 1071.12px; left: 40px;"><li data-value="174688"><a href="#">г Москва</a></li><li data-value="174736"><a href="#">г Московский, г Москва</a></li><li data-value="23760"><a href="#">с/п Москакасинское, Моргаушский р-н, Чувашская респ</a></li><li data-value="5809"><a href="#">с/с Московский, Дюртюлинский р-н, Респ Башкортостан</a></li><li data-value="22143"><a href="#">с/с Московский, Усть-Абаканский р-н, Респ Хакасия</a></li><li data-value="15897"><a href="#">с Моска, Ирафский р-н, Респ Северная Осетия - Алания</a></li><li data-value="23652"><a href="#">д Москакасы, Моргаушский р-н, Чувашская респ</a></li><li data-value="109128"><a href="#">рп Москаленки, Москаленский р-н, Омская обл</a></li><li data-value="145050"><a href="#">д Москаленки, Руднянский р-н, Смоленская обл</a></li><li data-value="109106"><a href="#">п Москаленский, Марьяновский р-н, Омская обл</a></li><li data-value="42473"><a href="#">п Москали, Почепский р-н, Брянская обл</a></li><li data-value="158771"><a href="#">д Москали, Томский р-н, Томская обл</a></li><li data-value="138997"><a href="#">с Москальво, Охинский р-н, Сахалинская обл</a></li><li data-value="28101"><a href="#">х Москальчук, Тихорецкий р-н, Краснодарский край</a></li><li data-value="127578"><a href="#">д Москачево, Пушкиногорский р-н, Псковская обл</a></li><li data-value="70678"><a href="#">д Москва, Верхошижемский р-н, Кировская обл</a></li><li data-value="127060"><a href="#">д Москва, Порховский р-н, Псковская обл</a></li><li data-value="154843"><a href="#">д Москва, Пеновский р-н, Тверская обл</a></li><li data-value="148142"><a href="#">автодорога Москва-Санкт-Петербург, Калининский р-н, Тверская обл</a></li><li data-value="132204"><a href="#">автодорога Москва-Челябинск 203 км, Рязанский р-н, Рязанская обл</a></li><li data-value="49349"><a href="#">д Москвин Починок, Великоустюгский р-н, Вологодская обл</a></li><li data-value="117393"><a href="#">д Москвина, Ильинский р-н, Пермский край</a></li><li data-value="120355"><a href="#">д Москвина, Кудымкарский р-н, Пермский край</a></li><li data-value="165970"><a href="#">д Москвина, Каслинский р-н, Челябинская обл</a></li><li data-value="82513"><a href="#">д Москвинка, Черемисиновский р-н, Курская обл</a></li></ul>
                             </div>
                         </div>
-                        <div class="delivery">
+                        <div class="simplecheckout-block-content delivery">
                             <h5>Выберите службу доставки</h5>
                             <div class="delivery-item">
                                 <div class="radio">
