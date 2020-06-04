@@ -957,13 +957,15 @@ header{
 
 .dropdown-menu{
     z-index: 3;
-    display: none;
     width: 100%;
+    display: none;
+    overflow-x: scroll;
+    max-height: 400px;
     position: absolute;
     left: 0 !important;
     background: #fff;
     margin-bottom: 20px;
-    top: 50px !important;
+    top: 73px !important;
     padding: 10px 30px 15px;
     border: 1px solid #e6ded4;
     li{
