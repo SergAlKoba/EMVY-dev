@@ -51,10 +51,16 @@ $(document).ready(function(){
 
     $('.filter-link').on('click', function(){
         $('.filter-content').addClass('active');
+        $('body').css({
+            'overflow': 'hidden',
+        });
     });
 
     $('.close-filter').on('click', function(){
         $('.filter-content').removeClass('active');
+        $('body').css({
+            'overflow': 'initial',
+        });
     });
 
 
