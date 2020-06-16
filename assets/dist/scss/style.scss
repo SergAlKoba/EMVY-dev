@@ -27,9 +27,14 @@
   box-sizing: border-box;
 }
 
+html{
+  -webkit-font-smoothing: antialiased !important
+}
+
 body{
   min-height: 100vh;
   position: relative;
+  -webkit-font-smoothing: antialiased !important
 }
 
 .wrapper{
