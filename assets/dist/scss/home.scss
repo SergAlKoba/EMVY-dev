@@ -203,7 +203,7 @@ header.search-form{
                     line-height: 26px;
                     span{
                         font-weight: 400;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                         i{
                             font-weight: 700;
                             font-style: normal;
@@ -222,7 +222,7 @@ header.search-form{
                 position: relative;
                 background-color: #f6f6f8;
                 padding: 22px 50px 20px 26px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 &::after{
                     content: '';
                     top: 50%;
@@ -363,7 +363,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #000000;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .product-stock{
             left: 0;
@@ -376,7 +376,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #f8f1e8;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .finished{
             left: 0;
@@ -389,7 +389,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #b8ad9e;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .conbiner{
             top: 22px;
@@ -473,7 +473,7 @@ header.search-form{
             line-height: 22px;
             margin-bottom: 31px;
             letter-spacing: 0.6px;
-            font-family: 'HelveticaNeueLight';
+            font-family: 'HelveticaNeueLight', system-ui;
             transition: all 0.5s;
         }
         .size{
@@ -486,7 +486,7 @@ header.search-form{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 span{
                     padding: 0 5px;
                     color: #616161;
@@ -496,7 +496,7 @@ header.search-form{
                     margin-right: 5px;
                     position: relative;
                     display: inline-block;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &::after{
                         content: '';
                         top: 8px;
@@ -513,7 +513,7 @@ header.search-form{
                     font-weight: 500;
                     line-height: 22px;
                     display: inline-block;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         color: #000000;
                         font-size: 18px;
@@ -547,7 +547,7 @@ header.search-form{
                     position: relative;
                     padding-left: 30px;
                     margin-bottom: 22px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -577,7 +577,7 @@ header.search-form{
                     position: relative;
                     display: inline-block;
                     padding: 15px 0 15px 50px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     i{
                         top: 45%;
                         left: 4px;
@@ -604,7 +604,7 @@ header.search-form{
                     font-weight: 500;
                     line-height: 22px;
                     text-align: center;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         font-weight: 700;
                         font-style: normal;
@@ -631,7 +631,7 @@ header.search-form{
             font-weight: 400;
             line-height: 20px;
             padding-bottom: 22px;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
             &:hover{
                 span{
                     width: 87px;
@@ -742,7 +742,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #000000;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .product-stock{
             left: 0;
@@ -755,7 +755,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #f8f1e8;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .finished{
             left: 0;
@@ -768,7 +768,7 @@ header.search-form{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #b8ad9e;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .conbiner{
             top: 22px;
@@ -852,7 +852,7 @@ header.search-form{
             line-height: 22px;
             margin-bottom: 31px;
             letter-spacing: 0.6px;
-            font-family: 'HelveticaNeueLight';
+            font-family: 'HelveticaNeueLight', system-ui;
             transition: all 0.5s;
         }
         .size{
@@ -865,7 +865,7 @@ header.search-form{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 span{
                     padding: 0 5px;
                     color: #616161;
@@ -875,7 +875,7 @@ header.search-form{
                     margin-right: 5px;
                     position: relative;
                     display: inline-block;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &::after{
                         content: '';
                         top: 8px;
@@ -892,7 +892,7 @@ header.search-form{
                     font-weight: 500;
                     line-height: 22px;
                     display: inline-block;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         color: #000000;
                         font-size: 18px;
@@ -926,7 +926,7 @@ header.search-form{
                     position: relative;
                     padding-left: 30px;
                     margin-bottom: 22px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -956,7 +956,7 @@ header.search-form{
                     position: relative;
                     display: inline-block;
                     padding: 15px 0 15px 50px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     i{
                         top: 45%;
                         left: 4px;
@@ -983,7 +983,7 @@ header.search-form{
                     font-weight: 500;
                     line-height: 22px;
                     text-align: center;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         font-weight: 700;
                         font-style: normal;
@@ -1007,7 +1007,7 @@ header.search-form{
         font-weight: 400;
         line-height: 20px;
         padding-bottom: 22px;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
         &:hover{
             span{
                 width: 87px;
@@ -1081,7 +1081,7 @@ header.search-form{
                 margin-bottom: 23px;
                 display: inline-block;
                 letter-spacing: -0.8px;
-                font-family: 'HelveticaNeueMedium';
+                font-family: 'HelveticaNeueMedium', system-ui;
                 i{
                     top: 50%;
                     left: 1px;
@@ -1115,7 +1115,7 @@ header.search-form{
                 position: relative;
                 padding-right: 20px;
                 margin: -4px 0 16px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 transition: all 0.5s;
                 &::after{
                     content: '';
@@ -1151,7 +1151,7 @@ header.search-form{
         align-items: center;
         justify-content: center;
         border: 1px solid #000000;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
         transition: all 0.5s;
         &:hover{
             color: #ffffff;
@@ -1289,7 +1289,7 @@ header.search-form{
         align-items: center;
         justify-content: center;
         border: 1px solid #000000;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
         transition: all 0.5s;
         &:hover{
             color: #ffffff;
@@ -1481,7 +1481,7 @@ header.search-form{
                 align-items: center;
                 justify-content: center;
                 border: 1px solid #000000;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 transition: all 0.5s;
                 &:hover{
                     color: #ffffff;
@@ -1846,7 +1846,7 @@ header.search-form{
                         border-radius: 33px;
                         align-items: center;
                         justify-content: center;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                         border: 1px solid rgba(0, 0, 0, 0.5);
                         transition: all 0.5s;
                         &:hover{
@@ -1884,7 +1884,7 @@ header.search-form{
                         line-height: 22px;
                         position: relative;
                         background: transparent;
-                        font-family: 'HelveticaNeueMedium';
+                        font-family: 'HelveticaNeueMedium', system-ui;
                         transition: all 0.5s;
                         &::after{
                             content: '';

@@ -87,7 +87,7 @@ header{
                 margin-bottom: 23px;
                 display: inline-block;
                 letter-spacing: -0.8px;
-                font-family: 'HelveticaNeueMedium';
+                font-family: 'HelveticaNeueMedium', system-ui;
                 i{
                     top: 50%;
                     left: 1px;
@@ -121,7 +121,7 @@ header{
                 position: relative;
                 padding-right: 20px;
                 margin: -4px 0 16px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 transition: all 0.5s;
                 &::after{
                     content: '';
@@ -245,7 +245,7 @@ header{
                 color: #000000;
                 line-height: 22px;
                 font-weight: normal;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
             }
         }
     }

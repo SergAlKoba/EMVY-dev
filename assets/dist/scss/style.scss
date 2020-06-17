@@ -11,9 +11,9 @@
   list-style: none;
   outline: none;
   text-decoration: none;
-  font-family: 'HelveticaNeueLight';
-  // font-family: 'HelveticaNeueRoman';
-  // font-family: 'HelveticaNeueMedium';
+  font-family: 'HelveticaNeueLight', system-ui;
+  // font-family: 'HelveticaNeueRoman', system-ui;
+  // font-family: 'HelveticaNeueMedium', system-ui;
   // font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -114,7 +114,7 @@ ul li,ol li{
         font-weight: 400;
         line-height: 20px;
         position: absolute;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
         transform: translate(0, -50%);
       }
       a{
@@ -122,14 +122,14 @@ ul li,ol li{
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
       }
       span{
         color: #b9baba;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
       }
     }
   }
@@ -167,7 +167,7 @@ ul li,ol li{
           align-items: center;
           justify-content: center;
           border: 1px solid #e5e5e5;
-          font-family: 'HelveticaNeueRoman';
+          font-family: 'HelveticaNeueRoman', system-ui;
           transition: all 0.5s;
           &:hover{
               color: #ffffff;
@@ -185,7 +185,7 @@ ul li,ol li{
           margin-top: 20px;
           line-height: 16px;
           display: inline-block;
-          font-family: 'HelveticaNeueRoman';
+          font-family: 'HelveticaNeueRoman', system-ui;
       }
   }
   li.active{
@@ -203,7 +203,7 @@ ul li,ol li{
           justify-content: center;
           border: 1px solid #e5e5e5;
           background-color: #000000;
-          font-family: 'HelveticaNeueRoman';
+          font-family: 'HelveticaNeueRoman', system-ui;
       }
   }
 }
@@ -413,7 +413,7 @@ i{
         font-size: 18px;
         font-weight: 500;
         line-height: 20px;
-        font-family: 'HelveticaNeueMedium';
+        font-family: 'HelveticaNeueMedium', system-ui;
         label{
           color: #000000;
           font-size: 16px;
@@ -514,14 +514,14 @@ i{
         line-height: 14px;
         margin-bottom: 10px;
         text-transform: uppercase;
-        font-family: 'HelveticaNeueMedium';
+        font-family: 'HelveticaNeueMedium', system-ui;
       }
       p{
         color: #616161;
         font-size: 14px;
         font-weight: 500;
         line-height: 14px;
-        font-family: 'HelveticaNeueRoman';
+        font-family: 'HelveticaNeueRoman', system-ui;
       }
     }
     .yes{
@@ -602,7 +602,7 @@ i{
             font-weight: 400;
             line-height: 20px;
             padding-left: 18px;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         i{
             top: 50%;

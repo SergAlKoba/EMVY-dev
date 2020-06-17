@@ -125,7 +125,7 @@ header{
                 position: absolute;
                 padding: 11px 16px 8px;
                 background-color: #000000;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
             }
             .product-stock{
                 left: 0;
@@ -138,7 +138,7 @@ header{
                 position: absolute;
                 padding: 11px 16px 8px;
                 background-color: #f8f1e8;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
             }
             .finished{
                 left: 0;
@@ -151,7 +151,7 @@ header{
                 position: absolute;
                 padding: 11px 16px 8px;
                 background-color: #b8ad9e;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
             }
             img{
                 width: 100%;
@@ -181,7 +181,7 @@ header{
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 20px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                 }
                 .review{
                     color: #000000;
@@ -190,7 +190,7 @@ header{
                     line-height: 20px;
                     position: relative;
                     display: inline-block;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &:hover{
                         &::after{
                             width: 0;
@@ -302,7 +302,7 @@ header{
                             line-height: 20px;
                             text-align: center;
                             background: transparent;
-                            font-family: 'HelveticaNeueMedium';
+                            font-family: 'HelveticaNeueMedium', system-ui;
                         }     
                         .jcf-btn-dec{
                             top: 50%;
@@ -329,7 +329,7 @@ header{
                                 color: #000000;
                                 font-weight: 500;
                                 position: absolute;
-                                font-family: 'HelveticaNeueMedium';
+                                font-family: 'HelveticaNeueMedium', system-ui;
                                 transform: translate(-50%, -50%);
                                 transition: all 0.5s;
                             }
@@ -359,7 +359,7 @@ header{
                                 color: #000000;
                                 font-weight: 500;
                                 position: absolute;
-                                font-family: 'HelveticaNeueMedium';
+                                font-family: 'HelveticaNeueMedium', system-ui;
                                 transform: translate(-50%, -50%);
                                 transition: all 0.5s;
                             }
@@ -393,7 +393,7 @@ header{
                     justify-content: center;
                     border: 1px solid #000000;
                     background-color: #000000;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     transition: all 0.5s;
                     &:hover{
                         color: #000000;
@@ -422,7 +422,7 @@ header{
                     align-items: center;
                     justify-content: center;
                     border: 1px solid #fdeef7;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     transition: all 0.5s;
                     &:hover{
                         background-color: #f8f1e8;
@@ -431,7 +431,7 @@ header{
                         margin-left: 3px;
                         font-style: normal;
                         display: inline-block;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                         transition: all 0.5s;
                     }
                 }
@@ -525,7 +525,7 @@ header{
                         align-items: center;
                         justify-content: center;
                         border: 1px solid #000000;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                         transition: all 0.5s;
                         &:hover{
                             color: #ffffff;
@@ -581,7 +581,7 @@ header{
                                     font-weight: 500;
                                     line-height: 17px;
                                     margin-bottom: 4px;
-                                    font-family: 'HelveticaNeueMedium';
+                                    font-family: 'HelveticaNeueMedium', system-ui;
                                 }
                                 .assessment {
                                     padding: 0;
@@ -703,7 +703,7 @@ header{
                         margin-bottom: 15px;
                         border: 1px solid #e6ded4;
                         background-color: #ffffff;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                     }
                     .write-textarea{
                         margin-bottom: 24px;
@@ -727,7 +727,7 @@ header{
                         margin-bottom: 15px;
                         border: 1px solid #e6ded4;
                         background-color: #ffffff;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                     }
                     .write-textarea{
                         margin-bottom: 24px;
@@ -749,7 +749,7 @@ header{
                             font-weight: 400;
                             line-height: 18px;
                             margin-right: 20px;
-                            font-family: 'HelveticaNeueRoman';
+                            font-family: 'HelveticaNeueRoman', system-ui;
                         }
                         .stars{
                             .star{
@@ -799,7 +799,7 @@ header{
                         justify-content: center;
                         background: transparent;
                         border: 1px solid #000000;
-                        font-family: 'HelveticaNeueRoman';
+                        font-family: 'HelveticaNeueRoman', system-ui;
                         transition: all 0.5s;
                         &:hover{
                             color: #ffffff;
@@ -815,7 +815,7 @@ header{
                             line-height: 20px;
                             padding-bottom: 30px;
                             letter-spacing: -0.36px;
-                            font-family: 'HelveticaNeueRoman';
+                            font-family: 'HelveticaNeueRoman', system-ui;
                             text-shadow: 1px 2px 60px rgba(255, 255, 255, 0.4);
                         }
                         ul{
@@ -847,7 +847,7 @@ header{
                                     justify-content: center;
                                     background: transparent;
                                     border: 1px solid #000000;
-                                    font-family: 'HelveticaNeueRoman';
+                                    font-family: 'HelveticaNeueRoman', system-ui;
                                     transition: all 0.5s;
                                     &:hover{
                                         color: #ffffff;
@@ -904,7 +904,7 @@ header{
                             font-size: 15px;
                             font-weight: 400;
                             line-height: 20px;
-                            font-family: 'HelveticaNeueRoman';
+                            font-family: 'HelveticaNeueRoman', system-ui;
                         }
                     }
                 }
@@ -1038,7 +1038,7 @@ header{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #000000;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .product-stock{
             left: 0;
@@ -1051,7 +1051,7 @@ header{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #f8f1e8;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .finished{
             left: 0;
@@ -1064,7 +1064,7 @@ header{
             position: absolute;
             padding: 11px 16px 8px;
             background-color: #b8ad9e;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
         }
         .conbiner{
             top: 22px;
@@ -1148,7 +1148,7 @@ header{
             line-height: 22px;
             margin-bottom: 31px;
             letter-spacing: 0.6px;
-            font-family: 'HelveticaNeueLight';
+            font-family: 'HelveticaNeueLight', system-ui;
             transition: all 0.5s;
         }
         .size{
@@ -1161,7 +1161,7 @@ header{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
-                font-family: 'HelveticaNeueRoman';
+                font-family: 'HelveticaNeueRoman', system-ui;
                 span{
                     padding: 0 5px;
                     color: #616161;
@@ -1171,7 +1171,7 @@ header{
                     margin-right: 5px;
                     position: relative;
                     display: inline-block;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &::after{
                         content: '';
                         top: 8px;
@@ -1188,7 +1188,7 @@ header{
                     font-weight: 500;
                     line-height: 22px;
                     display: inline-block;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         color: #000000;
                         font-size: 18px;
@@ -1222,7 +1222,7 @@ header{
                     position: relative;
                     padding-left: 30px;
                     margin-bottom: 22px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -1252,7 +1252,7 @@ header{
                     position: relative;
                     display: inline-block;
                     padding: 15px 0 15px 50px;
-                    font-family: 'HelveticaNeueRoman';
+                    font-family: 'HelveticaNeueRoman', system-ui;
                     i{
                         top: 45%;
                         left: 4px;
@@ -1279,7 +1279,7 @@ header{
                     font-weight: 500;
                     line-height: 22px;
                     text-align: center;
-                    font-family: 'HelveticaNeueMedium';
+                    font-family: 'HelveticaNeueMedium', system-ui;
                     i{
                         font-weight: 700;
                         font-style: normal;

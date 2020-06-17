@@ -61,7 +61,7 @@ header{
             margin: 20px auto 20px;
             justify-content: center;
             border: 1px solid #000000;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
             transition: all 0.5s;
             &:hover {
                 color: #ffffff;
@@ -144,7 +144,7 @@ header{
             margin: 20px auto 20px;
             justify-content: center;
             border: 1px solid #000000;
-            font-family: 'HelveticaNeueRoman';
+            font-family: 'HelveticaNeueRoman', system-ui;
             transition: all 0.5s;
             &:hover {
                 color: #ffffff;
