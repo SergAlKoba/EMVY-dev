@@ -1551,7 +1551,7 @@ header{
             .filter-content {
                 display: block;
                 position: static;
-                overflow: hidden;
+                overflow: initial;
                 padding: 102px 30px 40px;
                 .close-filter{
                     display: none;
