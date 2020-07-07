@@ -186,7 +186,7 @@ header.search-form{
                 width: 100%;
                 position: absolute;
                 padding: 40px 150px 30px 23px;
-                .h4{
+                h4{
                     color: #000000;
                     font-size: 22px;
                     font-weight: 700;
@@ -1367,14 +1367,12 @@ header.search-form{
         .stock-content {
             .item {
                 &:last-child{
-                    a{
-                        width: 174px;
-                    }
+                    
                 }
                 .text {
                     width: 60%;
                     padding: 80px 35px 30px 35px;
-                    .h4{
+                    h4{
                         font-size: 36px;
                         line-height: 42px;
                         margin-bottom: 30px;
@@ -1387,10 +1385,7 @@ header.search-form{
                 a{
                     left: 32px;
                     bottom: 46px;
-                    width: 194px;
-                    height: 64px;
-                    padding: 10px;
-                    display: flex;
+                    width: auto;
                     font-size: 15px;
                     color: #000000;
                     font-weight: 400;
@@ -1399,6 +1394,8 @@ header.search-form{
                     letter-spacing: 1px;
                     border-radius: 36px;
                     align-items: center;
+                    padding: 23px 53px;
+                    display: inline-block;
                     justify-content: center;
                     background-color: #ffffff;
                     transition: all 0.5s;
