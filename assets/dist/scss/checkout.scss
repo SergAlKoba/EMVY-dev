@@ -846,7 +846,8 @@ header{
                 transition: all 0.5s;
                 &:hover{
                     color: #ffffff;
-                    background-color: #000000;
+                    border: 1px solid #B8AD9E;
+                    background-color: #B8AD9E;
                 }
             }
             input{
@@ -869,7 +870,8 @@ header{
                 transition: all 0.5s;
                 &:hover{
                     color: #ffffff;
-                    background-color: #000000;
+                    border: 1px solid #B8AD9E;
+                    background-color: #B8AD9E;
                 }
             }
             a{
@@ -892,7 +894,8 @@ header{
                 transition: all 0.5s;
                 &:hover{
                     color: #ffffff;
-                    background-color: #000000;
+                    border: 1px solid #B8AD9E;
+                    background-color: #B8AD9E;
                 }
             }
         }

@@ -233,7 +233,23 @@
                             font-size: 24px;
                             font-weight: 500;
                             line-height: 28px;
+                            position: relative;
                             font-family: 'HelveticaNeueMedium', system-ui;
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                left: 0;
+                                width: 0;
+                                bottom: 0;
+                                height: 2px;
+                                position: absolute;
+                                background: #000000;
+                                transition: all 0.3s;
+                            }
                         }
                         ul{
                             display: none;
@@ -258,6 +274,16 @@
                                     line-height: 20px;
                                     letter-spacing: 0.08px;
                                     font-family: 'HelveticaNeueRoman', system-ui;
+                                    &::after{
+                                        content: '';
+                                        left: 0;
+                                        width: 0;
+                                        bottom: 0;
+                                        height: 1px;
+                                        position: absolute;
+                                        background: #000000;
+                                        transition: all 0.3s;
+                                    }
                                 }
                             }
                             li.active{
@@ -915,12 +941,12 @@ header{
                 background: transparent;
                 &:hover{
                     i{
-                        color: #000000;
+                        color: #616161;
                     }
                 }
                 i{
                     font-size: 23px;
-                    color: #616161;
+                    color: #000000;
                     transition: all 0.5s;
                 }
             }
@@ -968,12 +994,12 @@ header{
                     transform: translate(0, -50%);
                     &:hover{
                         i{
-                            color: #000000;
+                            color: #616161;
                         }
                     }
                     i{
                         font-size: 23px;
-                        color: #616161;
+                        color: #000000;
                         transition: all 0.5s;
                     }
                 }
@@ -985,12 +1011,12 @@ header{
                     transform: translate(0, -50%);
                     &:hover{
                         i{
-                            color: #000000;
+                            color: #616161;
                         }
                     }
                     i{
                         font-size: 23px;
-                        color: #616161;
+                        color: #000000;
                         transition: all 0.5s;
                     }
                 }
@@ -1004,12 +1030,12 @@ header{
             position: relative;
             .basket{
                 font-size: 23px;
-                color: #616161;
+                color: #000000;
                 position: relative;
                 display: inline-block;
                 transition: all 0.5s;
                 &:hover{
-                    color: #000000;
+                    color: #616161;
                 }
                 span{
                     right: 0;
@@ -1266,13 +1292,13 @@ header{
             position: relative;
             a{
                 font-size: 23px;
-                color: #616161;
+                color: #000000;
                 position: relative;
                 padding-right: 12px;
                 display: inline-block;
                 transition: all 0.5s;
                 &:hover{
-                    color: #000000;
+                    color: #616161;
                 }
                 &::after{
                     content: '\E800';
@@ -1463,7 +1489,23 @@ header.active{
                                 font-size: 16px;
                                 font-weight: 400;
                                 line-height: 22px;
+                                position: relative;
                                 font-family: 'HelveticaNeueRoman', system-ui;
+                                &:hover{
+                                    &::after{
+                                        width: 100%;
+                                    }
+                                }
+                                &::after{
+                                    content: '';
+                                    left: 0;
+                                    width: 0;
+                                    bottom: 0;
+                                    height: 1px;
+                                    position: absolute;
+                                    background: #000000;
+                                    transition: all 0.3s;
+                                }
                             }
                         }
                     }
