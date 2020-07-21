@@ -196,12 +196,11 @@ header{
                     border-radius: 36px;
                     align-items: center;
                     justify-content: center;
-                    border: 1px solid #000000;
+                    border: 1px solid #B8AD9E;
                     font-family: 'HelveticaNeueRoman', system-ui;
                     transition: all 0.5s;
                     &:hover {
                         color: #ffffff;
-                        border: 1px solid #B8AD9E;
                         background-color: #B8AD9E;
                     }
                 }
