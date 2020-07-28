@@ -287,6 +287,26 @@ header{
                         font-weight: 500;
                         line-height: 30px;
                         font-family: 'Roboto', sans-serif;
+                        span{
+                            padding: 0 5px;
+                            color: #616161;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            margin-right: 5px;
+                            position: relative;
+                            display: table;
+                            font-family: 'HelveticaNeueRoman';
+                            &::after {
+                                content: '';
+                                top: 8px;
+                                left: 0;
+                                width: 100%;
+                                height: 1px;
+                                position: absolute;
+                                background: #616161;
+                            }
+                        }
                     }
                     .jcf-number{
                         width: 132px;
@@ -1751,6 +1771,16 @@ footer{
             .product-description {
                 width: 50%;
                 margin-top: 20px;
+                .total {
+                    .sum {
+                        strong {
+                            span {
+                                margin-right: 15px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
             }
         }
         .advantage {
